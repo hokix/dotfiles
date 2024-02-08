@@ -1,0 +1,28 @@
+[user]
+    email = hokix@live.com
+    name = hokix
+[core]
+    excludesfile = ~/.gitignore
+    pager = less -FRX
+[commit]
+    template = ~/.gittemplate
+[push]
+    default = simple
+    autoSetupRemote = true
+[pull]
+    default = simple
+    rebase = true
+[color]
+    ui = auto
+[merge]
+    tool = nvimdiff
+[diff]
+    tool = nvimdiff
+[format]
+    pretty = format:'%Cred%h%Creset -%C(yellow)%d%Creset %an %s %Cgreen(%ad)%Creset'
+[url "git@github.com:"]
+    insteadOf = http://github.com/
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+[includeIf "gitdir:~/workspace*/"]
+    path = .gitconfig-job
