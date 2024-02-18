@@ -1,0 +1,16 @@
+-i
+--glob=!*.pb.*
+--glob=!*.stub.*
+--glob=!*.netmsg.*
+--glob=!build/
+--glob=!tags
+--glob=!TAGS
+--glob=!Makefile
+--glob=!makefile
+--glob=!common_inc
+--glob=!*.o
+--glob=!*.log
+--glob=!vendor/
+--glob=!mocks/
+--glob=!go.sum
+--glob=!interface_*.go

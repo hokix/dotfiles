@@ -1,0 +1,27 @@
+{
+  "configurations": {
+    "run": {
+      "adapter": "delve",
+      "configuration": {
+        "request": "launch",
+        "mode": "debug",
+        "program": "${workspaceRoot}/cmd/server",
+        "args": ["--config", "config/local-live.toml"],
+        "showGlobalVariables": true
+      }
+    },
+    "test": {
+      "adapter": "delve",
+      "configuration": {
+        "request": "launch",
+        "mode": "test",
+        "program": "${fileDirname}",
+        "args": ["--", "-run", "Test"],
+        "env": {},
+        "showLog": true,
+        "outputCapture": "std",
+        "showGlobalVariables": true
+      }
+    }
+  }
+}

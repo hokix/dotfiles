@@ -1,0 +1,14 @@
+--c++-kinds=+p
+--fields=+iaSl
+--extras=+q
+--exclude="*.so"
+--exclude="*.so.*"
+--exclude="*.la"
+--exclude="*.a"
+--exclude="*_bin*"
+--exclude="*_lib*"
+--exclude="*.bin*"
+--exclude="*.lib*"
+--exclude="*_include*"
+--exclude=common_inc
+--languages=c++,go

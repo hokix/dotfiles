@@ -1,0 +1,20 @@
+{
+  "adapters": {
+    "cpptools - StopOnEntry": {
+      "extends": "cpptools",
+      "name": "cppdbg"
+    }
+  },
+  "configurations": {
+    "cpptools": {
+      "adapter": "vscode-cpptools",
+      "configuration": {
+        "request": "launch",
+        "program": "${workspaceRoot}/test/OAuthServer",
+        "cwd": "${workspaceRoot}/test",
+        "stopOnEntry": true,
+        "MIMode": "gdb"
+      }
+    }
+  }
+}
