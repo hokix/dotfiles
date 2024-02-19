@@ -24,6 +24,7 @@ return {
 	"tpope/vim-characterize", -- Character representation with ga
 	"tpope/vim-abolish",   -- Abbreviation,
 	"tpope/vim-repeat",    -- Repeat with .
+	"tpope/vim-obsession", -- 
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		main = "ibl",
