@@ -19,12 +19,19 @@ return {
 			preserve_window_layout = { "this", "nameless" },
 		},
 	},
+	{
+		"famiu/bufdelete.nvim",
+		config = function()
+			local map = require("helpers.keys").map
+			map("n", "<leader>bC", "<cmd>Bdelete<cr>", "[B]uffer [C]lose(keep layout)")
+		end,
+	},
 	"tpope/vim-sleuth",    -- Detect tabstop and shiftwidth automatically
 	"tpope/vim-surround",  -- Surround stuff with the ys-, cs-, ds- commands
 	"tpope/vim-characterize", -- Character representation with ga
 	"tpope/vim-abolish",   -- Abbreviation,
 	"tpope/vim-repeat",    -- Repeat with .
-	"tpope/vim-obsession", -- 
+	"tpope/vim-obsession", -- Make sessions
 	{
 		"lukas-reineke/indent-blankline.nvim",
 		main = "ibl",
@@ -185,14 +192,6 @@ return {
 			map("n", "<C-k>", nvim_tmux_nav.NvimTmuxNavigateUp, "vim tmux up")
 			map("n", "<C-l>", nvim_tmux_nav.NvimTmuxNavigateRight, "vim tmux right")
 			map("n", "<C-\\>", nvim_tmux_nav.NvimTmuxNavigateLastActive, "vim tmux last active")
-			-- map('n', "<C-Space>", nvim_tmux_nav.NvimTmuxNavigateNext, "vim tmux next")
-		end,
-	},
-	{
-		"famiu/bufdelete.nvim",
-		config = function()
-			local map = require("helpers.keys").map
-			map("n", "<leader>bC", "<cmd>Bdelete<cr>", "[B]uffer [C]lose")
 		end,
 	},
 	{
