@@ -22,7 +22,7 @@ export RIPGREP_CONFIG_PATH=${HOME}/.ripgreprc
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 zstyle ':omz:plugins:nvm' lazy yes
-export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node
+export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node
 export NVM_LAZY_LOAD=true
 export NVM_LAZY_LOAD_EXTRA_COMMANDS=('vim' 'nvim')
 export NVM_AUTO_USE=true

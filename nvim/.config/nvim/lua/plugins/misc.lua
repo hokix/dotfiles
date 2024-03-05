@@ -197,4 +197,10 @@ return {
 	{
 		'jamestthompson3/nvim-remote-containers',
 	},
+	{
+		'mvllow/modes.nvim',
+		config = function()
+			require('modes').setup()
+		end,
+	},
 }

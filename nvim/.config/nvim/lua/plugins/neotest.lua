@@ -17,6 +17,10 @@ return {
 					experimental = {
 						test_table = true,
 					},
+					test_command_hook = function(command, position)
+						table.insert(command, "--run")
+						table.insert(command, position.name)
+					end,
 					args = { "-v", "-count=1", "-timeout=60s" },
 				},
 			},
@@ -69,7 +73,8 @@ return {
 			map("n", "<leader>tF", function() require("neotest").run.run(vim.fn.expand('%')) end, "[T]est current [F]ile")
 			map("n", "<leader>ts", function() require("neotest").summary.toggle() end, "[T]est [s]ummary")
 			map("n", "<leader>to", function() require("neotest").output_panel.toggle() end, "[T]est [o]utput panel")
-			map("n", "<leader>tO", function() require("neotest").output.open({ enter = true, auto_close = true }) end, "[T]est [O]utput")
+			map("n", "<leader>tO", function() require("neotest").output.open({ enter = true, auto_close = true }) end,
+				"[T]est [O]utput")
 			map("n", "<leader>tS", function() require("neotest").run.stop() end, "[T]est [S]top")
 			map("n", "<leader>td", function() require("neotest").run.run({ strategy = "dap" }) end, "[T]est [d]ebug")
 		end,
