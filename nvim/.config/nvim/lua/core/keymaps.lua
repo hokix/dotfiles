@@ -76,8 +76,8 @@ map({"n", "v"}, "<leader>y", "\"+y", "[Y]ank")
 map({"n", "v"}, "<leader>p", "\"+p", "[P]aste")
 
 -- cmake compile
-map("n", "<leader>cb", "<cmd>call BuildCmakeProj(\"build\")<cr>", "cmake build")
-map("n", "<leader>ci", "<cmd>call BuildCmakeProj(\"install\")<cr>", "cmake build")
-map("n", "<leader>cc", "<cmd>call BuildCmakeProj(\"clean\")<cr>", "cmake build")
-map("n", "<leader>crb", "<cmd>call BuildCmakeProj(\"rebuild\")<cr>", "cmake build")
-map("n", "<leader>ce", "<cmd>call BuildCmakeProj(\"export_compile_commands\")<cr>", "cmake build")
+map("n", "<leader>cb", "<cmd>call BuildCmakeProj(\"build\")<cr>", "[c]make [b]uild")
+map("n", "<leader>ci", "<cmd>call BuildCmakeProj(\"install\")<cr>", "[c]make [i]nstall")
+map("n", "<leader>cc", "<cmd>call BuildCmakeProj(\"clean\")<cr>", "[c]make [c]lean")
+map("n", "<leader>crb", "<cmd>call BuildCmakeProj(\"rebuild\")<cr>", "[c]make [r]e[b]uild")
+map("n", "<leader>ce", "<cmd>call BuildCmakeProj(\"export_compile_commands\")<cr>", "[c]make [e]xport compile commands")
