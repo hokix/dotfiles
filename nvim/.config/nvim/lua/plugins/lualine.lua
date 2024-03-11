@@ -68,10 +68,10 @@ return {
 						{ "diff" },
 					},
 					lualine_y = {
-						{ "encoding", separator = " ", padding = { left = 1, right = 0 } },
-						{ 'fileformat', separator = " ", padding = { left = 1, right = 0 }, icons_enabled = true },
-						{ "progress", separator = " ", padding = { left = 1, right = 0 } },
-						{ "location", padding = { left = 0, right = 1 } },
+						{ "encoding",   separator = " ",                  padding = { left = 1, right = 0 } },
+						{ 'fileformat', separator = " ",                  padding = { left = 1, right = 0 }, icons_enabled = true },
+						{ "progress",   separator = " ",                  padding = { left = 1, right = 0 } },
+						{ "location",   padding = { left = 0, right = 1 } },
 					},
 					lualine_z = {
 						function()
@@ -80,7 +80,14 @@ return {
 					},
 				},
 				tabline = {
-					lualine_a = {'buffers'},
+					lualine_a = {
+						{
+							'buffers',
+							symbols = {
+								alternate_file = '',
+							},
+						}
+					},
 				}
 			})
 			-- listen lsp-progress event and refresh lualine
