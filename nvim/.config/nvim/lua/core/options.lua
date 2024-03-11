@@ -32,6 +32,10 @@ for opt, val in pairs(opts) do
 	vim.o[opt] = val
 end
 
+-- Set other options
+local colorscheme = require("helpers.colorscheme")
+vim.cmd.colorscheme(colorscheme)
+
 -- Restore cursor position
 vim.api.nvim_create_autocmd({ "BufReadPost" }, {
 	pattern = { "*" },

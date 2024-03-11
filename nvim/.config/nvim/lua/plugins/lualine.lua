@@ -27,6 +27,8 @@ return {
 					"mason",
 					"trouble",
 					"fzf",
+					"oil",
+					"trouble",
 				},
 				sections = {
 					lualine_a = { "mode" },
@@ -77,6 +79,9 @@ return {
 						end,
 					},
 				},
+				tabline = {
+					lualine_a = {'buffers'},
+				}
 			})
 			-- listen lsp-progress event and refresh lualine
 			vim.api.nvim_create_augroup("lualine_augroup", { clear = true })

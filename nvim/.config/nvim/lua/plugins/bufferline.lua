@@ -5,12 +5,11 @@ return {
 		version = "*",
 		dependencies = "nvim-tree/nvim-web-devicons",
 		config = function()
-			require("bufferline").setup({
+			local opts = {
 				options = {
 					-- mode = "buffers",
 					themable = true,
 					diagnostics = "nvim_lsp",
-					highlights = require("catppuccin.groups.integrations.bufferline").get(),
 					offsets = {
 						{
 							filetype = "neo-tree",
@@ -20,7 +19,13 @@ return {
 						},
 					},
 				},
-			})
+			}
+			local colorscheme = require("helpers.colorscheme")
+			if colorscheme == "catppuccin" then
+				opts.options.highlights = require("catppuccin.groups.integrations.bufferline").get()
+			end
+			require("bufferline").setup(opts)
 		end,
+		enabled = false,
 	},
 }

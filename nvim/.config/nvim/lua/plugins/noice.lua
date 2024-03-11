@@ -35,10 +35,30 @@ return {
 					inc_rename = false, -- enables an input dialog for inc-rename.nvim
 					lsp_doc_border = true, -- add a border to hover docs and signature help
 				},
+				routes = {
+					{
+						filter = {
+							event = "msg_show",
+							kind = "",
+							find = "written",
+						},
+						view = "mini",
+					},
+					-- skip stack traceback msgs
+					{
+						filter = {
+							event = "msg_show",
+							kind = "",
+							find = "stack traceback",
+						},
+						opts = {
+							skip = true,
+						},
+					},
+				},
 			})
 			local map = require("helpers.keys").map
 			map("n", "<leader>nc", function() noice.cmd("dismiss") end, "[N]oice [C]lear")
-			-- map("n", "<leader>nd", function() noice.cmd("dismiss") end, "[N]oice [D]ismiss")
 			map("n", "<leader>nl", function() noice.cmd("last") end, "[N]oice [L]ast")
 			map("n", "<leader>nh", function() noice.cmd("history") end, "[N]oice [H]istory")
 		end,
