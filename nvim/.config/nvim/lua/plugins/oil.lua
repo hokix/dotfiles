@@ -1,22 +1,17 @@
 return {
-	{
-		"stevearc/oil.nvim",
-		opts = {},
-		-- Optional dependencies
-		dependencies = { "nvim-tree/nvim-web-devicons" },
-		config = function ()
-			require("oil").setup({
-				columns = {
-					-- "permissions",
-					"mtime",
-					"icon",
-				},
-				view_options = {
-					show_hidden = true,
-				}
-			})
-			local map = require("helpers.keys").map
-			map("n", "-", "<CMD>Oil<CR>", "Open parent directory")
-		end
-	},
+  {
+    "stevearc/oil.nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = {
+      columns = {
+        -- "permissions",
+        "mtime",
+        "icon",
+      },
+      view_options = {
+        show_hidden = true,
+      },
+    },
+    keys = { { "-", "<cmd>Oil<cr>", "Open parent directory" } },
+  },
 }

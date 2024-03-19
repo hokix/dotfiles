@@ -1,57 +1,52 @@
+-- Options are automatically loaded before lazy.nvim startup
+-- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
+-- Add any additional options here
+
+vim.g.mapleader = ","
+
 local opts = {
-	shiftwidth = 4,
-	tabstop = 4,
-	softtabstop = 4,
-	expandtab = true,
-	wrap = true,
-	-- linebreak = true,
-	splitbelow = true,
-	splitright = false,
-	termguicolors = true,
-	number = true,
-	relativenumber = true,
-	-- mouse = "",
-	mouse = "a",
-	backupext = "-" .. vim.fn.strftime("%Y%m%d%H%M"),
-	backupdir = vim.fs.normalize("~/.cache/nvim/tmp/"),
-	backup = true,
-	undodir = vim.fs.normalize("~/.cache/nvim/undo/"),
-	undofile = true,
-	-- cursorline = true,
-	spelllang = "en_us,cjk",
-	spell = true,
-	fileencodings = "utf8,gbk",
-	-- scrolloff = 999,
-	virtualedit = "block",
-	inccommand = "split",
-	ignorecase = true,
+  shiftwidth = 4,
+  tabstop = 4,
+  softtabstop = 4,
+  expandtab = true,
+  wrap = true,
+  -- linebreak = true,
+  splitbelow = true,
+  splitright = false,
+  termguicolors = true,
+  number = true,
+  relativenumber = true,
+  -- mouse = "",
+  mouse = "a",
+  backupext = "-" .. vim.fn.strftime("%Y%m%d%H%M"),
+  backupdir = vim.fs.normalize("~/.cache/nvim/tmp/"),
+  backup = true,
+  undodir = vim.fs.normalize("~/.cache/nvim/undo/"),
+  undofile = true,
+  -- cursorline = true,
+  spelllang = "en_us,cjk",
+  spell = true,
+  fileencodings = "utf8,gbk",
+  -- scrolloff = 999,
+  virtualedit = "block",
+  inccommand = "split",
+  ignorecase = true,
+  pumblend = 0, -- override lazyvim menu background for transparency
+  winblend = 0, -- override lazyvim menu background for transparency
 }
 
 -- Set options from table
 for opt, val in pairs(opts) do
-	vim.o[opt] = val
+  vim.o[opt] = val
 end
-
--- Set other options
-local colorscheme = require("helpers.colorscheme")
-vim.cmd.colorscheme(colorscheme)
-
--- Restore cursor position
-vim.api.nvim_create_autocmd({ "BufReadPost" }, {
-	pattern = { "*" },
-	callback = function()
-		vim.api.nvim_exec2('silent! normal! g`"zv', { output = false })
-	end,
-})
 
 vim.cmd([[
 	cnoreabbrev rg AsyncRun! rg --vimgrep --smart-case
 	packadd cfilter
 ]])
 
-
 if vim.fn.has("gui_running") then
-	vim.opt.guifont = "Roboto Nerd Font Mono"
+  vim.opt.guifont = "CaskaydiaCove Nerd Font Mono"
 end
 
 vim.cmd([[
@@ -94,6 +89,4 @@ function! BuildCmakeProj(cmd)
         call system("ln -s build/compile_commands.json .")
     endif
 endfu
-
-
 ]])
