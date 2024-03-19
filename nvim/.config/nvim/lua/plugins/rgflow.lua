@@ -13,11 +13,7 @@ return {
       {
         "<leader>rg",
         function()
-          require("rgflow").open(nil, nil, nil, {
-            custom_start = function(pattern, flags, path)
-              print("Pattern:" .. pattern .. " Flags:" .. flags .. " Path:" .. path)
-            end,
-          })
+          require("rgflow").open()
         end,
         "[RG]flow",
       },
