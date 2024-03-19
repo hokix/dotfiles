@@ -45,8 +45,8 @@ return {
   {
     "sindrets/diffview.nvim",
     cmd = {
-      "DiffViewOpen",
-      "DiffViewClose",
+      "DiffviewOpen",
+      "DiffviewClose",
     },
     lazy = true,
   },
