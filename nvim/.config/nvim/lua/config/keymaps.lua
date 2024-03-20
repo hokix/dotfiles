@@ -13,3 +13,7 @@ vim.keymap.set(
   '<cmd>call BuildCmakeProj("export_compile_commands")<cr>',
   { desc = "[c]make [e]xport compile commands" }
 )
+
+-- copy and paste
+vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', { desc = "[Y]ank" })
+vim.keymap.set({ "n", "v" }, "<leader>p", '"+p', { desc = "[P]aste" })
