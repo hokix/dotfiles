@@ -22,18 +22,18 @@ return {
         both = "cb",
         next = "cn",
         prev = "cp",
-      },
-      cmd = {
-        "GitConflictChooseOurs",
-        "GitConflictChooseTheirs",
-        "GitConflictChooseBoth",
-        "GitConflictChooseNone",
-        "GitConflictNextConflict",
-        "GitConflictPrevConflict",
-        "GitConflictListQf",
-      },
-      lazy = true,
+      }
     },
+    cmd = {
+      "GitConflictChooseOurs",
+      "GitConflictChooseTheirs",
+      "GitConflictChooseBoth",
+      "GitConflictChooseNone",
+      "GitConflictNextConflict",
+      "GitConflictPrevConflict",
+      "GitConflictListQf",
+    },
+    lazy = true
   },
   {
     "tpope/vim-fugitive",
