@@ -27,7 +27,7 @@ return {
       },
     },
     keys = {
-      { "<leader>tm", "<cmd>Lspsaga term_toggle<cr>", "[T]oggle Ter[m]inal", mode = { "n", "t" } },
+      { "<leader>tm", "<cmd>Lspsaga term_toggle<cr>", desc = "[T]oggle Ter[m]inal", mode = { "n", "t" } },
     },
     dependencies = {
       "nvim-treesitter/nvim-treesitter", -- optional

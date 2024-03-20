@@ -4,9 +4,15 @@ return {
     {
       "tpope/vim-abolish", -- Abbreviation,
       lazy = true,
+      init = function()
+        vim.g.abolish_no_mappings = true
+      end,
       cmd = {
         "Abolish",
         "Subvert",
+      },
+      keys = {
+        { "co", "<Plug>(abolish-coerce-word)", desc = "Abolish [co]erce" },
       },
     },
   },
