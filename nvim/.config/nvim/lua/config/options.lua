@@ -46,7 +46,7 @@ vim.cmd([[
 ]])
 
 if vim.fn.has("gui_running") then
-  vim.opt.guifont = "CaskaydiaCove Nerd Font Mono"
+  vim.opt.guifont = "Roboto Nerd Font Mono"
 end
 
 vim.cmd([[

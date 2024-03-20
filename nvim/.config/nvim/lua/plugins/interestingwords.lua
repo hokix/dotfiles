@@ -18,6 +18,11 @@ return {
       color_key = "<leader>m",
       cancel_color_key = "<leader>M",
     },
-    event = "VeryLazy",
+    -- event = "VeryLazy",
+    lazy = true,
+    keys = {
+      "<leader>m",
+      "<leader>M",
+    },
   },
 }
