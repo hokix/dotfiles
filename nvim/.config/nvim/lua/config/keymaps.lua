@@ -6,7 +6,7 @@
 vim.keymap.set("n", "<leader>cb", '<cmd>call BuildCmakeProj("build")<cr>', { desc = "[c]make [b]uild" })
 vim.keymap.set("n", "<leader>ci", '<cmd>call BuildCmakeProj("install")<cr>', { desc = "[c]make [i]nstall" })
 vim.keymap.set("n", "<leader>cn", '<cmd>call BuildCmakeProj("clean")<cr>', { desc = "[c]make clea[n]" })
-vim.keymap.set("n", "<leader>crb", '<cmd>call BuildCmakeProj("rebuild")<cr>', { desc = "[c]make [re]build" })
+-- vim.keymap.set("n", "<leader>crb", '<cmd>call BuildCmakeProj("rebuild")<cr>', { desc = "[c]make [re]build" })
 vim.keymap.set(
   "n",
   "<leader>ce",
