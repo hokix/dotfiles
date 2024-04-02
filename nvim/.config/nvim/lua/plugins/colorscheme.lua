@@ -2,6 +2,7 @@ return {
   {
     "folke/tokyonight.nvim",
     opts = {
+      style = "moon",
       transparent = true,
       styles = {
         sidebars = "transparent",
@@ -17,13 +18,11 @@ return {
   },
   {
     "catppuccin/nvim",
-    lazy = true,
-    priority = 1000,
     name = "catppuccin",
     opts = {
       flavour = "mocha",
       transparent_background = true,
-      show_end_of_buffer = false,
+      -- show_end_of_buffer = false,
       integrations = {
         aerial = true,
         alpha = true,
@@ -35,14 +34,18 @@ return {
         gitsigns = true,
         harpoon = true,
         headlines = true,
-        illuminate = true,
+        illuminate = {
+          enabled = true,
+        },
         indent_blankline = { enabled = true },
         leap = true,
         lsp_saga = true,
         lsp_trouble = true,
         mason = true,
         markdown = true,
-        mini = true,
+        mini = {
+          enabled = true,
+        },
         native_lsp = {
           enabled = true,
           underlines = {
@@ -58,7 +61,9 @@ return {
         noice = true,
         notify = true,
         semantic_tokens = true,
-        telescope = true,
+        telescope = {
+          enabled = true,
+        },
         treesitter = true,
         treesitter_context = true,
         which_key = true,
