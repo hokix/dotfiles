@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/Server",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/test",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "/usr/bin/gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Enable follow fork mode child for gdb",
+          "text": "-gdb-set follow-fork-mode child",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

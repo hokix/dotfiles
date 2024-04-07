@@ -10,7 +10,7 @@
       "adapter": "vscode-cpptools",
       "configuration": {
         "request": "launch",
-        "program": "${workspaceRoot}/test/OAuthServer",
+        "program": "${workspaceRoot}/test/Server",
         "cwd": "${workspaceRoot}/test",
         "stopOnEntry": true,
         "MIMode": "gdb"

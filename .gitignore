@@ -1,2 +1,3 @@
 lazy-lock.json
 git/.config/lazygit/state.yml
+!.vscode/
