@@ -15,7 +15,7 @@ return {
         function()
           require("rgflow").open()
         end,
-        "[RG]flow",
+        desc = "[RG]flow",
       },
     },
   },

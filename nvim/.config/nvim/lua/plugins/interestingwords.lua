@@ -21,8 +21,8 @@ return {
     -- event = "VeryLazy",
     lazy = true,
     keys = {
-      "<leader>m",
-      "<leader>M",
+      { "<leader>m", desc = "InterestingWord Toggle Color" },
+      { "<leader>M", desc = "InterestingWord Uncolor " },
     },
   },
 }

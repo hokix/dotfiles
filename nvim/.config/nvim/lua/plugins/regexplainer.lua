@@ -13,7 +13,7 @@ return {
       },
     },
     keys = {
-      { "<leader>re", "<cmd>RegexplainerToggle<cr>", "[R]eg[e]xplainerToggle" },
+      { "<leader>re", "<cmd>RegexplainerToggle<cr>", desc = "[R]eg[e]xplainerToggle" },
     },
     cmd = {
       "RegexplainerToggle",

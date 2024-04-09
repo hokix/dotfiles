@@ -12,6 +12,6 @@ return {
         show_hidden = true,
       },
     },
-    keys = { { "-", "<cmd>Oil<cr>", "Open parent directory" } },
+    keys = { { "-", "<cmd>Oil<cr>", desc = "Open parent directory" } },
   },
 }

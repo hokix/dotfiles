@@ -11,7 +11,7 @@ return {
       "VisitLinkNearest",
     },
     keys = {
-      { "gx", "<cmd>VisitLinkNearest<cr>", "Visit Link Nearest" },
+      { "gx", "<cmd>VisitLinkNearest<cr>", desc = "Visit Link Nearest" },
     },
     lazy = true,
   },
