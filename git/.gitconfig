@@ -6,6 +6,7 @@
     pager = less -FRX
 [commit]
     template = ~/.gittemplate
+    verbose = true
 [push]
     default = simple
     autoSetupRemote = true
