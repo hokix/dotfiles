@@ -1,6 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
+    optional = true,
     dependencies = {
       "williamboman/mason.nvim",
       opts = function(_, opts)
@@ -13,7 +14,6 @@ return {
       formatters_by_ft = {
         c = { "clang-format" },
         cpp = { "clang-format" },
-        go = { "goimports", "gofmt" },
       },
     },
   },
