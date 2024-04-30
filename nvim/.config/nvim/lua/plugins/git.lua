@@ -10,7 +10,7 @@ return {
       },
       current_line_blame_formatter = "  <author>, <author_time:%Y-%m-%d> - <summary>",
     },
-    keys = { "<leader>gl", "<cmd>Gitsigns toggle_current_line_blame<cr>", desc = "Toggle [g]it [l]ens" },
+    keys = { { "<leader>gl", "<cmd>Gitsigns toggle_current_line_blame<cr>", desc = "Toggle [g]it [l]ens" } },
   },
   {
     "akinsho/git-conflict.nvim",
