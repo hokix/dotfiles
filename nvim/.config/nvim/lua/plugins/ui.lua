@@ -1,11 +1,14 @@
 return {
-  -- {
-  --   "folke/edgy.nvim",
-  --   optional = true,
-  --   opts = {
-  --     animate = {
-  --       enabled = true,
-  --     },
-  --   },
-  -- },
+  {
+    "echasnovski/mini.animate",
+    optional = true,
+    opts = {
+      open = {
+        enable = false,
+      },
+      close = {
+        enable = false,
+      },
+    },
+  },
 }
