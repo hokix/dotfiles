@@ -9,6 +9,9 @@ return {
       close = {
         enable = false,
       },
+      scroll = {
+        enable = false,
+      }
     },
   },
 }

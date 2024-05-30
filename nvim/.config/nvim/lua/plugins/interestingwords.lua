@@ -13,7 +13,7 @@ return {
         "#b4befe",
         "#cba6f7",
       },
-      navigation = true,
+      navigation = false,
       search_count = true,
       color_key = "<leader>m",
       cancel_color_key = "<leader>M",
