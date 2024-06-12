@@ -65,7 +65,7 @@ return {
       end
 
       -- setup dap config by VsCode launch.json file
-      require("dap.ext.vscode").load_launchjs(nil, { cppdbg = { "c", "cpp" } })
+      -- require("dap.ext.vscode").load_launchjs(nil, { cppdbg = { "c", "cpp" } })
     end,
   },
 }

@@ -12,6 +12,8 @@ return {
         "#89b4fa",
         "#b4befe",
         "#cba6f7",
+        "#bac2de",
+        "#9399b2",
       },
       navigation = false,
       search_count = true,
