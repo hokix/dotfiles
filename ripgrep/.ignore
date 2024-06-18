@@ -1,0 +1,15 @@
+*.pb.*
+*.stub.*
+*.netmsg.*
+build/
+tags
+TAGS
+Makefile
+makefile
+common_inc
+*.o
+*.log
+vendor/
+mocks/
+go.sum
+interface_*.go
