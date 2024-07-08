@@ -25,3 +25,4 @@ go.work
 *.orig
 .tablestore_config
 .tablestore_tableinfo
+.php-cs-fixer.cache
