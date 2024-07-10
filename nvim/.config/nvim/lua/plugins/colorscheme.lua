@@ -2,18 +2,22 @@ return {
   {
     "folke/tokyonight.nvim",
     opts = {
-      style = "moon",
+      style = "night",
       transparent = true,
       styles = {
         sidebars = "transparent",
         floats = "transparent",
       },
+      on_colors = function(colors)
+        colors.bg_statusline = colors.none -- To check if its working try something like "#ff00ff" instead of colors.none
+      end,
     },
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin",
+      -- colorscheme = "catppuccin",
+      colorscheme = "tokyonight",
     },
   },
   {
