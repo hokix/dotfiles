@@ -26,3 +26,4 @@ go.work
 .tablestore_config
 .tablestore_tableinfo
 .php-cs-fixer.cache
+out/
