@@ -22,9 +22,11 @@
 [format]
     pretty = format:'%Cred%h%Creset -%C(yellow)%d%Creset %an %s %Cgreen(%ad)%Creset'
 ; [url "git@github.com:"]
-    ; insteadOf = http://github.com/
+;     insteadOf = http://github.com/
 ; [url "git@github.com:"]
-    ; insteadOf = https://github.com/
+;     insteadOf = https://github.com/
+[url "https://github.com/"]
+    insteadOf = git@github.com:
 [include]
     path = .gitconfig-url
 [includeIf "gitdir:~/workspace*/"]
