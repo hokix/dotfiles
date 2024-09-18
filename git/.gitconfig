@@ -29,5 +29,6 @@
     insteadOf = git@github.com:
 [include]
     path = .gitconfig-url
+    path = .gitconfig-local
 [includeIf "gitdir:~/workspace*/"]
     path = .gitconfig-job

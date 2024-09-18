@@ -13,3 +13,4 @@ vendor/
 mocks/
 go.sum
 interface_*.go
+Library/

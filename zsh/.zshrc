@@ -106,7 +106,9 @@ plugins=(git
     fzf
 )
 
+
 export ZPLUG_HOME=$HOME/.zplug
+[ -f ~/.zshrc_local ] && source ~/.zshrc_local
 if [[ -f $ZPLUG_HOME/init.zsh ]] {
   source $ZPLUG_HOME/init.zsh
 
@@ -204,8 +206,7 @@ bindkey -s "^[Om" "-"
 bindkey -s "^[Oj" "*"
 bindkey -s "^[Oo" "/"
 
-export LC_TIME='C.UTF-8'
+#export LC_TIME='C.UTF-8'
 
 setopt no_nomatch
 
-[ -f ~/.zshrc_local ] && source ~/.zshrc_local

@@ -1,0 +1,19 @@
+import = [
+    "~/.config/alacritty/colors-tokyo-night.toml"
+]
+[selection]
+    save_to_clipboard = true
+[window]
+    padding = { x = 10, y = 10 }
+    dynamic_padding = true
+    startup_mode  = "Maximized"
+    opacity = 0.95
+    blur = true
+[font]
+    normal = { family = "CaskaydiaMono Nerd Font", style="SemiBold"}
+    offset = { x = 0, y = 0 }
+    size = 12
+[mouse]
+    bindings = [
+        { mouse = "Right", action = "Paste" },
+    ]
