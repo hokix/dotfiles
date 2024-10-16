@@ -25,8 +25,8 @@
 ;     insteadOf = http://github.com/
 ; [url "git@github.com:"]
 ;     insteadOf = https://github.com/
-[url "https://github.com/"]
-    insteadOf = git@github.com:
+; [url "https://github.com/"]
+;     insteadOf = git@github.com:
 [include]
     path = .gitconfig-url
     path = .gitconfig-local
