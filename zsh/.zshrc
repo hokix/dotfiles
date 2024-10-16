@@ -118,6 +118,7 @@ if [[ -f $ZPLUG_HOME/init.zsh ]] {
   zplug "changyuheng/zsh-interactive-cd"
   zplug "romkatv/powerlevel10k", as:theme, depth:1
   zplug "lukechilds/zsh-nvm"
+  zplug "MichaelAquilina/zsh-you-should-use"
 
   if ! zplug check --verbose; then
       echo 'Run "zplug install" to install'
