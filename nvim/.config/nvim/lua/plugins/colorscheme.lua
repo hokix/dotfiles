@@ -16,8 +16,8 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "catppuccin",
-      colorscheme = "tokyonight",
+            colorscheme = "catppuccin",
+            -- colorscheme = "tokyonight",
     },
   },
   {
@@ -71,6 +71,7 @@ return {
         treesitter = true,
         treesitter_context = true,
         which_key = true,
+                blink_cmp = true,
       },
       custom_highlights = function(colors)
         return {

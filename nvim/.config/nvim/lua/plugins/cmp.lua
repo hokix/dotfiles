@@ -1,6 +1,7 @@
 return {
   {
     "L3MON4D3/LuaSnip",
+    optional = true,
     keys = function()
       return {}
     end,
@@ -9,7 +10,9 @@ return {
     "hrsh7th/nvim-cmp",
     dependencies = {
       "hrsh7th/cmp-emoji",
+      "L3MON4D3/LuaSnip",
     },
+    optional = true,
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
       local cmp = require("cmp")
@@ -50,5 +53,20 @@ return {
         end, { "i", "s" }),
       })
     end,
+  },
+  {
+    "saghen/blink.cmp",
+    optional = true,
+    opts = {
+      keymap = {
+        ["<C-space>"] = {},
+        ["<Tab>"] = { "show", "show_documentation", "hide_documentation" },
+      },
+      completion = {
+        menu = { border = "rounded" },
+        documentation = { window = { border = "rounded" } },
+      },
+      signature = { window = { border = "rounded" } },
+    },
   },
 }

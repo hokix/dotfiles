@@ -5,5 +5,6 @@ return {
     init = function()
       require("overseer").load_template("user")
     end,
+    lazy = true,
   },
 }

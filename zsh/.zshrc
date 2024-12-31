@@ -112,7 +112,7 @@ export ZPLUG_HOME=$HOME/.zplug
 if [[ -f $ZPLUG_HOME/init.zsh ]] {
   source $ZPLUG_HOME/init.zsh
 
-  zplug "zsh-users/zsh-syntax-highlighting"
+  # zplug "zsh-users/zsh-syntax-highlighting"
   zplug "zsh-users/zsh-autosuggestions"
   zplug "supercrabtree/k"
   zplug "changyuheng/zsh-interactive-cd"

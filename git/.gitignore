@@ -27,3 +27,4 @@ go.work
 .tablestore_tableinfo
 .php-cs-fixer.cache
 out/
+.phpactor.json

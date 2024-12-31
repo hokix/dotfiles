@@ -13,5 +13,6 @@ return {
       },
     },
     keys = { { "-", "<cmd>Oil<cr>", desc = "Open parent directory" } },
+    lazy = true,
   },
 }
