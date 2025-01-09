@@ -13,4 +13,13 @@ return {
       },
     },
   },
+  {
+    "Civitasv/cmake-tools.nvim",
+    optional = true,
+    opts = {
+      cmake_build_options = {
+        "-j"
+      },
+    },
+  }
 }
