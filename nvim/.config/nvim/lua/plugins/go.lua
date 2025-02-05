@@ -85,7 +85,7 @@ return {
     dependencies = {
       {
         "williamboman/mason.nvim",
-                opts = { ensure_installed = { "gomodifytags", "impl" } },
+        opts = { ensure_installed = { "gomodifytags", "impl" } },
       },
     },
     opts = function(_, opts)
@@ -93,8 +93,8 @@ return {
       opts.sources = vim.list_extend(opts.sources or {}, {
         nls.builtins.code_actions.gomodifytags,
         nls.builtins.code_actions.impl,
-        nls.builtins.formatting.goimports,
-        nls.builtins.formatting.gofmt,
+        -- nls.builtins.formatting.goimports,
+        -- nls.builtins.formatting.gofmt,
       })
     end,
   },
