@@ -44,10 +44,13 @@ return {
   },
   {
     "sindrets/diffview.nvim",
+    lazy = true,
     cmd = {
       "DiffviewOpen",
-      "DiffviewClose",
+      "DiffviewFileHistory",
     },
-    lazy = true,
+    opts = {
+      enhanced_diff_hl = true,
+    },
   },
 }

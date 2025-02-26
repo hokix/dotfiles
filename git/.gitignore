@@ -28,3 +28,5 @@ go.work
 .php-cs-fixer.cache
 out/
 .phpactor.json
+tmp
+tmp/
