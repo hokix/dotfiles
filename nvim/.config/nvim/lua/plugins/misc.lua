@@ -33,4 +33,34 @@ return {
     lazy = true,
     cmd = { "CsvViewToggle" },
   },
+  {
+    "obsidian-nvim/obsidian.nvim",
+    dependencies = {
+      -- Required.
+      "nvim-lua/plenary.nvim",
+      "Saghen/blink.cmp",
+      "folke/snacks.nvim",
+    },
+    lazy = true,
+    ft = "markdown",
+    opts = {
+      workspaces = {
+        {
+          name = "notes",
+          path = "~/Documents/obsidian/notes",
+        },
+      },
+      templates = {
+        folder = "模板",
+      },
+    },
+    cmd = {
+      "ObsidianNew",
+      "ObsidianNewFromTemplate",
+      "ObsidianWorkspace",
+    },
+  },
+  -- mason workaround
+  { "mason-org/mason.nvim", version = "1.11.0" },
+  { "mason-org/mason-lspconfig.nvim", version = "1.32.0" },
 }

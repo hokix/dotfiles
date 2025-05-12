@@ -1,6 +1,6 @@
 [general]
 import = [
-    "~/.config/alacritty/colors-tokyo-night.toml"
+    "~/.config/alacritty/colors-catppuccin-mocha.toml"
 ]
 [selection]
     save_to_clipboard = true
@@ -11,9 +11,9 @@ import = [
     opacity = 0.95
     blur = true
 [font]
-    normal = { family = "CaskaydiaMono Nerd Font", style="SemiBold"}
+    normal = { family = "CaskaydiaMono Nerd Font", style="Regular"}
     offset = { x = 0, y = 0 }
-    size = 12
+    size = 13.5
 [mouse]
     bindings = [
         { mouse = "Right", action = "Paste" },

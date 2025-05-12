@@ -4,15 +4,19 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     opts = {
       columns = {
-        -- "permissions",
+        "permissions",
         "mtime",
         "icon",
       },
-      view_options = {
-        show_hidden = true,
+      -- view_options = {
+      --   show_hidden = true,
+      -- },
+
+      float = {
+        padding = 5,
       },
     },
-    keys = { { "-", "<cmd>Oil<cr>", desc = "Open parent directory" } },
-    lazy = true,
+    keys = { { "-", "<cmd>Oil --float<cr>", desc = "Open parent directory" } },
+    lazy = false,
   },
 }

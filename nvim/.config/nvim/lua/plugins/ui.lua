@@ -4,10 +4,10 @@ return {
     optional = true,
     opts = {
       open = {
-        enable = false,
+        enable = true,
       },
       close = {
-        enable = false,
+        enable = true,
       },
       scroll = {
         enable = true,
