@@ -53,6 +53,10 @@ return {
       templates = {
         folder = "模板",
       },
+      ui = {
+        -- use render-markdown ui
+        enable = false,
+      },
     },
     cmd = {
       "ObsidianNew",
