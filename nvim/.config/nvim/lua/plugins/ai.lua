@@ -35,6 +35,13 @@ return {
         ft = { "markdown", "codecompanion" },
       },
     },
+    lazy = true,
+    cmd = {
+      "CodeCompanion",
+      "CodeCompanionActions",
+      "CodeCompanionChat",
+      "CodeCompanionCmd",
+    },
     opts = {
       display = {
         chat = {
