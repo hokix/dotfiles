@@ -21,5 +21,15 @@ return {
         "-j"
       },
     },
-  }
+  },
+  {
+    "stevearc/conform.nvim",
+    optional = true,
+    opts = {
+      -- log_level = vim.log.levels.DEBUG,
+      formatters_by_ft = {
+        cpp = { "clang-format" },
+      }
+    },
+  },
 }
