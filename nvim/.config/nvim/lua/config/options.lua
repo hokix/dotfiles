@@ -29,11 +29,6 @@ for opt, val in pairs(opts) do
   vim.o[opt] = val
 end
 
-vim.cmd([[
-	cnoreabbrev rg AsyncRun! rg --vimgrep --smart-case
-	packadd cfilter
-]])
-
 if vim.fn.has("gui_running") then
   vim.opt.guifont = "Roboto Nerd Font Mono"
 end
