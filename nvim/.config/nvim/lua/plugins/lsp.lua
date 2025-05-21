@@ -12,12 +12,6 @@ return {
           border = "rounded",
         },
       },
-      ---@type lspconfig.options
-      servers = {
-        clangd = {
-          filetypes = { "c", "cpp", "objc", "objcpp", "cuda" },
-        },
-      },
     },
   },
 }

@@ -4,6 +4,7 @@
 
 -- Disable autoformat for file types
 vim.api.nvim_create_autocmd({ "FileType" }, {
+  -- cpp / h / c are auto formatted by lsp-format-modifications
   pattern = { "toml", "proto", "cpp", "h", "c", "php" },
   callback = function()
     vim.b.autoformat = false
