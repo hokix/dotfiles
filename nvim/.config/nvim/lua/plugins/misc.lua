@@ -25,6 +25,15 @@ return {
     lazy = true,
     cmd = { "CsvViewToggle" },
   },
+  {
+    "m4xshen/hardtime.nvim",
+    lazy = false,
+    dependencies = { "MunifTanjim/nui.nvim" },
+    opts = {
+      disable_mouse = false,
+      restriction_mode = "hint",
+    },
+  },
   -- mason workaround
   { "mason-org/mason.nvim", version = "1.11.0" },
   { "mason-org/mason-lspconfig.nvim", version = "1.32.0" },
