@@ -2,7 +2,7 @@ return {
   {
     "folke/tokyonight.nvim",
     opts = {
-      style = "night",
+      style = "moon",
       transparent = true,
       styles = {
         sidebars = "transparent",
@@ -11,13 +11,18 @@ return {
       on_colors = function(colors)
         colors.bg_statusline = colors.none -- To check if its working try something like "#ff00ff" instead of colors.none
       end,
+      on_highlights = function(hl, colors)
+        hl.TabLineFill = {
+          bg = colors.none,
+        }
+      end,
     },
   },
   {
     "LazyVim/LazyVim",
     opts = {
-            colorscheme = "catppuccin",
-            -- colorscheme = "tokyonight",
+      colorscheme = "catppuccin",
+      -- colorscheme = "tokyonight",
     },
   },
   {
@@ -71,7 +76,12 @@ return {
         treesitter = true,
         treesitter_context = true,
         which_key = true,
-                blink_cmp = true,
+        blink_cmp = true,
+        dadbod_ui = true,
+        snacks = {
+          enabled = true,
+        },
+        grug_far = true,
       },
       custom_highlights = function(colors)
         return {

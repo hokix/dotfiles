@@ -18,7 +18,7 @@ return {
           settings = {
             gopls = {
               codelenses = {
-                gc_details = false,
+                gc_details = true,
                 generate = true,
                 regenerate_cgo = true,
                 run_govulncheck = true,
@@ -84,7 +84,7 @@ return {
     dependencies = {
       {
         "williamboman/mason.nvim",
-        opts = { ensure_installed = { "gomodifytags", "impl" } },
+        opts = { ensure_installed = { "gomodifytags", "impl", "golangci-lint" } },
       },
     },
     opts = function(_, opts)
@@ -94,6 +94,7 @@ return {
         nls.builtins.code_actions.impl,
         nls.builtins.formatting.goimports,
         nls.builtins.formatting.gofmt,
+        nls.builtins.diagnostics.golangci_lint,
       })
     end,
   },

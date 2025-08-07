@@ -47,7 +47,7 @@ return {
         format_range()
       end
 
-      vim.api.nvim_create_user_command('FormatDiff', format_hunks, { desc = "Format changed lines "})
+      vim.api.nvim_create_user_command("FormatDiff", format_hunks, { desc = "Format changed lines " })
 
       -- opts.log_level = vim.log.levels.DEBUG
       return opts
