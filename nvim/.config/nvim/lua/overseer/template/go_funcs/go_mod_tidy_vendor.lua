@@ -6,8 +6,14 @@ return {
       strategy = {
         "orchestrator",
         tasks = {
-          "go mod tidy",
-          "go mod vendor",
+          {
+            cmd = { "go" },
+            args = { "mod", "tidy" },
+          },
+          {
+            cmd = { "go" },
+            args = { "mod", "vendor" },
+          },
         },
       },
     }
