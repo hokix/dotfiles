@@ -37,4 +37,15 @@ return {
   -- mason workaround
   { "mason-org/mason.nvim", version = "1.11.0" },
   { "mason-org/mason-lspconfig.nvim", version = "1.32.0" },
+  {
+    "uhs-robert/sshfs.nvim",
+    lazy = true,
+    event = "VeryLazy",
+    opts = {
+      lead_prefix = "<leader>M",
+      log = {
+        enabled = false,
+      },
+    },
+  },
 }
