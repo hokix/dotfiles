@@ -92,8 +92,8 @@ return {
       opts.sources = vim.list_extend(opts.sources or {}, {
         nls.builtins.code_actions.gomodifytags,
         nls.builtins.code_actions.impl,
-        nls.builtins.formatting.goimports,
-        nls.builtins.formatting.gofmt,
+        -- nls.builtins.formatting.goimports,
+        -- nls.builtins.formatting.gofmt,
         nls.builtins.diagnostics.golangci_lint,
       })
     end,
@@ -103,7 +103,7 @@ return {
     optional = true,
     opts = {
       formatters_by_ft = {
-        go = { "goimports", "gofmt" },
+        go = { "goimports", "gofmt", "golangci-lint" },
       },
     },
   },

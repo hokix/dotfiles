@@ -1,1 +1,1 @@
-set -g @continuum-boot-options 'alacritty'
+set -g @continuum-boot-options 'kitty'
