@@ -6,7 +6,6 @@ export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/go/bin:$HOME/go/bin:$PATH"
 
 export RIPGREP_CONFIG_PATH=${HOME}/.ripgreprc
 
-[ -f ~/.zshrc_local ] && source ~/.zshrc_local
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # zstyle ':omz:plugins:nvm' lazy yes
@@ -16,6 +15,8 @@ export NVM_LAZY_LOAD_EXTRA_COMMANDS=('vim' 'nvim')
 # export NVM_AUTO_USE=true
 
 ZSH_TMUX_AUTOSTART=true
+
+[ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
