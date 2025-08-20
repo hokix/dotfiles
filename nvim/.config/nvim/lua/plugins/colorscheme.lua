@@ -1,6 +1,7 @@
 return {
   {
     "folke/tokyonight.nvim",
+    optional = true,
     opts = {
       style = "moon",
       transparent = true,
@@ -27,6 +28,7 @@ return {
   },
   {
     "catppuccin/nvim",
+    optional = true,
     name = "catppuccin",
     opts = {
       flavour = "mocha",

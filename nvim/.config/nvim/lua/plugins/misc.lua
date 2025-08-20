@@ -37,6 +37,17 @@ return {
   -- mason workaround
   { "mason-org/mason.nvim", version = "1.11.0" },
   { "mason-org/mason-lspconfig.nvim", version = "1.32.0" },
+  -- bufferline/catppuccin workaround
+  {
+    "akinsho/bufferline.nvim",
+    optioanl = true,
+    init = function()
+      local bufline = require("catppuccin.groups.integrations.bufferline")
+      function bufline.get()
+        return bufline.get_theme()
+      end
+    end,
+  },
   {
     "uhs-robert/sshfs.nvim",
     lazy = true,
