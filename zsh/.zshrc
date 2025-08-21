@@ -80,6 +80,9 @@ DISABLE_MAGIC_FUNCTIONS="true"
 # see 'man strftime' for details.
 # HIST_STAMPS="mm/dd/yyyy"
 
+HISTSIZE=200000
+SAVEHIST=200000
+
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
