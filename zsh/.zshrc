@@ -15,6 +15,7 @@ export NVM_LAZY_LOAD_EXTRA_COMMANDS=('vim' 'nvim')
 # export NVM_AUTO_USE=true
 
 ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOQUIT=false
 
 [ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
