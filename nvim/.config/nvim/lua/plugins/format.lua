@@ -13,7 +13,7 @@ return {
           return
         end
 
-        local hunks = require("gitsigns").get_hunks()
+        local hunks = require("gitsigns").get_hunks(0)
         if hunks == nil then
           return
         end
@@ -22,7 +22,7 @@ return {
 
         local function format_range()
           if next(hunks) == nil then
-            vim.notify("done formatting git hunks", "info", { title = "formatting" })
+            vim.notify("done formatting git hunks", vim.log.levels.INFO, { title = "formatting" })
             return
           end
           local hunk = nil
@@ -47,7 +47,7 @@ return {
         format_range()
       end
 
-      vim.api.nvim_create_user_command("FormatDiff", format_hunks, { desc = "Format changed lines " })
+      vim.api.nvim_create_user_command("FormatDiff", format_hunks, { desc = "Format changed lines" })
 
       -- opts.log_level = vim.log.levels.DEBUG
       return opts

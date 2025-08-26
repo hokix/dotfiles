@@ -75,5 +75,6 @@ return {
       "MunifTanjim/nui.nvim",
     },
     opts = {}, -- options, see default configuration
+    lazy = true,
   },
 }
