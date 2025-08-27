@@ -22,9 +22,6 @@ return {
       },
       cmake_executor = {
         name = "quickfix",
-        opts = {
-          show = "only_on_error",
-        },
       },
     },
   },
