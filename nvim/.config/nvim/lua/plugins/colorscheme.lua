@@ -1,5 +1,12 @@
 return {
   {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin",
+      -- colorscheme = "tokyonight",
+    },
+  },
+  {
     "folke/tokyonight.nvim",
     optional = true,
     opts = {
@@ -20,83 +27,30 @@ return {
     },
   },
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
-      -- colorscheme = "tokyonight",
-    },
-  },
-  {
     "catppuccin/nvim",
     optional = true,
     name = "catppuccin",
     opts = {
       flavour = "mocha",
       transparent_background = true,
-      -- show_end_of_buffer = false,
-      integrations = {
-        aerial = true,
-        alpha = true,
-        cmp = true,
-        dap = true,
-        dap_ui = true,
-        dashboard = true,
-        flash = true,
-        gitsigns = true,
-        harpoon = true,
-        headlines = true,
-        illuminate = {
-          enabled = true,
-        },
-        indent_blankline = { enabled = true },
-        leap = true,
-        lsp_saga = true,
-        lsp_trouble = true,
-        mason = true,
-        markdown = true,
-        mini = {
-          enabled = true,
-        },
-        native_lsp = {
-          enabled = true,
-          underlines = {
-            errors = { "undercurl" },
-            hints = { "undercurl" },
-            warnings = { "undercurl" },
-            information = { "undercurl" },
-          },
-        },
-        navic = { enabled = true, custom_bg = "lualine" },
-        neotest = true,
-        neotree = true,
-        noice = true,
-        notify = true,
-        semantic_tokens = true,
-        telescope = {
-          enabled = true,
-        },
-        treesitter = true,
-        treesitter_context = true,
-        which_key = true,
-        blink_cmp = true,
-        dadbod_ui = true,
-        snacks = {
-          enabled = true,
-        },
-        grug_far = true,
-      },
-      custom_highlights = function(colors)
-        return {
-          -- highlight colors for rgflow
-          RgFlowHead = { fg = colors.text },
-          RgFlowHeadLine = { fg = colors.text },
-          RgFlowInputBg = { fg = colors.text },
-          RgFlowInputFlags = { fg = colors.text },
-          RgFlowInputPattern = { fg = colors.teal },
-          RgFlowInputPath = { fg = colors.text },
-          RgFlowQfPattern = { fg = colors.pink },
-        }
-      end,
-    },
+      auto_integrations = true,
+    }
+  },
+  {
+    "xiyaowong/transparent.nvim",
+    opts = {
+      extra_groups = {
+        "TroubleNormal",
+        "TroubleNormalNC",
+        "EdgyNormal",
+        "RgFlowHead",
+        "RgFlowHeadLine",
+        "RgFlowInputBg",
+        "RgFlowInputFlags",
+        "RgFlowInputPattern",
+        "RgFlowInputPath",
+        "RgFlowQfPattern",
+      }
+    }
   },
 }
