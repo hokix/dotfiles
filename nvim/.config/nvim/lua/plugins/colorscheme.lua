@@ -34,6 +34,9 @@ return {
       flavour = "mocha",
       transparent_background = true,
       auto_integrations = true,
+      float = {
+        transparent = true,
+      },
     },
   },
   {
