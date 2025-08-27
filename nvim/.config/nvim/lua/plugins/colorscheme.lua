@@ -34,7 +34,7 @@ return {
       flavour = "mocha",
       transparent_background = true,
       auto_integrations = true,
-    }
+    },
   },
   {
     "xiyaowong/transparent.nvim",
@@ -50,7 +50,7 @@ return {
         "RgFlowInputPattern",
         "RgFlowInputPath",
         "RgFlowQfPattern",
-      }
-    }
+      },
+    },
   },
 }
