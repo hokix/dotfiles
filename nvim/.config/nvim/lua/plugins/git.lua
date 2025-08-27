@@ -2,6 +2,7 @@
 return {
   {
     "lewis6991/gitsigns.nvim",
+    optional = true,
     opts = {
       current_line_blame = true,
       current_line_blame_opts = {
@@ -10,7 +11,7 @@ return {
       },
       current_line_blame_formatter = "  <author>, <author_time:%Y-%m-%d> - <summary>",
     },
-    keys = { { "<leader>gl", "<cmd>Gitsigns toggle_current_line_blame<cr>", desc = "Toggle [g]it [l]ens" } },
+    lazy = true,
   },
   {
     "akinsho/git-conflict.nvim",
@@ -32,13 +33,6 @@ return {
       "GitConflictNextConflict",
       "GitConflictPrevConflict",
       "GitConflictListQf",
-    },
-    lazy = true,
-  },
-  {
-    "tpope/vim-fugitive",
-    cmd = {
-      "Git",
     },
     lazy = true,
   },
