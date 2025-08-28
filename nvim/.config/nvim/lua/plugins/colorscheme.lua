@@ -43,9 +43,9 @@ return {
     "xiyaowong/transparent.nvim",
     opts = {
       extra_groups = {
-        "TroubleNormal",
-        "TroubleNormalNC",
-        "EdgyNormal",
+        -- "TroubleNormal",
+        -- "TroubleNormalNC",
+        -- "EdgyNormal",
         "RgFlowHead",
         "RgFlowHeadLine",
         "RgFlowInputBg",
