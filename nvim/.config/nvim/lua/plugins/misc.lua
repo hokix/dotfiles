@@ -35,8 +35,8 @@ return {
     },
   },
   -- mason workaround
-  { "mason-org/mason.nvim", version = "1.11.0" },
-  { "mason-org/mason-lspconfig.nvim", version = "1.32.0" },
+  { "mason-org/mason.nvim", branch = "v1.x" },
+  { "mason-org/mason-lspconfig.nvim", branch = "v1.x" },
   -- bufferline/catppuccin workaround
   {
     "akinsho/bufferline.nvim",
@@ -58,5 +58,11 @@ return {
         enabled = false,
       },
     },
+  },
+  {
+    "alex-popov-tech/store.nvim",
+    dependencies = { "OXY2DEV/markview.nvim" },
+    cmd = "Store",
+    lazy = true,
   },
 }
