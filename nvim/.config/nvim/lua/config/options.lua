@@ -22,6 +22,7 @@ local opts = {
   inccommand = "split",
   pumblend = 0, -- override lazyvim menu background for transparency
   winblend = 0, -- override lazyvim menu background for transparency
+  clipboard = "unnamedplus",
 }
 
 -- Set options from table
