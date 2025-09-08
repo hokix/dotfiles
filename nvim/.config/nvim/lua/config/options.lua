@@ -22,6 +22,7 @@ local opts = {
   inccommand = "split",
   pumblend = 0, -- override lazyvim menu background for transparency
   winblend = 0, -- override lazyvim menu background for transparency
+  clipboard = "unnamedplus",
 }
 
 -- Set options from table
@@ -30,7 +31,6 @@ for opt, val in pairs(opts) do
 end
 
 if vim.env.SSH_TTY ~= nil and vim.env.TMUX == nil and vim.env.TERM ~= "tmux-256color" then
-  vim.o.clipboard = "unnamedplus"
   vim.g.clipboard = "osc52"
 end
 
