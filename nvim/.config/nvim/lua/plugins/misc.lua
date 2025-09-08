@@ -40,7 +40,7 @@ return {
   -- bufferline/catppuccin workaround
   {
     "akinsho/bufferline.nvim",
-    optioanl = true,
+    optional = true,
     init = function()
       local bufline = require("catppuccin.groups.integrations.bufferline")
       function bufline.get()
