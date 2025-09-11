@@ -54,6 +54,9 @@ return {
     event = "VeryLazy",
     opts = {
       lead_prefix = "<leader>M",
+      mounts = {
+        unmount_on_exit = false,
+      },
       log = {
         enabled = false,
       },

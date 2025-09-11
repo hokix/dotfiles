@@ -30,3 +30,4 @@ out/
 .phpactor.json
 tmp
 tmp/
+.DS_Store
