@@ -73,13 +73,16 @@ return {
         },
         strategies = {
           chat = {
-            adapter = "deepseek",
+            -- adapter = "deepseek",
+            adapter = "copilot",
           },
           inline = {
-            adapter = "deepseek",
+            -- adapter = "deepseek",
+            adapter = "copilot",
           },
           cmd = {
-            adapter = "deepseek",
+            -- adapter = "deepseek",
+            adapter = "copilot",
           },
         },
       },

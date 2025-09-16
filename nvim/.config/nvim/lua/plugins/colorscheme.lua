@@ -43,16 +43,7 @@ return {
     "xiyaowong/transparent.nvim",
     opts = {
       extra_groups = {
-        -- "TroubleNormal",
-        -- "TroubleNormalNC",
-        -- "EdgyNormal",
-        "RgFlowHead",
-        "RgFlowHeadLine",
-        "RgFlowInputBg",
-        "RgFlowInputFlags",
-        "RgFlowInputPattern",
-        "RgFlowInputPath",
-        "RgFlowQfPattern",
+        "RenderMarkdownCode",
       },
     },
   },
