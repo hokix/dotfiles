@@ -70,4 +70,22 @@ return {
     cmd = "Store",
     lazy = true,
   },
+  {
+    "zerochae/endpoint.nvim",
+    dependencies = {
+      -- Choose one or more pickers (all optional):
+      "folke/snacks.nvim", -- For snacks picker
+      -- vim.ui.select picker works without dependencies
+    },
+    cmd = { "Endpoint" },
+    opt = {
+      cache = {
+        mode = "persistent",
+      },
+      picker = {
+        type = "snacks",
+      },
+    },
+    lazy = true,
+  },
 }
