@@ -27,8 +27,7 @@ return {
     opts = function()
       local cmd = { vim.fn.exepath("jdtls") } -- Can be empty if executed too early
       if LazyVim.has("mason.nvim") then
-        local mason_registry = require("mason-registry")
-        local lombok_jar = mason_registry.get_package("jdtls"):get_install_path() .. "/lombok.jar"
+        local lombok_jar = vim.fn.expand("$MASON/share/jdtls/lombok.jar")
         -- Should be re-executed after require("mason-registry") to get a real value
         cmd = { vim.fn.exepath("jdtls") }
         table.insert(cmd, "--java-executable=" .. java_cmd)
