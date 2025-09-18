@@ -36,20 +36,6 @@ return {
       restriction_mode = "hint",
     },
   },
-  -- mason workaround
-  { "mason-org/mason.nvim", branch = "v1.x" },
-  { "mason-org/mason-lspconfig.nvim", branch = "v1.x" },
-  -- bufferline/catppuccin workaround
-  {
-    "akinsho/bufferline.nvim",
-    optional = true,
-    init = function()
-      local bufline = require("catppuccin.groups.integrations.bufferline")
-      function bufline.get()
-        return bufline.get_theme()
-      end
-    end,
-  },
   {
     "uhs-robert/sshfs.nvim",
     lazy = true,
