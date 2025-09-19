@@ -21,6 +21,10 @@ return {
       "folke/which-key.nvim",
       -- only works if nvim-dap is dependency
       "mfussenegger/nvim-dap",
+      {
+        "mason-org/mason.nvim",
+        opts = { ensure_installed = { "jdtls" } },
+      },
     },
     optional = true,
     -- ft = java_filetypes,
@@ -102,6 +106,10 @@ return {
     ft = { "java", "yaml", "jproperties", "xml" },
     dependencies = {
       "mfussenegger/nvim-jdtls", -- or nvim-java, nvim-lspconfig
+      {
+        "mason-org/mason.nvim",
+        opts = { ensure_installed = { "vscode-spring-boot-tools" } },
+      },
     },
     ---@type bootls.Config
     opts = {

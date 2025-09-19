@@ -10,6 +10,11 @@ return {
     },
     opts = {
       provider = "copilot",
+      -- providers = {
+      --   copilot = {
+      --     model_id = "claude-sonnet-4",
+      --   },
+      -- },
     },
     lazy = true,
     keys = {

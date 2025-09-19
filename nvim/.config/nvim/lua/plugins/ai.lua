@@ -39,6 +39,9 @@ return {
     dependencies = {
       "ravitemer/mcphub.nvim",
     },
+    opts = {
+      -- model = "claude-sonnet-4",
+    },
   },
   {
     "olimorris/codecompanion.nvim",
@@ -75,14 +78,17 @@ return {
           chat = {
             -- adapter = "deepseek",
             adapter = "copilot",
+            -- model = "claude-sonnet-4",
           },
           inline = {
             -- adapter = "deepseek",
             adapter = "copilot",
+            -- model = "claude-sonnet-4",
           },
           cmd = {
             -- adapter = "deepseek",
             adapter = "copilot",
+            -- model = "claude-sonnet-4",
           },
         },
       },
@@ -116,4 +122,17 @@ return {
       },
     },
   },
+  -- Edgy integration
+  -- {
+  --   "folke/edgy.nvim",
+  --   optional = true,
+  --   opts = function(_, opts)
+  --     opts.right = opts.right or {}
+  --     table.insert(opts.right, {
+  --       ft = "codecompanion",
+  --       title = "Code Companion",
+  --       size = { width = 50 },
+  --     })
+  --   end,
+  -- },
 }

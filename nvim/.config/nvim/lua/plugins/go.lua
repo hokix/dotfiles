@@ -18,7 +18,7 @@ return {
           settings = {
             gopls = {
               codelenses = {
-                gc_details = true,
+                gc_details = false,
                 generate = true,
                 regenerate_cgo = true,
                 run_govulncheck = true,
@@ -125,7 +125,11 @@ return {
     "nvim-neotest/neotest",
     optional = true,
     dependencies = {
-      "fredrikaverpil/neotest-golang",
+      {
+        "fredrikaverpil/neotest-golang",
+        -- workaround for treesitter main can't find tests
+        branch = "feat/treesitter-main",
+      },
     },
     opts = {
       adapters = {
