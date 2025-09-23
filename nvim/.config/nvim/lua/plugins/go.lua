@@ -127,8 +127,10 @@ return {
     dependencies = {
       {
         "fredrikaverpil/neotest-golang",
-        -- workaround for treesitter main can't find tests
-        branch = "feat/treesitter-main",
+      },
+      {
+        "mason-org/mason.nvim",
+        opts = { ensure_installed = { "gotestsum" } },
       },
     },
     opts = {
@@ -136,7 +138,8 @@ return {
         ["neotest-golang"] = {
           -- Here we can set options for neotest-golang, e.g.
           -- go_test_args = { "-v", "-race", "-count=1", "-timeout=60s" },
-          dap_go_enabled = true, -- requires leoluz/nvim-dap-go
+          dap_mode = "dap-go", -- requires leoluz/nvim-dap-go
+          runner = "gotestsum",
         },
       },
     },

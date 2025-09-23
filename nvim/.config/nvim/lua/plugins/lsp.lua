@@ -7,11 +7,6 @@ return {
       inlay_hints = {
         enabled = true,
       },
-      diagnostics = {
-        float = {
-          border = "rounded",
-        },
-      },
     },
   },
 }

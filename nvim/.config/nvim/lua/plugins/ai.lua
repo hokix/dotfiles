@@ -70,7 +70,7 @@ return {
         chat = {
           window = {
             position = "right",
-            border = "rounded",
+            -- border = "rounded",
             width = 0.3,
           },
         },
