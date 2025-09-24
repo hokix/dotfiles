@@ -1,5 +1,5 @@
-# dotfiles
+# dotfiles 💻
 
-My Windows/Linux/Mac OS dotfiles managed by [stow](https://www.gnu.org/software/stow/).
+My Windows🪟/Linux🐧/macOS🍎 dotfiles managed by [stow 📦](https://www.gnu.org/software/stow/).
 
-Need minor modification on different OS.
+🔧 Need minor modification on different OS.
