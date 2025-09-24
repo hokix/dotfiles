@@ -41,6 +41,9 @@ return {
     },
     opts = {
       model = "gpt-5",
+      window = {
+        width = math.floor(vim.o.columns * 0.3),
+      },
     },
   },
   {
