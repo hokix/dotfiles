@@ -46,9 +46,9 @@ return {
       end
 
       return {
-        -- How to find the root dir for a given filename. The default comes from
-        -- lspconfig which provides a function specifically for java projects.
-        root_dir = require("lspconfig.util").root_pattern(vim.lsp.config.jdtls.root_markers),
+        root_dir = function(path)
+          return vim.fs.root(path, vim.lsp.config.jdtls.root_markers)
+        end,
 
         -- How to find the project name for a given root dir.
         project_name = function(root_dir)

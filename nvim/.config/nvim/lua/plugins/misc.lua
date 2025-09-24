@@ -51,27 +51,27 @@ return {
     },
   },
   {
-    "alex-popov-tech/store.nvim",
-    dependencies = { "OXY2DEV/markview.nvim" },
-    cmd = "Store",
-    lazy = true,
+    "MeanderingProgrammer/render-markdown.nvim",
+    optional = true,
+    ---@module 'render-markdown'
+    ---@type render.md.UserConfig
+    opts = {
+      code = {
+        highlight_border = false,
+      },
+    },
   },
   {
-    "zerochae/endpoint.nvim",
+    "saxon1964/neovim-tips",
+    version = "*", -- Only update on tagged releases
     dependencies = {
-      -- Choose one or more pickers (all optional):
-      "folke/snacks.nvim", -- For snacks picker
-      -- vim.ui.select picker works without dependencies
+      "MunifTanjim/nui.nvim",
+      "MeanderingProgrammer/render-markdown.nvim",
     },
-    cmd = { "Endpoint" },
-    opt = {
-      cache = {
-        mode = "persistent",
-      },
-      picker = {
-        type = "snacks",
-      },
+    opts = {
+      -- OPTIONAL: Daily tip mode (default: 1)
+      -- 0 = off, 1 = once per day, 2 = every startup
+      daily_tip = 1,
     },
-    lazy = true,
   },
 }

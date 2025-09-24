@@ -9,12 +9,12 @@
   padding = { x = 10, y = 10 }
   dynamic_padding = true
   startup_mode = "Maximized"
-  opacity = 0.8
-  blur = true
+  opacity = 0.85
+  blur = false
 [font]
   normal = { family = "CaskaydiaMono Nerd Font", style = "Regular" }
   offset = { x = 0, y = 0 }
-  size = 13
+  size = 12.5
 [mouse]
   bindings = [{ mouse = "Right", action = "Paste" }]
 [env]
