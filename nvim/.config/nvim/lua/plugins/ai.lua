@@ -39,6 +39,9 @@ return {
     dependencies = {
       "ravitemer/mcphub.nvim",
     },
+    opts = {
+      model = "gpt-5",
+    },
   },
   {
     "olimorris/codecompanion.nvim",

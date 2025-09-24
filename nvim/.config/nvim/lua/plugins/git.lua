@@ -13,29 +13,29 @@ return {
     },
     lazy = true,
   },
-  {
-    "akinsho/git-conflict.nvim",
-    opts = {
-      default_mappings = {
-        ours = "co",
-        theirs = "ct",
-        none = "c0",
-        both = "cb",
-        next = "cn",
-        prev = "cp",
-      },
-    },
-    cmd = {
-      "GitConflictChooseOurs",
-      "GitConflictChooseTheirs",
-      "GitConflictChooseBoth",
-      "GitConflictChooseNone",
-      "GitConflictNextConflict",
-      "GitConflictPrevConflict",
-      "GitConflictListQf",
-    },
-    lazy = true,
-  },
+  -- {
+  --   "akinsho/git-conflict.nvim",
+  --   opts = {
+  --     default_mappings = {
+  --       ours = "co",
+  --       theirs = "ct",
+  --       none = "c0",
+  --       both = "cb",
+  --       next = "cn",
+  --       prev = "cp",
+  --     },
+  --   },
+  --   cmd = {
+  --     "GitConflictChooseOurs",
+  --     "GitConflictChooseTheirs",
+  --     "GitConflictChooseBoth",
+  --     "GitConflictChooseNone",
+  --     "GitConflictNextConflict",
+  --     "GitConflictPrevConflict",
+  --     "GitConflictListQf",
+  --   },
+  --   lazy = true,
+  -- },
   {
     "sindrets/diffview.nvim",
     lazy = true,
