@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "git": {
+      "command": "mcp-server-git"
+    },
+    "memory": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "command": "npx"
+    },
+    "sequentialthinking": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "autoApprove": [
+        "sequentialthinking"
+      ],
+      "command": "npx"
+    }
+  },
+  "nativeMCPServers": []
+}

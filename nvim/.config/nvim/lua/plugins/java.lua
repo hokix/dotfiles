@@ -117,8 +117,17 @@ return {
 
       return {
         root_dir = function(path)
+          -- Determine the project root for jdtls.
+          -- Strategy:
+          -- 1. Find the nearest directory containing one of the build markers.
+          -- 2. If that directory itself is a git repo -> return it.
+          -- 3. Walk upward:
+          --      - If a parent is a git repo -> return that parent.
+          --      - Else keep extending outward while parent still has a marker.
+          -- 4. Return the outermost consecutive marker dir (multi-module builds).
           local markers = vim.lsp.config.jdtls.root_markers or {}
           local uv = vim.uv or vim.loop
+          local join = vim.fs.joinpath
 
           local function exists(p)
             return uv.fs_stat(p) ~= nil
@@ -126,25 +135,32 @@ return {
 
           local function has_marker(dir)
             for _, m in ipairs(markers) do
-              if exists(vim.fs.joinpath(dir, m)) then
+              if exists(join(dir, m)) then
                 return true
               end
             end
             return false
           end
 
-          local first = vim.fs.root(path, markers)
-          if not first then
-            return nil
+          local function has_git(dir)
+            return exists(join(dir, ".git"))
           end
 
-          local outer = first
-          for dir in vim.fs.parents(first) do
-            if exists(vim.fs.joinpath(dir, ".git")) then
-              return dir
+          local base = vim.fs.root(path, markers)
+          if not base then
+            return nil
+          end
+          if has_git(base) then
+            return base
+          end
+
+          local outer = base
+          for parent in vim.fs.parents(base) do
+            if has_git(parent) then
+              return parent
             end
-            if has_marker(dir) then
-              outer = dir
+            if has_marker(parent) then
+              outer = parent
             else
               break
             end

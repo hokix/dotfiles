@@ -44,6 +44,7 @@ return {
     opts = {
       extra_groups = {
         "RenderMarkdownCode",
+        "NormalFloat",
       },
     },
   },
