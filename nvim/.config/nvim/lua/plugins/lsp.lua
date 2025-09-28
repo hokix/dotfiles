@@ -11,13 +11,10 @@ return {
   },
   {
     "oribarilan/lensline.nvim",
-    tag = "1.0.0", -- or: branch = 'release/1.x' for latest non-breaking updates
+    tag = "2.0.0", -- or: branch = 'release/1.x' for latest non-breaking updates
     event = "LspAttach",
     config = function()
-      require("lensline").setup({
-
-        render = "focused",
-      })
+      require("lensline").setup()
     end,
     lazy = true,
   },

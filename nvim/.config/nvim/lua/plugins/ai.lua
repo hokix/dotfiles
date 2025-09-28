@@ -68,6 +68,32 @@ return {
       "CodeCompanionChat",
       "CodeCompanionCmd",
     },
+    keys = {
+      {
+        "<leader>aca",
+        "<cmd>CodeCompanionChat Toggle<cr>",
+        desc = "Toggle (CodeCompanion)",
+        mode = { "n", "v" },
+      },
+      {
+        "<leader>acx",
+        "<cmd>CodeCompanionChat RefreshCache<cr>",
+        desc = "Clear (CodeCompanion)",
+        mode = { "n", "v" },
+      },
+      {
+        "<leader>acq",
+        "<cmd>CodeCompanion<cr>",
+        desc = "Quick Chat (CodeCompanion)",
+        mode = { "n", "v" },
+      },
+      {
+        "<leader>acp",
+        "<cmd>CodeCompanionActions<cr>",
+        desc = "Prompt Actions (CodeCompanion)",
+        mode = { "n", "v" },
+      },
+    },
     opts = {
       display = {
         chat = {
