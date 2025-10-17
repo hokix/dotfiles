@@ -12,7 +12,7 @@
   opacity = 0.85
   blur = false
 [font]
-  normal = { family = "CaskaydiaMono Nerd Font", style = "Regular" }
+  normal = { family = "Maple Mono NF CN", style = "Regular" }
   offset = { x = 0, y = 0 }
   size = 12.5
 [mouse]

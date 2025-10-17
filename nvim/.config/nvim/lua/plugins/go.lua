@@ -76,7 +76,7 @@ return {
   -- Ensure Go tools are installed
   {
     "mason-org/mason.nvim",
-    opts = { ensure_installed = { "goimports" } },
+    opts = { ensure_installed = { "goimports", "golangci-lint" } },
   },
   {
     "nvimtools/none-ls.nvim",
@@ -84,7 +84,7 @@ return {
     dependencies = {
       {
         "mason-org/mason.nvim",
-        opts = { ensure_installed = { "gomodifytags", "impl", "golangci-lint" } },
+        opts = { ensure_installed = { "gomodifytags", "impl" } },
       },
     },
     opts = function(_, opts)
@@ -94,16 +94,27 @@ return {
         nls.builtins.code_actions.impl,
         -- nls.builtins.formatting.goimports,
         -- nls.builtins.formatting.gofmt,
-        nls.builtins.diagnostics.golangci_lint,
+        -- INFO: golangci-lint here can be very slow, use nvim-lint
+        -- nls.builtins.diagnostics.golangci_lint,
       })
     end,
   },
+  {
+    "mfussenegger/nvim-lint",
+    optional = true,
+    opts = {
+      linters_by_ft = {
+        go = { "golangcilint" },
+      },
+    },
+  },
+
   {
     "stevearc/conform.nvim",
     optional = true,
     opts = {
       formatters_by_ft = {
-        go = { "goimports", "gofmt", "golangci-lint" },
+        go = { "golangci-lint" },
       },
     },
   },

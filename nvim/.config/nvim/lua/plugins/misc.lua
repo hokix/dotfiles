@@ -34,6 +34,9 @@ return {
     opts = {
       disable_mouse = false,
       restriction_mode = "hint",
+      disabled_filetypes = {
+        maven = true,
+      },
     },
   },
   {
@@ -51,11 +54,23 @@ return {
     },
   },
   {
+    "folke/which-key.nvim",
+    optional = true,
+    opts = {
+      spec = {
+        { "<leader>M", group = "mount", icon = "" },
+      },
+    },
+  },
+  {
     "MeanderingProgrammer/render-markdown.nvim",
     optional = true,
     ---@module 'render-markdown'
     ---@type render.md.UserConfig
     opts = {
+      latex = {
+        enabled = false,
+      },
       code = {
         highlight_border = false,
       },

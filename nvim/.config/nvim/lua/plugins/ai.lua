@@ -40,7 +40,7 @@ return {
       "ravitemer/mcphub.nvim",
     },
     opts = {
-      model = "gpt-5",
+      model = "claude-sonnet-4.5",
       window = {
         width = math.floor(vim.o.columns * 0.3),
       },
@@ -60,6 +60,25 @@ return {
         },
         ft = { "markdown", "codecompanion" },
       },
+      {
+        "saghen/blink.cmp",
+        optional = true,
+        opts = {
+          sources = {
+            default = { "codecompanion" },
+            providers = {
+              -- other providers
+              codecompanion = {
+                name = "CodeCompanion",
+                module = "codecompanion.providers.completion.blink",
+                enabled = true,
+                score_offset = 10,
+                async = true,
+              },
+            },
+          },
+        },
+      },
     },
     lazy = true,
     cmd = {
@@ -70,25 +89,25 @@ return {
     },
     keys = {
       {
-        "<leader>aca",
+        "<leader>aCa",
         "<cmd>CodeCompanionChat Toggle<cr>",
         desc = "Toggle (CodeCompanion)",
         mode = { "n", "v" },
       },
       {
-        "<leader>acx",
+        "<leader>aCx",
         "<cmd>CodeCompanionChat RefreshCache<cr>",
         desc = "Clear (CodeCompanion)",
         mode = { "n", "v" },
       },
       {
-        "<leader>acq",
+        "<leader>aCq",
         "<cmd>CodeCompanion<cr>",
         desc = "Quick Chat (CodeCompanion)",
         mode = { "n", "v" },
       },
       {
-        "<leader>acp",
+        "<leader>aCp",
         "<cmd>CodeCompanionActions<cr>",
         desc = "Prompt Actions (CodeCompanion)",
         mode = { "n", "v" },
@@ -106,14 +125,17 @@ return {
           chat = {
             -- adapter = "deepseek",
             adapter = "copilot",
+            model = "claude-sonnet-4.5",
           },
           inline = {
             -- adapter = "deepseek",
             adapter = "copilot",
+            model = "claude-sonnet-4.5",
           },
           cmd = {
             -- adapter = "deepseek",
             adapter = "copilot",
+            model = "claude-sonnet-4.5",
           },
         },
       },
@@ -127,6 +149,38 @@ return {
             },
           })
         end,
+      },
+      prompt_library = {
+        ["Diff code review"] = {
+          strategy = "chat",
+          description = "Perform a code review",
+          opts = {
+            auto_submit = true,
+            user_prompt = false,
+          },
+          prompts = {
+            {
+              role = "user",
+              content = function()
+                local target_branch = vim.fn.input("Target branch for merge base diff (default: master): ", "master")
+
+                return string.format(
+                  [[
+          You are a senior software engineer performing a code review. Analyze the following code changes.
+           Identify any potential bugs, performance issues, security vulnerabilities, or areas that could be refactored for better readability or maintainability.
+           Explain your reasoning clearly and provide specific suggestions for improvement.
+           Consider edge cases, error handling, and adherence to best practices and coding standards.
+           Here are the code changes:
+           ```
+            %s
+           ```
+           ]],
+                  vim.fn.system("git diff --merge-base " .. target_branch)
+                )
+              end,
+            },
+          },
+        },
       },
       extensions = {
         mcphub = {
@@ -158,6 +212,18 @@ return {
         title = "Code Companion",
         size = { width = 50 },
       })
+    end,
+  },
+  -- lualine integration
+  {
+    "nvim-lualine/lualine.nvim",
+    optional = true,
+    dependencies = {
+      "franco-ruggeri/codecompanion-lualine.nvim",
+      -- Other dependencies
+    },
+    opts = function(_, opts)
+      table.insert(opts.sections.lualine_x, "codecompanion")
     end,
   },
   {
@@ -219,7 +285,21 @@ return {
       optional = true,
       opts = {
         spec = {
+          { "<leader>aC", group = "CodeCompanion" },
           { "<leader>cw", group = "wtf" },
+        },
+      },
+    },
+    {
+      "folke/sidekick.nvim",
+      optional = true,
+      opts = {
+        -- add any options here
+        cli = {
+          mux = {
+            enabled = true,
+            backend = "tmux",
+          },
         },
       },
     },
