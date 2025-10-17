@@ -1,14 +1,55 @@
 {
   "mcpServers": {
+    "browsermcp": {
+      "args": [
+        "@browsermcp/mcp@latest"
+      ],
+      "command": "npx",
+      "disabled": false,
+      "tools": [
+        "*"
+      ],
+      "type": "http"
+    },
+    "browsertools": {
+      "args": [
+        "@agentdeskai/browser-tools-mcp@1.2.0"
+      ],
+      "autoApprove": [],
+      "command": "npx",
+      "disabled": false,
+      "tools": [
+        "*"
+      ],
+      "type": "local"
+    },
+    "filesystem": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "${CWD}"
+      ],
+      "command": "npx"
+    },
     "git": {
-      "command": "mcp-server-git"
+      "args": [],
+      "command": "mcp-server-git",
+      "tools": [
+        "*"
+      ],
+      "type": "local"
     },
     "memory": {
       "args": [
         "-y",
         "@modelcontextprotocol/server-memory"
       ],
-      "command": "npx"
+      "autoApprove": [],
+      "command": "npx",
+      "tools": [
+        "*"
+      ],
+      "type": "local"
     },
     "sequentialthinking": {
       "args": [
@@ -18,7 +59,11 @@
       "autoApprove": [
         "sequentialthinking"
       ],
-      "command": "npx"
+      "command": "npx",
+      "tools": [
+        "*"
+      ],
+      "type": "local"
     }
   },
   "nativeMCPServers": []

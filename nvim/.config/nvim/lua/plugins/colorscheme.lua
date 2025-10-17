@@ -43,7 +43,7 @@ return {
     "xiyaowong/transparent.nvim",
     opts = {
       extra_groups = {
-        "RenderMarkdownCode",
+        "RenderMarkdownCode", -- render-markdown
         "NormalFloat",
       },
     },
@@ -67,13 +67,26 @@ return {
         },
         navigation = false,
         search_count = true,
-        color_key = "<leader>m",
-        cancel_color_key = "<leader>Mc",
+        color_key = "<leader>mm",
+        cancel_color_key = "<leader>mM",
+        search_key = "<leader>ms",
+        cancel_search_key = "<leader>mS",
       },
       lazy = true,
       keys = {
-        { "<leader>m", desc = "InterestingWord Toggle Color" },
-        { "<leader>Mc", desc = "InterestingWord Uncolor " },
+        { "<leader>mm", desc = "InterestingWord Toggle Color" },
+        { "<leader>mM", desc = "InterestingWord Uncolor " },
+        { "<leader>ms", desc = "InterestingWord Toggle Search" },
+        { "<leader>mS", desc = "InterestingWord Unsearch " },
+      },
+    },
+  },
+  {
+    "folke/which-key.nvim",
+    optional = true,
+    opts = {
+      spec = {
+        { "<leader>m", group = "InterestingWord", icon = " " },
       },
     },
   },

@@ -4,8 +4,8 @@ return {
     optional = true,
     ---@class PluginLspOpts
     opts = {
-      inlay_hints = {
-        enabled = true,
+      virtual_lines = {
+        current_line = true,
       },
     },
   },
