@@ -64,6 +64,7 @@ return {
   },
   {
     "MeanderingProgrammer/render-markdown.nvim",
+    lazy = true,
     optional = true,
     ---@module 'render-markdown'
     ---@type render.md.UserConfig
@@ -87,6 +88,35 @@ return {
       -- OPTIONAL: Daily tip mode (default: 1)
       -- 0 = off, 1 = once per day, 2 = every startup
       daily_tip = 1,
+    },
+  },
+  {
+    "obsidian-nvim/obsidian.nvim",
+    dependencies = {
+      "folke/snacks.nvim",
+      "saghen/blink.cmp",
+      "MeanderingProgrammer/render-markdown.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    version = "*", -- recommended, use latest release instead of latest commit
+    event = {
+      "BufReadPre " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*.md",
+      "BufNewFile " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*.md",
+      "BufReadPre " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*.md",
+      "BufNewFile " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*.md",
+    },
+    cmd = { "Obsidian" },
+    ---@module 'obsidian'
+    ---@type obsidian.config
+    opts = {
+      workspaces = {
+        {
+          name = "notes",
+          path = "~/Documents/obsidian/notes",
+        },
+      },
+
+      -- see below for full list of options 👇
     },
   },
 }

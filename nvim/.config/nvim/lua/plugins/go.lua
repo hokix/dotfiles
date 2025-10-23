@@ -76,7 +76,7 @@ return {
   -- Ensure Go tools are installed
   {
     "mason-org/mason.nvim",
-    opts = { ensure_installed = { "goimports", "golangci-lint" } },
+    opts = { ensure_installed = { "goimports", "gofumpt" } },
   },
   {
     "nvimtools/none-ls.nvim",
@@ -99,16 +99,22 @@ return {
       })
     end,
   },
+  -- Add linting
   {
     "mfussenegger/nvim-lint",
     optional = true,
+    dependencies = {
+      {
+        "mason-org/mason.nvim",
+        opts = { ensure_installed = { "golangci-lint" } },
+      },
+    },
     opts = {
       linters_by_ft = {
         go = { "golangcilint" },
       },
     },
   },
-
   {
     "stevearc/conform.nvim",
     optional = true,
