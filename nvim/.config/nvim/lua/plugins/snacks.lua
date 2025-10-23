@@ -1,6 +1,7 @@
 return {
   {
     "folke/snacks.nvim",
+    optional = true,
     opts = {
       image = {
         enabled = true,

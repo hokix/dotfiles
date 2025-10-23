@@ -106,11 +106,9 @@ return {
     },
     ft = java_filetypes,
     opts = function()
-      local cmd = { vim.fn.exepath("jdtls") } -- Can be empty if executed too early
+      local cmd = { vim.fn.exepath("jdtls") }
       if LazyVim.has("mason.nvim") then
         local lombok_jar = vim.fn.expand("$MASON/share/jdtls/lombok.jar")
-        -- Should be re-executed after require("mason-registry") to get a real value
-        cmd = { vim.fn.exepath("jdtls") }
         table.insert(cmd, "--java-executable=" .. java_cmd)
         table.insert(cmd, string.format("--jvm-arg=-javaagent:%s", lombok_jar))
       end
@@ -248,7 +246,9 @@ return {
           },
           settings = opts.settings,
           -- enable CMP capabilities
-          capabilities = LazyVim.has("cmp-nvim-lsp") and require("cmp_nvim_lsp").default_capabilities() or nil,
+          capabilities = LazyVim.has("blink.cmp") and require("blink.cmp").get_lsp_capabilities() or LazyVim.has(
+            "cmp-nvim-lsp"
+          ) and require("cmp_nvim_lsp").default_capabilities() or nil,
         }, opts.jdtls)
 
         -- Existing server will be reused if the root_dir matches.
