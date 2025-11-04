@@ -55,7 +55,7 @@ return {
         gopls = function(_, opts)
           -- workaround for gopls not supporting semanticTokensProvider
           -- https://github.com/golang/go/issues/54531#issuecomment-1464982242
-          LazyVim.lsp.on_attach(function(client, _)
+          Snacks.util.lsp.on({ name = "gopls" }, function(_, client)
             if not client.server_capabilities.semanticTokensProvider then
               local semantic = client.config.capabilities.textDocument.semanticTokens
               client.server_capabilities.semanticTokensProvider = {
@@ -67,7 +67,7 @@ return {
                 range = true,
               }
             end
-          end, "gopls")
+          end)
           -- end workaround
         end,
       },
@@ -109,20 +109,28 @@ return {
         opts = { ensure_installed = { "golangci-lint" } },
       },
     },
-    opts = {
-      linters_by_ft = {
-        go = { "golangcilint" },
-      },
-    },
+    opts = function(_, opts)
+      -- many projects are still using v1 configs, so use global config file instead
+      local golangcilint = require("lint").linters.golangcilint
+      vim.list_extend(golangcilint.args, { "-c", vim.fn.expand("~") .. "/.golangci.yml" })
+      opts.linters_by_ft = opts.linters_by_ft or {}
+      opts.linters_by_ft.go = { "golangcilint" }
+    end,
   },
   {
     "stevearc/conform.nvim",
     optional = true,
-    opts = {
-      formatters_by_ft = {
-        go = { "golangci-lint" },
-      },
-    },
+    opts = function(_, opts)
+      -- many projects are still using v1 configs, so use global config file instead
+      opts.formatters_by_ft = opts.formatters_by_ft or {}
+      opts.formatters_by_ft.go = { "golangci-lint" }
+      -- append_args can be a function, just like args
+      require("conform").formatters["golangci-lint"] = {
+        append_args = function(self, ctx)
+          return { "-c", vim.fn.expand("~") .. "/.golangci.yml" }
+        end,
+      }
+    end,
   },
   {
     "mfussenegger/nvim-dap",

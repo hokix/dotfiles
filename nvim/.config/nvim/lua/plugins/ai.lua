@@ -320,6 +320,10 @@ return {
             backend = "tmux",
           },
         },
+        -- nes is buggy right now, disable it
+        nes = {
+          enabled = false,
+        },
       },
     },
   },
