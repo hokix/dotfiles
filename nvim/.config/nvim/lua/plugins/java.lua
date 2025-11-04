@@ -112,7 +112,6 @@ return {
         table.insert(cmd, "--java-executable=" .. java_cmd)
         table.insert(cmd, string.format("--jvm-arg=-javaagent:%s", lombok_jar))
       end
-
       return {
         root_dir = function(path)
           -- Determine the project root for jdtls.
@@ -363,7 +362,7 @@ return {
   },
   {
     "JavaHello/spring-boot.nvim",
-    ft = { "java", "yaml", "jproperties", "xml" },
+    ft = { "java", "jproperties" },
     dependencies = {
       "mfussenegger/nvim-jdtls", -- or nvim-java, nvim-lspconfig
       {

@@ -103,7 +103,9 @@ return {
       "BufReadPre " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*.md",
       "BufNewFile " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*.md",
       "BufReadPre " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*.md",
-      "BufNewFile " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*.md",
+      "BufReadPre " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*.md",
+      "BufNewFile " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*/*.md",
+      "BufNewFile " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*/*.md",
     },
     cmd = { "Obsidian" },
     ---@module 'obsidian'
