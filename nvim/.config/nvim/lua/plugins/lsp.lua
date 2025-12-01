@@ -7,6 +7,17 @@ return {
       virtual_lines = {
         current_line = true,
       },
+      servers = {
+        lua_ls = {
+          settings = {
+            Lua = {
+              diagnostics = {
+                globals = { "redis", "KEYS", "ARGV" },
+              },
+            },
+          },
+        },
+      },
     },
   },
   {
