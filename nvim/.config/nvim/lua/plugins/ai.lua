@@ -175,7 +175,7 @@ return {
             %s
            ```
            ]],
-                  vim.fn.system("git diff --merge-base " .. target_branch)
+                  vim.fn.system("git diff --merge-base " .. target_branch .. " -- . ':(exclude)vendor'")
                 )
               end,
             },
