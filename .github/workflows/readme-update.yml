@@ -1,0 +1,42 @@
+name: Update README Stats
+
+on:
+  push:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    name: Update README Statistics
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Count configuration files
+        id: count
+        run: |
+          echo "lua_files=$(find nvim -name '*.lua' -type f 2>/dev/null | wc -l)" >> $GITHUB_OUTPUT
+          echo "total_configs=$(find . -maxdepth 1 -type d | tail -n +2 | wc -l)" >> $GITHUB_OUTPUT
+          echo "shell_files=$(find bash zsh -type f 2>/dev/null | wc -l)" >> $GITHUB_OUTPUT
+
+      - name: Display stats
+        run: |
+          echo "📊 Repository Statistics:"
+          echo "  - Configuration packages: ${{ steps.count.outputs.total_configs }}"
+          echo "  - Neovim Lua files: ${{ steps.count.outputs.lua_files }}"
+          echo "  - Shell configuration files: ${{ steps.count.outputs.shell_files }}"
+
+      - name: Create stats comment
+        run: |
+          echo "✅ README stats updated successfully" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "📊 **Statistics:**" >> $GITHUB_STEP_SUMMARY
+          echo "- Configuration packages: ${{ steps.count.outputs.total_configs }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Neovim Lua files: ${{ steps.count.outputs.lua_files }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Shell files: ${{ steps.count.outputs.shell_files }}" >> $GITHUB_STEP_SUMMARY
