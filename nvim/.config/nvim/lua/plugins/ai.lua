@@ -121,22 +121,27 @@ return {
             width = 0.3,
           },
         },
-        strategies = {
-          chat = {
-            -- adapter = "deepseek",
-            adapter = "copilot",
-            model = "claude-sonnet-4.5",
-          },
-          inline = {
-            -- adapter = "deepseek",
-            adapter = "copilot",
-            model = "claude-sonnet-4.5",
-          },
-          cmd = {
-            -- adapter = "deepseek",
-            adapter = "copilot",
-            model = "claude-sonnet-4.5",
-          },
+      },
+      interactions = {
+        background = {
+          -- adapter = "deepseek",
+          adapter = "copilot",
+          model = "claude-sonnet-4.5",
+        },
+        chat = {
+          -- adapter = "deepseek",
+          adapter = "copilot",
+          model = "claude-sonnet-4.5",
+        },
+        inline = {
+          -- adapter = "deepseek",
+          adapter = "copilot",
+          model = "claude-sonnet-4.5",
+        },
+        cmd = {
+          -- adapter = "deepseek",
+          adapter = "copilot",
+          model = "claude-sonnet-4.5",
         },
       },
       adapters = {
@@ -149,6 +154,17 @@ return {
             },
           })
         end,
+        http = {
+          copilot = function()
+            return require("codecompanion.adapters").extend("copilot", {
+              schema = {
+                model = {
+                  default = "claude-sonnet-4.5",
+                },
+              },
+            })
+          end,
+        },
       },
       prompt_library = {
         ["Diff code review"] = {
@@ -188,7 +204,7 @@ return {
             modes = { "v" },
             auto_submit = true,
             user_prompt = true,
-            short_name = "note",
+            alias = "note",
             stop_context_insertion = true,
           },
           prompts = {
@@ -319,10 +335,6 @@ return {
             enabled = true,
             backend = "tmux",
           },
-        },
-        -- nes is buggy right now, disable it
-        nes = {
-          enabled = false,
         },
       },
     },
