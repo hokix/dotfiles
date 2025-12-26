@@ -45,3 +45,11 @@
 My Windows🪟/Linux🐧/macOS🍎 dotfiles managed by [stow 📦](https://www.gnu.org/software/stow/).
 
 🔧 Need minor modification on different OS.
+
+## 📊 Repository Stats
+
+<!-- STATS_START -->
+- **Configuration Packages:** 20
+- **Neovim Lua Files:** 35
+- **Shell Config Files:** 2
+<!-- STATS_END -->

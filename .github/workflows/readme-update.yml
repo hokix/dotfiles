@@ -25,14 +25,38 @@ jobs:
           echo "total_configs=$(find . -maxdepth 1 -type d | tail -n +2 | wc -l)" >> $GITHUB_OUTPUT
           echo "shell_files=$(find bash zsh -type f 2>/dev/null | wc -l)" >> $GITHUB_OUTPUT
 
-      - name: Display stats
+      - name: Update README with stats
         run: |
-          echo "📊 Repository Statistics:"
-          echo "  - Configuration packages: ${{ steps.count.outputs.total_configs }}"
-          echo "  - Neovim Lua files: ${{ steps.count.outputs.lua_files }}"
-          echo "  - Shell configuration files: ${{ steps.count.outputs.shell_files }}"
+          # Create new stats section
+          cat > /tmp/new_stats.txt << EOF
+          <!-- STATS_START -->
+          - **Configuration Packages:** ${{ steps.count.outputs.total_configs }}
+          - **Neovim Lua Files:** ${{ steps.count.outputs.lua_files }}
+          - **Shell Config Files:** ${{ steps.count.outputs.shell_files }}
+          <!-- STATS_END -->
+          EOF
+          
+          # Replace stats section in README
+          sed -i '/<!-- STATS_START -->/,/<!-- STATS_END -->/{ 
+            /<!-- STATS_START -->/r /tmp/new_stats.txt
+            d
+          }' README.md
 
-      - name: Create stats comment
+      - name: Check for changes
+        id: git_status
+        run: |
+          git diff --exit-code README.md || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changed
+        if: steps.git_status.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "chore: auto-update README stats [skip ci]"
+          git push
+
+      - name: Display stats
         run: |
           echo "✅ README stats updated successfully" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
