@@ -1,0 +1,88 @@
+name: Lint Configuration Files
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+jobs:
+  lua-lint:
+    name: Lua Syntax Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install luacheck
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y luarocks
+          sudo luarocks install luacheck
+
+      - name: Run luacheck on nvim configs
+        run: |
+          find nvim -name "*.lua" -type f | xargs luacheck --no-unused-args --no-max-line-length
+
+  shell-lint:
+    name: Shell Script Lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run shellcheck
+        uses: ludeeus/action-shellcheck@master
+        with:
+          scandir: './bash ./zsh'
+          severity: warning
+
+  yaml-json-toml-lint:
+    name: Validate YAML/JSON/TOML
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Validate YAML files
+        run: |
+          find . -name "*.yml" -o -name "*.yaml" | while read file; do
+            echo "Checking $file"
+            python3 -c "import yaml; yaml.safe_load(open('$file'))" || exit 1
+          done
+
+      - name: Validate JSON files
+        run: |
+          find . -name "*.json" | while read file; do
+            echo "Checking $file"
+            python3 -c "import json; json.load(open('$file'))" || exit 1
+          done
+
+      - name: Install taplo for TOML validation
+        run: cargo install taplo-cli
+
+      - name: Validate TOML files
+        run: |
+          find . -name "*.toml" | while read file; do
+            echo "Checking $file"
+            taplo check "$file" || exit 1
+          done
+
+  check-symlinks:
+    name: Check for Broken Symlinks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Find broken symlinks
+        run: |
+          broken=$(find . -type l ! -exec test -e {} \; -print)
+          if [ -n "$broken" ]; then
+            echo "Broken symlinks found:"
+            echo "$broken"
+            exit 1
+          else
+            echo "No broken symlinks found"
+          fi

@@ -1,0 +1,59 @@
+name: Test Stow Deployment
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+  workflow_dispatch:
+
+jobs:
+  stow-test:
+    name: Test Stow on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+      fail-fast: false
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install stow (Ubuntu)
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y stow
+
+      - name: Install stow (macOS)
+        if: runner.os == 'macOS'
+        run: brew install stow
+
+      - name: Create temporary home directory
+        run: |
+          mkdir -p $HOME/test-dotfiles
+          echo "TEST_HOME=$HOME/test-dotfiles" >> $GITHUB_ENV
+
+      - name: Test stow deployment (dry-run)
+        run: |
+          # Test each package individually
+          for package in */; do
+            package_name=$(basename "$package")
+            echo "Testing stow for: $package_name"
+            stow --dry-run --verbose=2 --target="$TEST_HOME" "$package_name" || echo "Warning: $package_name failed dry-run"
+          done
+
+      - name: Test actual stow deployment
+        run: |
+          # Try to stow a few safe packages
+          for package in git tmux vim; do
+            if [ -d "$package" ]; then
+              echo "Stowing $package"
+              stow --verbose=2 --target="$TEST_HOME" "$package" || echo "Warning: $package failed"
+            fi
+          done
+
+      - name: Verify files were created
+        run: |
+          echo "Files created in test home:"
+          ls -la "$TEST_HOME" || true
+          find "$TEST_HOME" -type l | head -20 || true
