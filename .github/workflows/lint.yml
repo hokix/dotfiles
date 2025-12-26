@@ -26,7 +26,7 @@ jobs:
 
       - name: Run luacheck on nvim configs
         run: |
-          find nvim -name "*.lua" -type f | xargs luacheck --no-unused-args --no-max-line-length
+          find nvim -name "*.lua" -type f | xargs luacheck --config .luacheckrc
 
   shell-lint:
     name: Shell Script Lint
