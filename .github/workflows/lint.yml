@@ -63,7 +63,9 @@ jobs:
           done
 
       - name: Install taplo for TOML validation
-        run: cargo install taplo-cli
+        run: |
+          curl -fsSL https://github.com/tamasfe/taplo/releases/latest/download/taplo-linux-x86_64.gz | gunzip -c - | sudo tee /usr/local/bin/taplo > /dev/null
+          sudo chmod +x /usr/local/bin/taplo
 
       - name: Validate TOML files
         run: |
