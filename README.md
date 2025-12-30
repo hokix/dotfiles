@@ -4,16 +4,16 @@
 
 <!-- Repository Status -->
 <a href="https://github.com/hokix/dotfiles">
-  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/hokix/dotfiles?style=for-the-badge&logo=git&color=8bd5ca&labelColor=302D41" />
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/hokix/dotfiles?logo=git&color=8bd5ca&labelColor=302D41" />
 </a>
 <a href="https://github.com/hokix/dotfiles/stargazers">
-  <img alt="Stars" src="https://img.shields.io/github/stars/hokix/dotfiles?style=for-the-badge&logo=github&color=c69ff5&labelColor=302D41" />
+  <img alt="Stars" src="https://img.shields.io/github/stars/hokix/dotfiles?logo=github&color=c69ff5&labelColor=302D41" />
 </a>
 <a href="https://github.com/hokix/dotfiles/issues">
-  <img alt="Issues" src="https://img.shields.io/github/issues/hokix/dotfiles?style=for-the-badge&logo=gitbook&color=F5E0DC&labelColor=302D41" />
+  <img alt="Issues" src="https://img.shields.io/github/issues/hokix/dotfiles?logo=gitbook&color=F5E0DC&labelColor=302D41" />
 </a>
 <a href="https://github.com/hokix/dotfiles">
-  <img alt="Repo Size" src="https://img.shields.io/github/repo-size/hokix/dotfiles?style=for-the-badge&logo=codesandbox&color=DDB6F2&label=SIZE&labelColor=302D41" />
+  <img alt="Repo Size" src="https://img.shields.io/github/repo-size/hokix/dotfiles?logo=codesandbox&color=DDB6F2&label=SIZE&labelColor=302D41" />
 </a>
 
 <br/>
@@ -52,6 +52,7 @@ My Windows🪟/Linux🐧/macOS🍎 dotfiles managed by [stow 📦](https://www.g
 ## 📊 Repository Stats
 
 <!-- STATS_START -->
+
 - **Configuration Packages:** 23
 - **Neovim Lua Files:** 34
 - **Shell Config Files:** 3
