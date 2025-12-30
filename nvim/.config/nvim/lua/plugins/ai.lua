@@ -122,28 +122,6 @@ return {
           },
         },
       },
-      interactions = {
-        background = {
-          -- adapter = "deepseek",
-          adapter = "copilot",
-          model = "claude-sonnet-4.5",
-        },
-        chat = {
-          -- adapter = "deepseek",
-          adapter = "copilot",
-          model = "claude-sonnet-4.5",
-        },
-        inline = {
-          -- adapter = "deepseek",
-          adapter = "copilot",
-          model = "claude-sonnet-4.5",
-        },
-        cmd = {
-          -- adapter = "deepseek",
-          adapter = "copilot",
-          model = "claude-sonnet-4.5",
-        },
-      },
       adapters = {
         deepseek = function()
           return require("codecompanion.adapters").extend("deepseek", {
