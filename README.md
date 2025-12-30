@@ -52,8 +52,7 @@ My Windows🪟/Linux🐧/macOS🍎 dotfiles managed by [stow 📦](https://www.g
 ## 📊 Repository Stats
 
 <!-- STATS_START -->
-
-- **Configuration Packages:** 22
+- **Configuration Packages:** 23
 - **Neovim Lua Files:** 34
 - **Shell Config Files:** 3
 <!-- STATS_END -->
