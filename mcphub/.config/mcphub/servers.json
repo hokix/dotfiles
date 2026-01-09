@@ -1,58 +1,48 @@
 {
   "mcpServers": {
-    "browsermcp": {
+    "awesome-copilot": {
       "args": [
-        "@browsermcp/mcp@latest"
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/microsoft/mcp-dotnet-samples/awesome-copilot:latest"
       ],
+      "command": "docker",
+      "disabled": false,
+      "tools": ["*"],
+      "type": "local"
+    },
+    "browsermcp": {
+      "args": ["@browsermcp/mcp@latest"],
       "command": "npx",
       "disabled": false,
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local"
     },
     "filesystem": {
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-filesystem",
-        "${CWD}"
-      ],
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "${CWD}"],
       "command": "npx",
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local"
     },
     "git": {
       "args": [],
       "command": "mcp-server-git",
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local"
     },
     "memory": {
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ],
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
       "autoApprove": [],
       "command": "npx",
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local"
     },
     "sequentialthinking": {
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-sequential-thinking"
-      ],
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
       "autoApprove": [],
       "command": "npx",
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local"
     }
   },

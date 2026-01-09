@@ -27,6 +27,12 @@ return {
           if context.is_working_mode then
             env.ALLOWED_DIRECTORY = context.working_root
           end
+          if vim.fn.filereadable("/var/run/docker.sock") == 1 then
+            env.DOCKER_HOST = "unix:///var/run/docker.sock"
+          elseif vim.fn.filereadable(vim.fn.expand("$HOME/.lima/default/sock/docker.sock")) == 1 then
+            -- lima for macos docker
+            env.DOCKER_HOST = "unix://" .. vim.fn.expand("$HOME/.lima/default/sock/docker.sock")
+          end
           return env
         end,
       })
@@ -248,6 +254,11 @@ return {
       },
       opts = {
         provider = "copilot",
+        providers = {
+          copilot = {
+            model_id = "claude-sonnet-4.5",
+          },
+        },
       },
       lazy = true,
       keys = {

@@ -33,3 +33,4 @@ tmp/
 .DS_Store
 .codecompanion.workspace.json
 .github/
+bak/
