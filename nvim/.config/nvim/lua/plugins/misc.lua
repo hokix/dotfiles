@@ -110,4 +110,10 @@ return {
       -- see below for full list of options 👇
     },
   },
+  {
+    "wsdjeg/calendar.nvim",
+    opts = {
+      locale = "zh-CN",
+    },
+  },
 }

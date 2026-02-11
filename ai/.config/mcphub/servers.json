@@ -9,40 +9,62 @@
       ],
       "command": "docker",
       "disabled": false,
-      "tools": ["*"],
+      "tools": [
+        "*"
+      ],
       "type": "local"
     },
     "browsermcp": {
-      "args": ["@browsermcp/mcp@latest"],
+      "args": [
+        "@browsermcp/mcp@latest"
+      ],
       "command": "npx",
       "disabled": false,
-      "tools": ["*"],
-      "type": "local"
-    },
-    "filesystem": {
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "${CWD}"],
-      "command": "npx",
-      "tools": ["*"],
+      "tools": [
+        "*"
+      ],
       "type": "local"
     },
     "git": {
       "args": [],
       "command": "mcp-server-git",
-      "tools": ["*"],
+      "tools": [
+        "*"
+      ],
       "type": "local"
     },
     "memory": {
-      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
       "autoApprove": [],
       "command": "npx",
-      "tools": ["*"],
+      "tools": [
+        "*"
+      ],
+      "type": "local"
+    },
+    "playwright": {
+      "args": [
+        "@playwright/mcp@latest"
+      ],
+      "command": "npx",
+      "tools": [
+        "*"
+      ],
       "type": "local"
     },
     "sequentialthinking": {
-      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
       "autoApprove": [],
       "command": "npx",
-      "tools": ["*"],
+      "tools": [
+        "*"
+      ],
       "type": "local"
     }
   },

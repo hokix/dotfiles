@@ -34,3 +34,5 @@ tmp/
 .codecompanion.workspace.json
 .github/
 bak/
+.sisyphus/
+boulder.json
