@@ -1,0 +1,44 @@
+{
+  "version": 3,
+  "skills": {
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "c2f31172b6f256272305a5e6e7228b258446899f",
+      "installedAt": "2026-01-28T01:26:38.673Z",
+      "updatedAt": "2026-01-28T01:26:38.673Z"
+    },
+    "api-design-principles": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/wshobson/agents.git",
+      "skillPath": "plugins/backend-development/skills/api-design-principles/SKILL.md",
+      "skillFolderHash": "d9f49b5a4c69c1372041ac3892b9c4a3bdd4b02a",
+      "installedAt": "2026-01-28T01:40:16.444Z",
+      "updatedAt": "2026-01-28T01:40:16.444Z"
+    },
+    "architecture-patterns": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/wshobson/agents.git",
+      "skillPath": "plugins/backend-development/skills/architecture-patterns/SKILL.md",
+      "skillFolderHash": "f1065fb3a70a01b204c1343deb7f8c7e377a90cc",
+      "installedAt": "2026-01-28T01:40:29.398Z",
+      "updatedAt": "2026-01-28T01:40:29.398Z"
+    },
+    "golang-testing-strategies": {
+      "source": "bobmatnyc/claude-mpm-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/bobmatnyc/claude-mpm-skills.git",
+      "skillPath": "toolchains/golang/testing/SKILL.md",
+      "skillFolderHash": "3a33e28887e7649cf0866adec7b5552f3377a4e5",
+      "installedAt": "2026-02-04T01:34:57.375Z",
+      "updatedAt": "2026-02-04T01:34:57.375Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  }
+}

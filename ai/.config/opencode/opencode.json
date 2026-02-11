@@ -1,0 +1,56 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "theme": "catppuccin",
+  "plugin": [
+    "@zenobius/opencode-skillful",
+    "oh-my-opencode@latest"
+  ],
+  "mcp": {
+    "awesome-copilot": {
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "ghcr.io/microsoft/mcp-dotnet-samples/awesome-copilot:latest"
+      ],
+      "type": "local"
+    },
+    "browsermcp": {
+      "command": [
+        "npx",
+        "@browsermcp/mcp@latest"
+      ],
+      "type": "local"
+    },
+    "git": {
+      "command": [
+        "mcp-server-git"
+      ],
+      "type": "local"
+    },
+    "memory": {
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "type": "local"
+    },
+    "playwright": {
+      "command": [
+        "npx",
+        "@playwright/mcp@latest"
+      ],
+      "type": "local"
+    },
+    "sequentialthinking": {
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "type": "local"
+    }
+  }
+}
