@@ -30,7 +30,13 @@
 <img alt="Shell Zsh" src="https://img.shields.io/badge/Zsh-%2389dceb.svg?&logo=gnubash&logoColor=3b4252" />
 <img alt="Neovim" src="https://img.shields.io/badge/Neovim-%2357A143.svg?&logo=neovim&logoColor=white" />
 <img alt="LazyVim" src="https://img.shields.io/badge/LazyVim-%231e2030.svg?&logo=neovim&logoColor=c69ff5" />
+<br/>
+
+<!-- AI Coding Tools -->
 <img alt="GitHub Copilot" src="https://img.shields.io/badge/GitHub%20Copilot-%237E56C2.svg?&logo=githubcopilot&logoColor=white" />
+<img alt="OpenCode" src="https://img.shields.io/badge/OpenCode-%2318181B.svg?&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYTNlNjM1IiBzdHJva2Utd2lkdGg9IjIiPjxwYXRoIGQ9Ik04IDlsLTQgM2w0IDNtOC02bDQgM2wtNCAzIi8+PC9zdmc+&logoColor=a3e635" />
+<img alt="Claude" src="https://img.shields.io/badge/Claude-%23D97757.svg?&logo=anthropic&logoColor=white" />
+<img alt="MCPHub" src="https://img.shields.io/badge/MCPHub-%2336BCF7.svg?&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIzIi8+PGNpcmNsZSBjeD0iNCIgY3k9IjgiIHI9IjIiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjgiIHI9IjIiLz48Y2lyY2xlIGN4PSI0IiBjeT0iMTgiIHI9IjIiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjE4IiByPSIyIi8+PGxpbmUgeDE9IjYiIHkxPSI4IiB4Mj0iOSIgeTI9IjExIi8+PGxpbmUgeDE9IjE4IiB5MT0iOCIgeDI9IjE1IiB5Mj0iMTEiLz48bGluZSB4MT0iNiIgeTE9IjE4IiB4Mj0iOSIgeTI9IjE0Ii8+PGxpbmUgeDE9IjE4IiB5MT0iMTgiIHgyPSIxNSIgeTI9IjE0Ii8+PC9zdmc+&logoColor=white" />
 
 <br/>
 
