@@ -25,6 +25,15 @@
       ],
       "type": "local"
     },
+    "carnival": {
+      "args": [],
+      "command": "carnival-mcp",
+      "disabled": false,
+      "tools": [
+        "*"
+      ],
+      "type": "local"
+    },
     "git": {
       "args": [],
       "command": "mcp-server-git",
