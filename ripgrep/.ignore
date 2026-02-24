@@ -15,3 +15,4 @@ go.sum
 interface_*.go
 Library/
 .phpactor.json
+__pycache__/

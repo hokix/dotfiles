@@ -1,79 +1,49 @@
 {
   "mcpServers": {
-    "awesome-copilot": {
-      "args": [
-        "run",
-        "-i",
-        "--rm",
-        "ghcr.io/microsoft/mcp-dotnet-samples/awesome-copilot:latest"
-      ],
-      "command": "docker",
-      "disabled": false,
-      "tools": [
-        "*"
-      ],
-      "type": "local"
-    },
     "browsermcp": {
-      "args": [
-        "@browsermcp/mcp@latest"
-      ],
+      "args": ["@browsermcp/mcp@latest"],
       "command": "npx",
-      "disabled": false,
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local"
     },
     "carnival": {
       "args": [],
       "command": "carnival-mcp",
-      "disabled": false,
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local"
     },
     "git": {
       "args": [],
       "command": "mcp-server-git",
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local"
     },
     "memory": {
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ],
-      "autoApprove": [],
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
       "command": "npx",
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local"
     },
     "playwright": {
-      "args": [
-        "@playwright/mcp@latest"
-      ],
+      "args": ["@playwright/mcp@latest"],
       "command": "npx",
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
+      "type": "local"
+    },
+    "postman-api-mcp": {
+      "args": ["@postman/postman-mcp-server", "--full"],
+      "command": "npx",
+      "disabled": false,
+      "env": {
+        "POSTMAN_API_KEY": "${POSTMAN_API_KEY}"
+      },
+      "tools": ["*"],
       "type": "local"
     },
     "sequentialthinking": {
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-sequential-thinking"
-      ],
-      "autoApprove": [],
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
       "command": "npx",
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local"
     }
   },

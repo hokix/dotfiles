@@ -1,5 +1,42 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "theme": "catppuccin",
-  "plugin": ["@zenobius/opencode-skillful", "oh-my-opencode@latest"]
+  "plugin": ["@zenobius/opencode-skillful"],
+  "mcp": {
+    "browsermcp": {
+      "command": ["npx", "@browsermcp/mcp@latest"],
+      "type": "local"
+    },
+    "carnival": {
+      "command": ["carnival-mcp"],
+      "type": "local"
+    },
+    "git": {
+      "command": ["mcp-server-git"],
+      "type": "local"
+    },
+    "memory": {
+      "command": ["npx", "-y", "@modelcontextprotocol/server-memory"],
+      "type": "local"
+    },
+    "playwright": {
+      "command": ["npx", "@playwright/mcp@latest"],
+      "type": "local"
+    },
+    "postman-api-mcp": {
+      "command": ["npx", "@postman/postman-mcp-server", "--full"],
+      "environment": {
+        "POSTMAN_API_KEY": "{env:POSTMAN_API_KEY}"
+      },
+      "type": "local"
+    },
+    "sequentialthinking": {
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "type": "local"
+    }
+  }
 }
