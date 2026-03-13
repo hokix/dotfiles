@@ -1,12 +1,12 @@
 {
-  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/dev/assets/oh-my-opencode.schema.json",
   "agents": {
     "sisyphus": {
       "model": "github-copilot/claude-opus-4.6",
       "variant": "max"
     },
     "oracle": {
-      "model": "github-copilot/gpt-5.2",
+      "model": "github-copilot/gpt-5.4",
       "variant": "high"
     },
     "librarian": {
@@ -27,27 +27,24 @@
       "variant": "max"
     },
     "momus": {
-      "model": "github-copilot/gpt-5.2",
-      "variant": "medium"
+      "model": "github-copilot/gpt-5.4",
+      "variant": "xhigh"
     },
     "atlas": {
       "model": "github-copilot/claude-sonnet-4.6"
-    },
-    "hephaestus": {
-      "model": "github-copilot/gpt-5.3-codex",
-      "variant": "medium"
     }
   },
   "categories": {
     "visual-engineering": {
-      "model": "github-copilot/gemini-3-pro-preview"
+      "model": "github-copilot/gemini-3.1-pro-preview",
+      "variant": "high"
     },
     "ultrabrain": {
-      "model": "github-copilot/gpt-5.3-codex",
-      "variant": "xhigh"
+      "model": "github-copilot/gemini-3.1-pro-preview",
+      "variant": "high"
     },
     "artistry": {
-      "model": "github-copilot/gemini-3-pro-preview",
+      "model": "github-copilot/gemini-3.1-pro-preview",
       "variant": "high"
     },
     "quick": {
@@ -61,16 +58,6 @@
     },
     "writing": {
       "model": "github-copilot/gemini-3-flash-preview"
-    },
-    "deep": {
-      "model": "github-copilot/gpt-5.3-codex",
-      "variant": "medium"
-    }
-  },
-  "background_task": {
-    "defaultConcurrency": 2,
-    "modelConcurrency": {
-      "github-copilot/claude-opus-4.5": 1
     }
   }
 }

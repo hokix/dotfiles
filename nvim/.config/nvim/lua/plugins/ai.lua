@@ -47,7 +47,7 @@ return {
       "ravitemer/mcphub.nvim",
     },
     opts = {
-      model = "claude-sonnet-4.5",
+      model = "claude-sonnet-4.6",
       window = {
         width = math.floor(vim.o.columns * 0.3),
       },
@@ -86,6 +86,7 @@ return {
           },
         },
       },
+      "cairijun/codecompanion-agentskills.nvim",
     },
     lazy = true,
     cmd = {
@@ -125,7 +126,7 @@ return {
         chat = {
           window = {
             position = "right",
-            width = 0.3,
+            width = 0.4,
           },
         },
       },
@@ -144,7 +145,7 @@ return {
             return require("codecompanion.adapters").extend("copilot", {
               schema = {
                 model = {
-                  default = "claude-sonnet-4.5",
+                  default = "claude-sonnet-4.6",
                 },
               },
             })
@@ -218,7 +219,15 @@ return {
             make_slash_commands = true, -- Add MCP prompts as /slash commands
           },
         },
+        agentskills = {
+          opts = {
+            paths = {
+              { "~/.agents/skills", recursive = true },
+            },
+          },
+        },
       },
+      language = "Chinese",
     },
   },
   -- Edgy integration
@@ -230,7 +239,7 @@ return {
       table.insert(opts.right, {
         ft = "codecompanion",
         title = "Code Companion",
-        size = { width = 50 },
+        size = { width = 80 },
       })
     end,
   },
@@ -328,6 +337,7 @@ return {
           ---@type table<string, sidekick.cli.Config|{}>
           tools = {
             copilot = { cmd = { "copilot", "--no-auto-update" } },
+            -- copilot = { cmd = { "copilot", "--no-auto-update", "--alt-screen", "off" } },
           },
         },
       },

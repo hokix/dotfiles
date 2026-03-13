@@ -2,6 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
+      -- colorscheme = "rose-pine",
       colorscheme = "catppuccin",
       -- colorscheme = "tokyonight",
     },
@@ -24,6 +25,17 @@ return {
           bg = colors.none,
         }
       end,
+    },
+  },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    opts = {
+      styles = {
+        bold = true,
+        italic = true,
+        transparency = true,
+      },
     },
   },
   {
@@ -92,9 +104,6 @@ return {
   },
   {
     "NvChad/nvim-colorizer.lua",
-    opts = {
-      lazy_load = true,
-    },
-    event = "VeryLazy",
+    event = "BufReadPre",
   },
 }
