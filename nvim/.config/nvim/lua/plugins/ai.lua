@@ -336,8 +336,7 @@ return {
           },
           ---@type table<string, sidekick.cli.Config|{}>
           tools = {
-            copilot = { cmd = { "copilot", "--no-auto-update" } },
-            -- copilot = { cmd = { "copilot", "--no-auto-update", "--alt-screen", "off" } },
+            copilot = { cmd = { "copilot", "--alt-screen" } },
           },
         },
       },

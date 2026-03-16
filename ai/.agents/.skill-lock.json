@@ -1,50 +1,68 @@
 {
   "version": 3,
   "skills": {
+    "coding-jupiter-skill": {
+      "source": "git@git.dz11.com:skills/platform/skills.git",
+      "sourceType": "git",
+      "sourceUrl": "git@git.dz11.com:skills/platform/skills.git",
+      "skillPath": "coding-jupiter-skill/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-03-16T11:18:53.598Z",
+      "updatedAt": "2026-03-16T11:18:53.598Z"
+    },
+    "dy-api-conventions": {
+      "source": "git@git.dz11.com:skills/platform/skills.git",
+      "sourceType": "git",
+      "sourceUrl": "git@git.dz11.com:skills/platform/skills.git",
+      "skillPath": "dy-api-conventions/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-03-16T11:18:53.598Z",
+      "updatedAt": "2026-03-16T11:18:53.598Z"
+    },
+    "dy-doc-go-api": {
+      "source": "git@git.dz11.com:skills/platform/skills.git",
+      "sourceType": "git",
+      "sourceUrl": "git@git.dz11.com:skills/platform/skills.git",
+      "skillPath": "dy-doc-go-api/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-03-16T11:18:53.599Z",
+      "updatedAt": "2026-03-16T11:18:53.599Z"
+    },
+    "dy-gorm-gen-tool": {
+      "source": "git@git.dz11.com:skills/platform/skills.git",
+      "sourceType": "git",
+      "sourceUrl": "git@git.dz11.com:skills/platform/skills.git",
+      "skillPath": "dy-gorm-gen-tool/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-03-16T11:18:53.599Z",
+      "updatedAt": "2026-03-16T11:18:53.599Z"
+    },
+    "gen-postman-echo": {
+      "source": "git@git.dz11.com:skills/platform/skills.git",
+      "sourceType": "git",
+      "sourceUrl": "git@git.dz11.com:skills/platform/skills.git",
+      "skillPath": "gen-postman-echo/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-03-16T11:18:53.599Z",
+      "updatedAt": "2026-03-16T11:18:53.599Z"
+    },
+    "minerva-upgrade": {
+      "source": "git@git.dz11.com:skills/platform/skills.git",
+      "sourceType": "git",
+      "sourceUrl": "git@git.dz11.com:skills/platform/skills.git",
+      "skillPath": "minerva-upgrade/SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-03-16T11:18:53.599Z",
+      "updatedAt": "2026-03-16T11:18:53.599Z"
+    },
     "find-skills": {
       "source": "vercel-labs/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/vercel-labs/skills.git",
       "skillPath": "skills/find-skills/SKILL.md",
-      "skillFolderHash": "c2f31172b6f256272305a5e6e7228b258446899f",
-      "installedAt": "2026-01-28T01:26:38.673Z",
-      "updatedAt": "2026-01-28T01:26:38.673Z"
-    },
-    "api-design-principles": {
-      "source": "wshobson/agents",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/wshobson/agents.git",
-      "skillPath": "plugins/backend-development/skills/api-design-principles/SKILL.md",
-      "skillFolderHash": "d9f49b5a4c69c1372041ac3892b9c4a3bdd4b02a",
-      "installedAt": "2026-01-28T01:40:16.444Z",
-      "updatedAt": "2026-01-28T01:40:16.444Z"
-    },
-    "architecture-patterns": {
-      "source": "wshobson/agents",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/wshobson/agents.git",
-      "skillPath": "plugins/backend-development/skills/architecture-patterns/SKILL.md",
-      "skillFolderHash": "f1065fb3a70a01b204c1343deb7f8c7e377a90cc",
-      "installedAt": "2026-01-28T01:40:29.398Z",
-      "updatedAt": "2026-01-28T01:40:29.398Z"
-    },
-    "golang-testing-strategies": {
-      "source": "bobmatnyc/claude-mpm-skills",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/bobmatnyc/claude-mpm-skills.git",
-      "skillPath": "toolchains/golang/testing/SKILL.md",
-      "skillFolderHash": "3a33e28887e7649cf0866adec7b5552f3377a4e5",
-      "installedAt": "2026-02-04T01:34:57.375Z",
-      "updatedAt": "2026-02-04T01:34:57.375Z"
-    },
-    "test-driven-development": {
-      "source": "obra/superpowers",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/obra/superpowers.git",
-      "skillPath": "skills/test-driven-development/SKILL.md",
-      "skillFolderHash": "98904a7d8e0e04b9bd46220b9b17298f45fe0b72",
-      "installedAt": "2026-02-14T01:11:52.500Z",
-      "updatedAt": "2026-03-12T06:37:16.193Z"
+      "skillFolderHash": "3013fdeb8a11b10b1eb795ec3ae8bfca38f7c26d",
+      "installedAt": "2026-03-16T11:19:00.390Z",
+      "updatedAt": "2026-03-16T11:20:08.676Z"
     },
     "brainstorming": {
       "source": "obra/superpowers",
@@ -52,8 +70,8 @@
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/brainstorming/SKILL.md",
       "skillFolderHash": "cb55eef29a446656b39f38ead06b4ea7232ab227",
-      "installedAt": "2026-03-12T06:37:09.962Z",
-      "updatedAt": "2026-03-12T06:37:09.962Z"
+      "installedAt": "2026-03-16T11:21:05.262Z",
+      "updatedAt": "2026-03-16T11:21:05.262Z"
     },
     "dispatching-parallel-agents": {
       "source": "obra/superpowers",
@@ -61,8 +79,8 @@
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/dispatching-parallel-agents/SKILL.md",
       "skillFolderHash": "ebd0490e6b0bccfdb9f9c0cc9dd6a066036c8d89",
-      "installedAt": "2026-03-12T06:37:11.035Z",
-      "updatedAt": "2026-03-12T06:37:11.035Z"
+      "installedAt": "2026-03-16T11:21:05.947Z",
+      "updatedAt": "2026-03-16T11:21:05.947Z"
     },
     "executing-plans": {
       "source": "obra/superpowers",
@@ -70,8 +88,8 @@
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/executing-plans/SKILL.md",
       "skillFolderHash": "20087d25fb28f5f54578d873dc198ab24b34f967",
-      "installedAt": "2026-03-12T06:37:11.738Z",
-      "updatedAt": "2026-03-12T06:37:11.738Z"
+      "installedAt": "2026-03-16T11:21:06.583Z",
+      "updatedAt": "2026-03-16T11:21:06.583Z"
     },
     "finishing-a-development-branch": {
       "source": "obra/superpowers",
@@ -79,8 +97,8 @@
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/finishing-a-development-branch/SKILL.md",
       "skillFolderHash": "7656b8ebe0c9659ea548ba2981b078b333d1846e",
-      "installedAt": "2026-03-12T06:37:12.416Z",
-      "updatedAt": "2026-03-12T06:37:12.416Z"
+      "installedAt": "2026-03-16T11:21:07.267Z",
+      "updatedAt": "2026-03-16T11:21:07.267Z"
     },
     "receiving-code-review": {
       "source": "obra/superpowers",
@@ -88,8 +106,8 @@
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/receiving-code-review/SKILL.md",
       "skillFolderHash": "7750c56fddb8b2f1cbdb1550a6e3e40d2eeac5f1",
-      "installedAt": "2026-03-12T06:37:13.083Z",
-      "updatedAt": "2026-03-12T06:37:13.083Z"
+      "installedAt": "2026-03-16T11:21:08.375Z",
+      "updatedAt": "2026-03-16T11:21:08.375Z"
     },
     "requesting-code-review": {
       "source": "obra/superpowers",
@@ -97,8 +115,8 @@
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/requesting-code-review/SKILL.md",
       "skillFolderHash": "ed265b1a03114cc400d5524afc5c961a4aa9ea8b",
-      "installedAt": "2026-03-12T06:37:13.755Z",
-      "updatedAt": "2026-03-12T06:37:13.755Z"
+      "installedAt": "2026-03-16T11:21:09.628Z",
+      "updatedAt": "2026-03-16T11:21:09.628Z"
     },
     "subagent-driven-development": {
       "source": "obra/superpowers",
@@ -106,8 +124,8 @@
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/subagent-driven-development/SKILL.md",
       "skillFolderHash": "fbcd94ffcf589754a8ecfa59861cc8843313590e",
-      "installedAt": "2026-03-12T06:37:14.860Z",
-      "updatedAt": "2026-03-12T06:37:14.860Z"
+      "installedAt": "2026-03-16T11:21:10.840Z",
+      "updatedAt": "2026-03-16T11:21:10.840Z"
     },
     "systematic-debugging": {
       "source": "obra/superpowers",
@@ -115,8 +133,17 @@
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/systematic-debugging/SKILL.md",
       "skillFolderHash": "828c239ac986cc1fc7edd10292f66e4a3640e9c0",
-      "installedAt": "2026-03-12T06:37:15.522Z",
-      "updatedAt": "2026-03-12T06:37:15.522Z"
+      "installedAt": "2026-03-16T11:21:12.199Z",
+      "updatedAt": "2026-03-16T11:21:12.199Z"
+    },
+    "test-driven-development": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/obra/superpowers.git",
+      "skillPath": "skills/test-driven-development/SKILL.md",
+      "skillFolderHash": "98904a7d8e0e04b9bd46220b9b17298f45fe0b72",
+      "installedAt": "2026-03-16T11:21:13.165Z",
+      "updatedAt": "2026-03-16T11:21:13.165Z"
     },
     "using-git-worktrees": {
       "source": "obra/superpowers",
@@ -124,8 +151,8 @@
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/using-git-worktrees/SKILL.md",
       "skillFolderHash": "a5b3f5965f321175a7f07dcadff0bb79adb9e9f7",
-      "installedAt": "2026-03-12T06:37:16.886Z",
-      "updatedAt": "2026-03-12T06:37:16.886Z"
+      "installedAt": "2026-03-16T11:21:14.562Z",
+      "updatedAt": "2026-03-16T11:21:14.562Z"
     },
     "using-superpowers": {
       "source": "obra/superpowers",
@@ -133,8 +160,8 @@
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/using-superpowers/SKILL.md",
       "skillFolderHash": "9ff6cf6979d6afa62c3e5f6306b124df56afce31",
-      "installedAt": "2026-03-12T06:37:17.673Z",
-      "updatedAt": "2026-03-12T06:37:17.673Z"
+      "installedAt": "2026-03-16T11:21:15.313Z",
+      "updatedAt": "2026-03-16T11:21:15.313Z"
     },
     "verification-before-completion": {
       "source": "obra/superpowers",
@@ -142,8 +169,8 @@
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/verification-before-completion/SKILL.md",
       "skillFolderHash": "ceb2f1f67f4cadb29b32a06e54d3d0be832071f5",
-      "installedAt": "2026-03-12T06:37:18.769Z",
-      "updatedAt": "2026-03-12T06:37:18.769Z"
+      "installedAt": "2026-03-16T11:21:16.494Z",
+      "updatedAt": "2026-03-16T11:21:16.494Z"
     },
     "writing-plans": {
       "source": "obra/superpowers",
@@ -151,8 +178,8 @@
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/writing-plans/SKILL.md",
       "skillFolderHash": "484c438ecee175aadad4f6caa1213c20d2a92c03",
-      "installedAt": "2026-03-12T06:37:19.401Z",
-      "updatedAt": "2026-03-12T06:37:19.401Z"
+      "installedAt": "2026-03-16T11:21:17.418Z",
+      "updatedAt": "2026-03-16T11:21:17.418Z"
     },
     "writing-skills": {
       "source": "obra/superpowers",
@@ -160,8 +187,130 @@
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/writing-skills/SKILL.md",
       "skillFolderHash": "657cdd6aef472054ffd3f0e7798494d79be9f807",
-      "installedAt": "2026-03-12T06:37:20.173Z",
-      "updatedAt": "2026-03-12T06:37:20.173Z"
+      "installedAt": "2026-03-16T11:21:18.306Z",
+      "updatedAt": "2026-03-16T11:21:18.306Z"
+    },
+    "defuddle": {
+      "source": "kepano/obsidian-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/kepano/obsidian-skills.git",
+      "skillPath": "skills/defuddle/SKILL.md",
+      "skillFolderHash": "d365ce41229386873b7868d05c13fac80cd9c7fc",
+      "installedAt": "2026-03-16T11:21:41.530Z",
+      "updatedAt": "2026-03-16T11:21:41.530Z"
+    },
+    "json-canvas": {
+      "source": "kepano/obsidian-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/kepano/obsidian-skills.git",
+      "skillPath": "skills/json-canvas/SKILL.md",
+      "skillFolderHash": "9df7971db7ffebf96f2a207840b9f4765aa11b04",
+      "installedAt": "2026-03-16T11:21:42.079Z",
+      "updatedAt": "2026-03-16T11:21:42.079Z"
+    },
+    "obsidian-bases": {
+      "source": "kepano/obsidian-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/kepano/obsidian-skills.git",
+      "skillPath": "skills/obsidian-bases/SKILL.md",
+      "skillFolderHash": "4bef60bb848bfb02b4172b552626d5741b0d4057",
+      "installedAt": "2026-03-16T11:21:43.076Z",
+      "updatedAt": "2026-03-16T11:21:43.076Z"
+    },
+    "obsidian-cli": {
+      "source": "kepano/obsidian-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/kepano/obsidian-skills.git",
+      "skillPath": "skills/obsidian-cli/SKILL.md",
+      "skillFolderHash": "96254a554e480359de7b685571876f2e7f9ba57d",
+      "installedAt": "2026-03-16T11:21:43.646Z",
+      "updatedAt": "2026-03-16T11:21:43.646Z"
+    },
+    "obsidian-markdown": {
+      "source": "kepano/obsidian-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/kepano/obsidian-skills.git",
+      "skillPath": "skills/obsidian-markdown/SKILL.md",
+      "skillFolderHash": "5caf5d9e7de204f3904216857545f2aa36bcfcac",
+      "installedAt": "2026-03-16T11:21:44.716Z",
+      "updatedAt": "2026-03-16T11:21:44.716Z"
+    },
+    "api-design-principles": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/wshobson/agents.git",
+      "skillPath": "plugins/backend-development/skills/api-design-principles/SKILL.md",
+      "skillFolderHash": "4a9f363dc7a13301fe5c6aaa2d4f185a8e230113",
+      "installedAt": "2026-03-16T11:24:39.175Z",
+      "updatedAt": "2026-03-16T11:24:39.175Z"
+    },
+    "architecture-decision-records": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/wshobson/agents.git",
+      "skillPath": "plugins/documentation-generation/skills/architecture-decision-records/SKILL.md",
+      "skillFolderHash": "75227f18c39b855d72a328e3c4b5abc74144a4aa",
+      "installedAt": "2026-03-16T11:24:41.230Z",
+      "updatedAt": "2026-03-16T11:24:41.230Z"
+    },
+    "docx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/docx/SKILL.md",
+      "skillFolderHash": "a0d216202f9793a78da44cf96aabe48f42e627ac",
+      "pluginName": "document-skills",
+      "installedAt": "2026-03-16T11:26:53.374Z",
+      "updatedAt": "2026-03-16T11:26:53.374Z"
+    },
+    "pdf": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/pdf/SKILL.md",
+      "skillFolderHash": "6369f4649de69bd6857c9bc3b058a77206009238",
+      "pluginName": "document-skills",
+      "installedAt": "2026-03-16T11:26:54.402Z",
+      "updatedAt": "2026-03-16T11:26:54.402Z"
+    },
+    "pptx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/pptx/SKILL.md",
+      "skillFolderHash": "10b3d70962e489867ddfee7da92f7da6b0eccc4f",
+      "pluginName": "document-skills",
+      "installedAt": "2026-03-16T11:26:55.329Z",
+      "updatedAt": "2026-03-16T11:26:55.329Z"
+    },
+    "xlsx": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/xlsx/SKILL.md",
+      "skillFolderHash": "f5fb1cdb7993b2feee8367e983e9d4d58d2eedd4",
+      "pluginName": "document-skills",
+      "installedAt": "2026-03-16T11:26:56.368Z",
+      "updatedAt": "2026-03-16T11:26:56.368Z"
+    },
+    "skill-creator": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/skill-creator/SKILL.md",
+      "skillFolderHash": "98a510d1cfef9f82c3b1eec200229ca68725e613",
+      "pluginName": "example-skills",
+      "installedAt": "2026-03-16T11:26:57.209Z",
+      "updatedAt": "2026-03-16T11:26:57.209Z"
+    },
+    "architecture-patterns": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/wshobson/agents.git",
+      "skillPath": "plugins/backend-development/skills/architecture-patterns/SKILL.md",
+      "skillFolderHash": "e210508eb986c748fce92b191d84f0430da62277",
+      "installedAt": "2026-03-16T11:32:00.382Z",
+      "updatedAt": "2026-03-16T11:32:00.382Z"
     }
   },
   "dismissed": {
@@ -175,6 +324,7 @@
     "gemini-cli",
     "github-copilot",
     "kimi-cli",
-    "opencode"
+    "opencode",
+    "warp"
   ]
 }
