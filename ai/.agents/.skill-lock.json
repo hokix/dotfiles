@@ -69,9 +69,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/brainstorming/SKILL.md",
-      "skillFolderHash": "cb55eef29a446656b39f38ead06b4ea7232ab227",
+      "skillFolderHash": "fe653626a6e2da69d1ece00bb04c56fce6ab310e",
       "installedAt": "2026-03-16T11:21:05.262Z",
-      "updatedAt": "2026-03-16T11:21:05.262Z"
+      "updatedAt": "2026-03-17T02:18:45.849Z"
     },
     "dispatching-parallel-agents": {
       "source": "obra/superpowers",
@@ -159,9 +159,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/using-superpowers/SKILL.md",
-      "skillFolderHash": "9ff6cf6979d6afa62c3e5f6306b124df56afce31",
+      "skillFolderHash": "7569e98e26e69d0cc0b16da7ea4c30f48e94ca02",
       "installedAt": "2026-03-16T11:21:15.313Z",
-      "updatedAt": "2026-03-16T11:21:15.313Z"
+      "updatedAt": "2026-03-17T02:18:49.335Z"
     },
     "verification-before-completion": {
       "source": "obra/superpowers",
@@ -177,9 +177,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/writing-plans/SKILL.md",
-      "skillFolderHash": "484c438ecee175aadad4f6caa1213c20d2a92c03",
+      "skillFolderHash": "2a472929552ca56aa3bb27a95ecff3e606af5792",
       "installedAt": "2026-03-16T11:21:17.418Z",
-      "updatedAt": "2026-03-16T11:21:17.418Z"
+      "updatedAt": "2026-03-17T02:18:53.967Z"
     },
     "writing-skills": {
       "source": "obra/superpowers",
