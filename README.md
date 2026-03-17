@@ -57,6 +57,8 @@ My Windows🪟/Linux🐧/macOS🍎 dotfiles managed by [stow 📦](https://www.g
 
 > **Note:** AI configurations are from other GitHub repositories.
 
+> **Note:** If you use the [`tmux-window-name`](https://github.com/ofirgall/tmux-window-name) plugin, install `libtmux` manually with `python3 -m pip install --user --break-system-packages libtmux`.
+
 ## 📊 Repository Stats
 
 <!-- STATS_START -->
