@@ -1,0 +1,7 @@
+.claude/.mcp.json:.config/mcphub/servers.json
+.claude/agents:.config/agents
+.claude/skills:.agents/skills
+.copilot/skills:.agents/skills
+.copilot/agents:.config/agents
+.copilot/mcp-config.json:.config/mcphub/servers.json
+.config/opencode/skills:.agents/skills

@@ -53,6 +53,8 @@ My Windows🪟/Linux🐧/macOS🍎 dotfiles managed by [stow 📦](https://www.g
 
 🔧 Need minor modification on different OS.
 
+> **Note:** The `ai` package uses `stow-with-dirs.sh` for portable post-link setup. Prefer `./stow-with-dirs.sh ai` over bare `stow ai`.
+
 > **Note:** AI configurations are from other GitHub repositories.
 
 ## 📊 Repository Stats
