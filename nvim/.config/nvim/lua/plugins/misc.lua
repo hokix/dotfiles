@@ -26,45 +26,6 @@ return {
     cmd = { "CsvViewToggle" },
   },
   {
-    "m4xshen/hardtime.nvim",
-    lazy = false,
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-    },
-    opts = {
-      disable_mouse = false,
-      restriction_mode = "hint",
-      disabled_filetypes = {
-        maven = true,
-      },
-    },
-  },
-  {
-    "uhs-robert/sshfs.nvim",
-    lazy = true,
-    event = "VeryLazy",
-    opts = {
-      lead_prefix = "<leader>M",
-      hooks = {
-        on_exit = {
-          auto_unmount = false,
-        },
-      },
-      log = {
-        enabled = false,
-      },
-    },
-  },
-  {
-    "folke/which-key.nvim",
-    optional = true,
-    opts = {
-      spec = {
-        { "<leader>M", group = "mount", icon = "" },
-      },
-    },
-  },
-  {
     "MeanderingProgrammer/render-markdown.nvim",
     lazy = true,
     optional = true,
@@ -92,8 +53,8 @@ return {
       "BufReadPre " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*.md",
       "BufNewFile " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*.md",
       "BufReadPre " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*.md",
-      "BufReadPre " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*.md",
-      "BufNewFile " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*/*.md",
+      "BufNewFile " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*.md",
+      "BufReadPre " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*/*.md",
       "BufNewFile " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*/*.md",
     },
     cmd = { "Obsidian" },
@@ -106,14 +67,7 @@ return {
           path = "~/Documents/obsidian/notes",
         },
       },
-
-      -- see below for full list of options 👇
-    },
-  },
-  {
-    "wsdjeg/calendar.nvim",
-    opts = {
-      locale = "zh-CN",
+      legacy_commands = false,
     },
   },
 }

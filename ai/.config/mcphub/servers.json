@@ -1,80 +1,55 @@
 {
   "mcpServers": {
     "browsermcp": {
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local",
       "command": "npx",
-      "args": [
-        "@browsermcp/mcp@latest"
-      ],
-      "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json"
+      "args": ["@browsermcp/mcp@latest"],
+      "source": "user"
     },
     "git": {
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local",
       "command": "mcp-server-git",
       "args": [],
-      "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json"
+      "source": "user"
     },
     "memory": {
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local",
       "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ],
-      "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json"
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "source": "user"
     },
     "playwright": {
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local",
       "command": "npx",
-      "args": [
-        "@playwright/mcp@latest"
-      ],
-      "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json"
+      "args": ["@playwright/mcp@latest"],
+      "source": "user"
     },
     "postman-api-mcp": {
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local",
       "command": "npx",
-      "args": [
-        "@postman/postman-mcp-server",
-        "--full"
-      ],
+      "args": ["@postman/postman-mcp-server", "--full"],
       "env": {
         "POSTMAN_API_KEY": "${POSTMAN_API_KEY}"
       },
-      "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json"
+      "source": "user"
     },
     "sequentialthinking": {
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local",
       "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-sequential-thinking"
-      ],
-      "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json"
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "source": "user"
+    },
+    "feishu": {
+      "type": "http",
+      "url": "https://open.feishu.cn/mcp/stream/${FEISHU_MCP_KEY}",
+      "headers": {},
+      "tools": ["*"]
     }
   },
   "nativeMCPServers": []

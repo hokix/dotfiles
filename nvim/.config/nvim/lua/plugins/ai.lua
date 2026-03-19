@@ -13,9 +13,6 @@ return {
       require("mcphub").setup({
         use_bundled_binary = true,
         extensions = {
-          avante = {
-            make_slash_commands = true, -- make /slash commands from MCP server prompts
-          },
           copilotchat = {
             enabled = true,
             convert_tools_to_functions = true, -- Convert MCP tools to CopilotChat functions
@@ -41,221 +38,6 @@ return {
     lazy = true,
   },
   {
-    "CopilotC-Nvim/CopilotChat.nvim",
-    optional = true,
-    dependencies = {
-      "ravitemer/mcphub.nvim",
-    },
-    opts = {
-      model = "claude-sonnet-4.6",
-      window = {
-        width = math.floor(vim.o.columns * 0.3),
-      },
-    },
-  },
-  {
-    "olimorris/codecompanion.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-treesitter/nvim-treesitter",
-      -- extensions
-      "ravitemer/mcphub.nvim",
-      {
-        "MeanderingProgrammer/render-markdown.nvim",
-        opts = {
-          file_types = { "markdown", "codecompanion" },
-        },
-        ft = { "markdown", "codecompanion" },
-      },
-      {
-        "saghen/blink.cmp",
-        optional = true,
-        opts = {
-          sources = {
-            default = { "codecompanion" },
-            providers = {
-              -- other providers
-              codecompanion = {
-                name = "CodeCompanion",
-                module = "codecompanion.providers.completion.blink",
-                enabled = true,
-                score_offset = 10,
-                async = true,
-              },
-            },
-          },
-        },
-      },
-      "cairijun/codecompanion-agentskills.nvim",
-    },
-    lazy = true,
-    cmd = {
-      "CodeCompanion",
-      "CodeCompanionActions",
-      "CodeCompanionChat",
-      "CodeCompanionCmd",
-    },
-    keys = {
-      {
-        "<leader>aCa",
-        "<cmd>CodeCompanionChat Toggle<cr>",
-        desc = "Toggle (CodeCompanion)",
-        mode = { "n", "v" },
-      },
-      {
-        "<leader>aCx",
-        "<cmd>CodeCompanionChat RefreshCache<cr>",
-        desc = "Clear (CodeCompanion)",
-        mode = { "n", "v" },
-      },
-      {
-        "<leader>aCq",
-        "<cmd>CodeCompanion<cr>",
-        desc = "Quick Chat (CodeCompanion)",
-        mode = { "n", "v" },
-      },
-      {
-        "<leader>aCp",
-        "<cmd>CodeCompanionActions<cr>",
-        desc = "Prompt Actions (CodeCompanion)",
-        mode = { "n", "v" },
-      },
-    },
-    opts = {
-      display = {
-        chat = {
-          window = {
-            position = "right",
-            width = 0.4,
-          },
-        },
-      },
-      adapters = {
-        deepseek = function()
-          return require("codecompanion.adapters").extend("deepseek", {
-            schema = {
-              model = {
-                default = "deepseek-chat",
-              },
-            },
-          })
-        end,
-        http = {
-          copilot = function()
-            return require("codecompanion.adapters").extend("copilot", {
-              schema = {
-                model = {
-                  default = "claude-sonnet-4.6",
-                },
-              },
-            })
-          end,
-        },
-      },
-      prompt_library = {
-        ["Diff code review"] = {
-          strategy = "chat",
-          description = "Perform a code review",
-          opts = {
-            auto_submit = true,
-            user_prompt = false,
-          },
-          prompts = {
-            {
-              role = "user",
-              content = function()
-                local target_branch = vim.fn.input("Target branch for merge base diff (default: master): ", "master")
-
-                return string.format(
-                  [[
-          You are a senior software engineer performing a code review. Analyze the following code changes.
-           Identify any potential bugs, performance issues, security vulnerabilities, or areas that could be refactored for better readability or maintainability.
-           Explain your reasoning clearly and provide specific suggestions for improvement.
-           Consider edge cases, error handling, and adherence to best practices and coding standards.
-           Here are the code changes:
-           ```
-            %s
-           ```
-           ]],
-                  vim.fn.system("git diff --merge-base " .. target_branch .. " -- . ':(exclude)vendor'")
-                )
-              end,
-            },
-          },
-        },
-        ["Note taking"] = {
-          strategy = "chat",
-          description = "Take notes on the current file",
-          opts = {
-            modes = { "v" },
-            auto_submit = true,
-            user_prompt = true,
-            alias = "note",
-            stop_context_insertion = true,
-          },
-          prompts = {
-            {
-              role = "user",
-              content = [[
-                I want you to act as a note-taking assistant for a lecture. Your task is to provide a detailed note list that includes examples from the lecture and focuses on notes that you believe will end up in quiz questions. Additionally, please make a separate list for notes that have numbers and data in them and another separated list for the examples that included in this lecture. The notes should be concise and easy to read.
-                ]],
-            },
-          },
-        },
-      },
-      extensions = {
-        mcphub = {
-          callback = "mcphub.extensions.codecompanion",
-          opts = {
-            -- MCP Tools
-            make_tools = true, -- Make individual tools (@server__tool) and server groups (@server) from MCP servers
-            show_server_tools_in_chat = true, -- Show individual tools in chat completion (when make_tools=true)
-            add_mcp_prefix_to_tool_names = false, -- Add mcp__ prefix (e.g `@mcp__github`, `@mcp__neovim__list_issues`)
-            show_result_in_chat = true, -- Show tool results directly in chat buffer
-            format_tool = nil, -- function(tool_name:string, tool: CodeCompanion.Agent.Tool) : string Function to format tool names to show in the chat buffer
-            -- MCP Resources
-            make_vars = true, -- Convert MCP resources to #variables for prompts
-            -- MCP Prompts
-            make_slash_commands = true, -- Add MCP prompts as /slash commands
-          },
-        },
-        agentskills = {
-          opts = {
-            paths = {
-              { "~/.agents/skills", recursive = true },
-            },
-          },
-        },
-      },
-      language = "Chinese",
-    },
-  },
-  -- Edgy integration
-  {
-    "folke/edgy.nvim",
-    optional = true,
-    opts = function(_, opts)
-      opts.right = opts.right or {}
-      table.insert(opts.right, {
-        ft = "codecompanion",
-        title = "Code Companion",
-        size = { width = 80 },
-      })
-    end,
-  },
-  -- lualine integration
-  {
-    "nvim-lualine/lualine.nvim",
-    optional = true,
-    dependencies = {
-      "franco-ruggeri/codecompanion-lualine.nvim",
-      -- Other dependencies
-    },
-    opts = function(_, opts)
-      table.insert(opts.sections.lualine_x, "codecompanion")
-    end,
-  },
-  {
     {
       "piersolenski/wtf.nvim",
       dependencies = {
@@ -266,7 +48,7 @@ return {
         provider = "copilot",
         providers = {
           copilot = {
-            model_id = "claude-sonnet-4.5",
+            model_id = "claude-sonnet-4.6",
           },
         },
       },
@@ -319,7 +101,6 @@ return {
       optional = true,
       opts = {
         spec = {
-          { "<leader>aC", group = "CodeCompanion" },
           { "<leader>cw", group = "wtf" },
         },
       },
