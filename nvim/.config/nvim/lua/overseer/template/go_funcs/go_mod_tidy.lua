@@ -6,7 +6,6 @@ return {
       args = { "mod", "tidy" },
     }
   end,
-  priority = 100,
   condition = {
     filetype = { "go" },
   },

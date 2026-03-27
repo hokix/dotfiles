@@ -6,7 +6,6 @@ return {
       args = { "generate", vim.fn.expand("%:p") },
     }
   end,
-  priority = 30,
   condition = {
     filetype = { "go" },
   },

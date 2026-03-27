@@ -6,7 +6,6 @@ return {
       args = { "mod", "vendor" },
     }
   end,
-  priority = 101,
   condition = {
     filetype = { "go" },
   },

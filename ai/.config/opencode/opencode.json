@@ -1,61 +1,28 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugin": [
-    "@zenobius/opencode-skillful",
-    "oh-my-opencode"
-  ],
+  "plugin": ["@zenobius/opencode-skillful", "oh-my-opencode"],
   "mcp": {
     "browsermcp": {
-      "command": [
-        "npx",
-        "@browsermcp/mcp@latest"
-      ],
-      "type": "local"
-    },
-    "carnival": {
-      "command": [
-        "carnival-mcp"
-      ],
+      "command": ["npx", "@browsermcp/mcp@latest"],
       "type": "local"
     },
     "git": {
-      "command": [
-        "mcp-server-git"
-      ],
+      "command": ["mcp-server-git"],
       "type": "local"
     },
     "memory": {
-      "command": [
-        "npx",
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ],
+      "command": ["npx", "-y", "@modelcontextprotocol/server-memory"],
       "type": "local"
     },
     "playwright": {
-      "command": [
-        "npx",
-        "@playwright/mcp@latest"
-      ],
+      "command": ["npx", "@playwright/mcp@latest"],
       "type": "local"
     },
     "postman-api-mcp": {
-      "command": [
-        "npx",
-        "@postman/postman-mcp-server",
-        "--full"
-      ],
+      "command": ["npx", "@postman/postman-mcp-server", "--full"],
       "environment": {
         "POSTMAN_API_KEY": "{env:POSTMAN_API_KEY}"
       },
-      "type": "local"
-    },
-    "sequentialthinking": {
-      "command": [
-        "npx",
-        "-y",
-        "@modelcontextprotocol/server-sequential-thinking"
-      ],
       "type": "local"
     }
   }

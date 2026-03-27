@@ -1,12 +1,5 @@
 {
   "mcpServers": {
-    "browsermcp": {
-      "tools": ["*"],
-      "type": "local",
-      "command": "npx",
-      "args": ["@browsermcp/mcp@latest"],
-      "source": "user"
-    },
     "git": {
       "tools": ["*"],
       "type": "local",
@@ -37,19 +30,6 @@
         "POSTMAN_API_KEY": "${POSTMAN_API_KEY}"
       },
       "source": "user"
-    },
-    "sequentialthinking": {
-      "tools": ["*"],
-      "type": "local",
-      "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
-      "source": "user"
-    },
-    "feishu": {
-      "type": "http",
-      "url": "https://open.feishu.cn/mcp/stream/${FEISHU_MCP_KEY}",
-      "headers": {},
-      "tools": ["*"]
     }
   },
   "nativeMCPServers": []

@@ -115,10 +115,6 @@ return {
             enabled = true,
             backend = "tmux",
           },
-          ---@type table<string, sidekick.cli.Config|{}>
-          tools = {
-            copilot = { cmd = { "copilot", "--alt-screen" } },
-          },
         },
       },
     },

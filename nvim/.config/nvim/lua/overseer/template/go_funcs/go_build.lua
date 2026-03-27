@@ -6,7 +6,6 @@ return {
       args = { "build" },
     }
   end,
-  priority = 20,
   condition = {
     filetype = { "go" },
   },
