@@ -9,9 +9,10 @@ export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node
 export NVM_LAZY_LOAD=true
 export NVM_LAZY_LOAD_EXTRA_COMMANDS=('vim' 'nvim')
 
-# Tmux (must be set before tmux plugin loads)
-ZSH_TMUX_AUTOSTART=true
-ZSH_TMUX_AUTOQUIT=false
+# Tmux auto-start (replaces OMZP::tmux)
+if command -v tmux &>/dev/null && [[ -z "$TMUX" && -z "$VSCODE_PID" && -z "$INTELLIJ_ENVIRONMENT_READER" ]]; then
+  tmux -2 attach -t default 2>/dev/null || tmux -2 new-session -s default
+fi
 
 # Local overrides
 [ -f ~/.zshrc_local ] && source ~/.zshrc_local
@@ -29,16 +30,14 @@ source "${ZINIT_HOME}/zinit.zsh"
 zinit ice pick"async.zsh" src"pure.zsh"
 zinit light sindresorhus/pure
 
-# === Synchronous (must load before prompt) ===
-zinit snippet OMZP::tmux
-
-# === Deferred: OMZ Plugins (load right after prompt) ===
-zinit ice wait lucid
-zinit snippet OMZL::git.zsh
-zinit ice wait lucid
-zinit snippet OMZP::git
-zinit ice wait lucid
-zinit snippet OMZP::colored-man-pages
+# === Colored man pages (replaces OMZP::colored-man-pages) ===
+export LESS_TERMCAP_mb=$'\e[1;31m'
+export LESS_TERMCAP_md=$'\e[1;36m'
+export LESS_TERMCAP_me=$'\e[0m'
+export LESS_TERMCAP_se=$'\e[0m'
+export LESS_TERMCAP_so=$'\e[1;44;33m'
+export LESS_TERMCAP_ue=$'\e[0m'
+export LESS_TERMCAP_us=$'\e[1;32m'
 
 # === Deferred: Third-party Plugins ===
 zinit ice wait lucid blockf
@@ -53,13 +52,14 @@ zinit ice wait lucid
 zinit light lukechilds/zsh-nvm
 zinit ice wait lucid
 zinit light MichaelAquilina/zsh-you-should-use
+zinit ice wait lucid
+zinit light wfxr/forgit
 # syntax-highlighting last; atinit triggers deferred compinit
 zinit ice wait lucid atinit"zicompinit; zicdreplay"
 zinit light zsh-users/zsh-syntax-highlighting
 
 # === Completions ===
-# OpenSpec completions (fpath set before deferred zicompinit runs)
-fpath=("/Users/ted/.oh-my-zsh/custom/completions" $fpath)
+fpath=("$HOME/.zsh/completions" $fpath)
 
 # === History ===
 HISTSIZE=200000
