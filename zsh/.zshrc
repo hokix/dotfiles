@@ -1,189 +1,99 @@
-# OPENSPEC:START
-# OpenSpec shell completions configuration
-fpath=("/Users/ted/.oh-my-zsh/custom/completions" $fpath)
-# OPENSPEC:END
-
 # zmodload zsh/zprof
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
 
+# === Environment ===
 export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/go/bin:$HOME/go/bin:$PATH"
+export RIPGREP_CONFIG_PATH="${HOME}/.ripgreprc"
 
-export RIPGREP_CONFIG_PATH=${HOME}/.ripgreprc
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# zstyle ':omz:plugins:nvm' lazy yes
+# NVM (must be set before zsh-nvm loads)
 export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node
 export NVM_LAZY_LOAD=true
 export NVM_LAZY_LOAD_EXTRA_COMMANDS=('vim' 'nvim')
-# export NVM_AUTO_USE=true
 
+# Tmux (must be set before tmux plugin loads)
 ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOQUIT=false
 
+# Local overrides
 [ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="" # 置空，使用pure
-# ZSH_THEME="robbyrussell"
-# ZSH_THEME="af-magic"
-# ZSH_THEME="powerlevel10k/powerlevel10k"
+# === Zinit ===
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+if [[ ! -d "$ZINIT_HOME" ]]; then
+    print -P "%F{33}▓▒░ Installing zinit…%f"
+    mkdir -p "$(dirname $ZINIT_HOME)"
+    git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
+source "${ZINIT_HOME}/zinit.zsh"
 
-unsetopt BG_NICE
+# === Theme: Pure ===
+zinit ice pick"async.zsh" src"pure.zsh"
+zinit light sindresorhus/pure
 
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+# === Synchronous (must load before prompt) ===
+zinit snippet OMZP::tmux
 
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
+# === Deferred: OMZ Plugins (load right after prompt) ===
+zinit ice wait lucid
+zinit snippet OMZL::git.zsh
+zinit ice wait lucid
+zinit snippet OMZP::git
+zinit ice wait lucid
+zinit snippet OMZP::colored-man-pages
 
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
+# === Deferred: Third-party Plugins ===
+zinit ice wait lucid blockf
+zinit light zsh-users/zsh-completions
+zinit ice wait lucid
+zinit light Aloxaf/fzf-tab
+zinit ice wait lucid
+zinit light zsh-users/zsh-autosuggestions
+zinit ice wait lucid
+zinit light changyuheng/zsh-interactive-cd
+zinit ice wait lucid
+zinit light lukechilds/zsh-nvm
+zinit ice wait lucid
+zinit light MichaelAquilina/zsh-you-should-use
+# syntax-highlighting last; atinit triggers deferred compinit
+zinit ice wait lucid atinit"zicompinit; zicdreplay"
+zinit light zsh-users/zsh-syntax-highlighting
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-DISABLE_AUTO_UPDATE="true"
+# === Completions ===
+# OpenSpec completions (fpath set before deferred zicompinit runs)
+fpath=("/Users/ted/.oh-my-zsh/custom/completions" $fpath)
 
-# Uncomment the following line to automatically update without prompting.
-# DISABLE_UPDATE_PROMPT="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line if pasting URLs and other text is messed up.
-DISABLE_MAGIC_FUNCTIONS="true"
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
-
+# === History ===
 HISTSIZE=200000
 SAVEHIST=200000
-setopt SHARE_HISTORY        # 多终端共享历史
-setopt HIST_IGNORE_ALL_DUPS # 去重
-setopt HIST_REDUCE_BLANKS   # 去除多余空格
+setopt SHARE_HISTORY
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_REDUCE_BLANKS
 
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
+# === Options ===
+unsetopt BG_NICE
+setopt no_nomatch
 
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    git
-    tmux
-    colored-man-pages
-    colorize
-    jsontools
-    fzf
-)
+# === fzf ===
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-source $ZSH/oh-my-zsh.sh
-
-if [ -z "${ZPLUG_HOME}" ]; then
-    export ZPLUG_HOME="$HOME/.zplug"
-fi
-if [[ -f $ZPLUG_HOME/init.zsh ]]; then
-  source $ZPLUG_HOME/init.zsh
-
-  zplug "zsh-users/zsh-syntax-highlighting", defer:2
-  zplug "zsh-users/zsh-autosuggestions"
-  zplug "changyuheng/zsh-interactive-cd"
-  zplug "lukechilds/zsh-nvm"
-  zplug "MichaelAquilina/zsh-you-should-use"
-  zplug "mafredri/zsh-async", from:github
-  zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
-
-  if ! zplug check; then
-      echo 'Run "zplug install" to install'
-  fi
-  zplug load
-fi
-
+# === Aliases ===
 alias ll="ls -l"
 alias tmux="tmux -2"
 alias ctags="noglob ctags"
 
-# User configuration
-
-# key bindings
-bindkey "\e[1~" beginning-of-line
-bindkey "\e[4~" end-of-line
+# === Key Bindings ===
 bindkey "\e[5~" beginning-of-history
 bindkey "\e[6~" end-of-history
-
-# for rxvt
-bindkey "\e[8~" end-of-line
-bindkey "\e[7~" beginning-of-line
-# for non RH/Debian xterm, can't hurt for RH/DEbian xterm
 bindkey "\eOH" beginning-of-line
 bindkey "\eOF" end-of-line
-# for freebsd console
 bindkey "\e[H" beginning-of-line
 bindkey "\e[F" end-of-line
-# completion in the middle of a line
 bindkey '^i' expand-or-complete-prefix
 
-# Fix numeric keypad
-# 0 . Enter
-bindkey -s "^[Op" "0"
-bindkey -s "^[On" "."
-bindkey -s "^[OM" "^M"
-# 1 2 3
-bindkey -s "^[Oq" "1"
-bindkey -s "^[Or" "2"
-bindkey -s "^[Os" "3"
-# 4 5 6
-bindkey -s "^[Ot" "4"
-bindkey -s "^[Ou" "5"
-bindkey -s "^[Ov" "6"
-# 7 8 9
-bindkey -s "^[Ow" "7"
-bindkey -s "^[Ox" "8"
-bindkey -s "^[Oy" "9"
-# + - * /
-bindkey -s "^[Ol" "+"
-bindkey -s "^[Om" "-"
-bindkey -s "^[Oj" "*"
-bindkey -s "^[Oo" "/"
-
-#export LC_TIME='C.UTF-8'
-
-setopt no_nomatch
-# zprof
-
+# === Tmux Window Name ===
+autoload -Uz add-zsh-hook
 tmux-window-name() {
 	($TMUX_PLUGIN_MANAGER_PATH/tmux-window-name/scripts/rename_session_windows.py &)
 }
-
 add-zsh-hook chpwd tmux-window-name
+
+# zprof
