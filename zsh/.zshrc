@@ -1,8 +1,6 @@
 # OPENSPEC:START
 # OpenSpec shell completions configuration
 fpath=("/Users/ted/.oh-my-zsh/custom/completions" $fpath)
-autoload -Uz compinit
-compinit
 # OPENSPEC:END
 
 # zmodload zsh/zprof
@@ -30,7 +28,7 @@ ZSH_TMUX_AUTOQUIT=false
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME=""
+ZSH_THEME="" # 置空，使用pure
 # ZSH_THEME="robbyrussell"
 # ZSH_THEME="af-magic"
 # ZSH_THEME="powerlevel10k/powerlevel10k"
@@ -89,6 +87,9 @@ DISABLE_MAGIC_FUNCTIONS="true"
 
 HISTSIZE=200000
 SAVEHIST=200000
+setopt SHARE_HISTORY        # 多终端共享历史
+setopt HIST_IGNORE_ALL_DUPS # 去重
+setopt HIST_REDUCE_BLANKS   # 去除多余空格
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -115,6 +116,7 @@ fi
 if [[ -f $ZPLUG_HOME/init.zsh ]]; then
   source $ZPLUG_HOME/init.zsh
 
+  zplug "zsh-users/zsh-syntax-highlighting", defer:2
   zplug "zsh-users/zsh-autosuggestions"
   zplug "changyuheng/zsh-interactive-cd"
   zplug "lukechilds/zsh-nvm"
@@ -122,7 +124,7 @@ if [[ -f $ZPLUG_HOME/init.zsh ]]; then
   zplug "mafredri/zsh-async", from:github
   zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
 
-  if ! zplug check --verbose; then
+  if ! zplug check; then
       echo 'Run "zplug install" to install'
   fi
   zplug load

@@ -30,6 +30,13 @@
         "POSTMAN_API_KEY": "${POSTMAN_API_KEY}"
       },
       "source": "user"
+    },
+    "gitnexus": {
+      "tools": ["*"],
+      "type": "local",
+      "command": "npx",
+      "args": ["-y", "gitnexus", "mcp"],
+      "source": "user"
     }
   },
   "nativeMCPServers": []
