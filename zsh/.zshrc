@@ -4,6 +4,15 @@
 export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/go/bin:$HOME/go/bin:$PATH"
 export RIPGREP_CONFIG_PATH="${HOME}/.ripgreprc"
 
+# === Colors for ls ===
+if [[ "$(uname)" == "Darwin" ]]; then
+  export CLICOLOR=1
+  export LSCOLORS=ExFxBxDxCxegedabagacad
+else
+  command -v dircolors &>/dev/null && eval "$(dircolors -b)"
+  alias ls='ls --color=auto'
+fi
+
 # NVM (must be set before zsh-nvm loads)
 export NVM_NODEJS_ORG_MIRROR=https://npmmirror.com/mirrors/node
 export NVM_LAZY_LOAD=true
@@ -39,13 +48,14 @@ export LESS_TERMCAP_so=$'\e[1;44;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;32m'
 
+# === Load: Third-party Plugins ===
+zinit light zsh-users/zsh-autosuggestions
+
 # === Deferred: Third-party Plugins ===
 zinit ice wait lucid blockf
 zinit light zsh-users/zsh-completions
 zinit ice wait lucid
 zinit light Aloxaf/fzf-tab
-zinit ice wait lucid
-zinit light zsh-users/zsh-autosuggestions
 zinit ice wait lucid
 zinit light changyuheng/zsh-interactive-cd
 zinit ice wait lucid
@@ -62,6 +72,7 @@ zinit light zsh-users/zsh-syntax-highlighting
 fpath=("$HOME/.zsh/completions" $fpath)
 
 # === History ===
+HISTFILE="${HOME}/.zsh_history"
 HISTSIZE=200000
 SAVEHIST=200000
 setopt SHARE_HISTORY
@@ -73,7 +84,7 @@ unsetopt BG_NICE
 setopt no_nomatch
 
 # === fzf ===
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 # === Aliases ===
 alias ll="ls -l"
@@ -87,7 +98,8 @@ bindkey "\eOH" beginning-of-line
 bindkey "\eOF" end-of-line
 bindkey "\e[H" beginning-of-line
 bindkey "\e[F" end-of-line
-bindkey '^i' expand-or-complete-prefix
+bindkey '^e' autosuggest-accept
+bindkey '^i' expand-or-complete
 
 # === Tmux Window Name ===
 autoload -Uz add-zsh-hook

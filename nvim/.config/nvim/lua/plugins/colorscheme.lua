@@ -3,7 +3,7 @@ return {
     "LazyVim/LazyVim",
     opts = {
       -- colorscheme = "rose-pine",
-      colorscheme = "catppuccin",
+      colorscheme = "catppuccin-nvim",
       -- colorscheme = "tokyonight",
     },
   },
@@ -11,7 +11,7 @@ return {
     "folke/tokyonight.nvim",
     optional = true,
     opts = {
-      style = "moon",
+      style = "storm",
       transparent = true,
       styles = {
         sidebars = "transparent",
@@ -29,6 +29,7 @@ return {
   },
   {
     "rose-pine/neovim",
+    optional = true,
     name = "rose-pine",
     opts = {
       styles = {
@@ -48,6 +49,7 @@ return {
       auto_integrations = true,
       float = {
         transparent = true,
+        solid = true,
       },
     },
   },

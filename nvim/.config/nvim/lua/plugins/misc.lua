@@ -70,4 +70,29 @@ return {
       legacy_commands = false,
     },
   },
+  {
+    "uhs-robert/sshfs.nvim",
+    lazy = true,
+    event = "VeryLazy",
+    opts = {
+      lead_prefix = "<leader>M",
+      hooks = {
+        on_exit = {
+          auto_unmount = false,
+        },
+      },
+      log = {
+        enabled = false,
+      },
+    },
+  },
+  {
+    "folke/which-key.nvim",
+    optional = true,
+    opts = {
+      spec = {
+        { "<leader>M", group = "mount", icon = "" },
+      },
+    },
+  },
 }

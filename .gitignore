@@ -2,3 +2,4 @@ lazy-lock.json
 git/.config/lazygit/state.yml
 !.vscode/
 ai/.agents/skills/
+.gitnexus
