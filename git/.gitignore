@@ -39,3 +39,5 @@ boulder.json
 openspec/
 docs/superpowers/
 .gitnexus
+.claude/
+CLAUDE.md

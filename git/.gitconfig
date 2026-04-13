@@ -40,3 +40,5 @@
 	helper = !/opt/homebrew/bin/gh auth git-credential
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+[url "ssh://git@git.dz11.com/"]
+	insteadOf = https://git.dz11.com/

@@ -362,9 +362,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-doc/SKILL.md",
-      "skillFolderHash": "499c7b30740ec193639f51302a26eb4b4e1503de",
+      "skillFolderHash": "8d42fa856c610f57e80abc2ff4dd7f1bb2f85008",
       "installedAt": "2026-03-30T09:22:45.785Z",
-      "updatedAt": "2026-04-03T02:14:55.299Z"
+      "updatedAt": "2026-04-09T02:26:29.670Z"
     },
     "lark-drive": {
       "source": "larksuite/cli",
@@ -398,9 +398,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-mail/SKILL.md",
-      "skillFolderHash": "8929a74dfd3da3ae7e0474f72218fdd078a3a50d",
+      "skillFolderHash": "997e58b3a84c58a4334238db5568efd3a1461803",
       "installedAt": "2026-03-30T09:22:51.556Z",
-      "updatedAt": "2026-04-07T06:15:57.977Z"
+      "updatedAt": "2026-04-09T02:26:33.283Z"
     },
     "lark-minutes": {
       "source": "larksuite/cli",
@@ -434,9 +434,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-sheets/SKILL.md",
-      "skillFolderHash": "12fbca55392c6d55822ed4253d3a39b79a93ec5b",
+      "skillFolderHash": "68183450fb998a8498b4ce4e112c39f1231c2d9e",
       "installedAt": "2026-03-30T09:22:58.367Z",
-      "updatedAt": "2026-03-30T09:22:58.367Z"
+      "updatedAt": "2026-04-09T02:26:36.968Z"
     },
     "lark-skill-maker": {
       "source": "larksuite/cli",
@@ -452,18 +452,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-task/SKILL.md",
-      "skillFolderHash": "dd59ecb1b45791a55c335a47960bed7554de7a85",
+      "skillFolderHash": "6e8267b2121f3e73ba94a4cafe09a40ea53570b9",
       "installedAt": "2026-03-30T09:23:02.025Z",
-      "updatedAt": "2026-04-08T02:39:01.410Z"
+      "updatedAt": "2026-04-09T02:26:41.349Z"
     },
     "lark-vc": {
       "source": "larksuite/cli",
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-vc/SKILL.md",
-      "skillFolderHash": "3ffb4e4ea9ac599d60e9bc204c4a7fe8a474fbbe",
+      "skillFolderHash": "4e3db1ee299f71af9921c49df62a153f63f4e62f",
       "installedAt": "2026-03-30T09:23:03.971Z",
-      "updatedAt": "2026-04-03T02:15:16.057Z"
+      "updatedAt": "2026-04-09T02:26:45.999Z"
     },
     "lark-whiteboard": {
       "source": "larksuite/cli",
@@ -479,9 +479,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-wiki/SKILL.md",
-      "skillFolderHash": "dbd89f74995a18f3af96c3bb224567ac47b689a7",
+      "skillFolderHash": "94809681f236f2f00151465e05b02d82dbb3e00c",
       "installedAt": "2026-03-30T09:23:06.750Z",
-      "updatedAt": "2026-04-03T02:15:19.625Z"
+      "updatedAt": "2026-04-09T02:26:49.647Z"
     },
     "lark-workflow-meeting-summary": {
       "source": "larksuite/cli",
@@ -563,6 +563,69 @@
       "skillFolderHash": "ee457b64870b6c5a2252b6374761fd983debc757",
       "installedAt": "2026-03-31T03:24:13.028Z",
       "updatedAt": "2026-03-31T03:24:13.028Z"
+    },
+    "figma-code-connect": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
+      "skillPath": "skills/figma-code-connect/SKILL.md",
+      "skillFolderHash": "1f5fe799e383ea8d1201fa83783689970681956a",
+      "installedAt": "2026-04-09T09:23:13.345Z",
+      "updatedAt": "2026-04-09T09:23:13.345Z"
+    },
+    "figma-create-design-system-rules": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
+      "skillPath": "skills/figma-create-design-system-rules/SKILL.md",
+      "skillFolderHash": "a561be29cb3610ed3ad613c5a43159834fdc3f2c",
+      "installedAt": "2026-04-09T09:23:13.953Z",
+      "updatedAt": "2026-04-09T09:23:13.953Z"
+    },
+    "figma-create-new-file": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
+      "skillPath": "skills/figma-create-new-file/SKILL.md",
+      "skillFolderHash": "8a8c3de0378ceb251476b3a3f8b68b5fc8295156",
+      "installedAt": "2026-04-09T09:23:14.566Z",
+      "updatedAt": "2026-04-09T09:23:14.566Z"
+    },
+    "figma-generate-design": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
+      "skillPath": "skills/figma-generate-design/SKILL.md",
+      "skillFolderHash": "fd3d20a5981055da38d2849f54af413094a4372d",
+      "installedAt": "2026-04-09T09:23:15.214Z",
+      "updatedAt": "2026-04-09T09:23:15.214Z"
+    },
+    "figma-generate-library": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
+      "skillPath": "skills/figma-generate-library/SKILL.md",
+      "skillFolderHash": "ec1930dd06e9f91a84f9094c634a5139f64c243c",
+      "installedAt": "2026-04-09T09:23:15.935Z",
+      "updatedAt": "2026-04-09T09:23:15.935Z"
+    },
+    "figma-implement-design": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
+      "skillPath": "skills/figma-implement-design/SKILL.md",
+      "skillFolderHash": "dc027370467ccd0488b3aa587532a58742748497",
+      "installedAt": "2026-04-09T09:23:16.666Z",
+      "updatedAt": "2026-04-09T09:23:16.666Z"
+    },
+    "figma-use": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
+      "skillPath": "skills/figma-use/SKILL.md",
+      "skillFolderHash": "d62be229f25a2bd7a310de5c8a9e31f12eb88ad7",
+      "installedAt": "2026-04-09T09:23:17.286Z",
+      "updatedAt": "2026-04-09T09:23:17.286Z"
     }
   },
   "dismissed": {
@@ -575,6 +638,7 @@
     "codex",
     "cursor",
     "deepagents",
+    "firebender",
     "gemini-cli",
     "github-copilot",
     "kimi-cli",

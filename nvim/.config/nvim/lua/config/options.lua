@@ -39,8 +39,29 @@ if vim.fn.has("gui_running") then
   vim.opt.guifont = "Roboto Nerd Font Mono"
 end
 
-vim.api.nvim_create_user_command("CopyRelPath", function()
-  local path = vim.fn.expand("%")
+local function copy_path(path, cmd)
+  if cmd.range > 0 then
+    if cmd.line1 == cmd.line2 then
+      path = path .. " :L" .. cmd.line1
+    else
+      path = path .. " :L" .. cmd.line1 .. "-L" .. cmd.line2
+    end
+  end
   vim.fn.setreg("+", path)
   vim.notify('Copied "' .. path .. '" to the clipboard!')
-end, {})
+end
+
+vim.api.nvim_create_user_command("CopyRelPath", function(cmd)
+  local name = vim.api.nvim_buf_get_name(0)
+  if name == "" then
+    return
+  end
+  local cwd = vim.fn.getcwd(0)
+  local ok, rel = pcall(vim.fs.relpath, cwd, name)
+  copy_path((ok and rel and rel ~= "" and rel ~= ".") and rel or name, cmd)
+end, { range = true })
+
+vim.api.nvim_create_user_command("CopyAbsPath", function(cmd)
+  local name = vim.api.nvim_buf_get_name(0)
+  copy_path(name ~= "" and name or vim.fn.getcwd(0), cmd)
+end, { range = true })
