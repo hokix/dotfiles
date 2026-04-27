@@ -92,14 +92,43 @@ alias tmux="tmux -2"
 alias ctags="noglob ctags"
 
 # === Key Bindings ===
-bindkey "\e[5~" beginning-of-history
-bindkey "\e[6~" end-of-history
-bindkey "\eOH" beginning-of-line
-bindkey "\eOF" end-of-line
-bindkey "\e[H" beginning-of-line
-bindkey "\e[F" end-of-line
-bindkey '^e' autosuggest-accept
-bindkey '^i' expand-or-complete
+
+# --- 行首 / 行尾（emacs 风格，vi 模式下不自带需显式绑定）---
+bindkey '^a' beginning-of-line                 # Ctrl+A  → 跳到行首
+bindkey '^e' end-of-line                       # Ctrl+E  → 跳到行尾
+bindkey '\eb' backward-word                    # Alt+B   → 向左跳一个单词
+bindkey '\ef' forward-word                     # Alt+F   → 向右跳一个单词
+
+# --- 行首 / 行尾（终端 Home/End 键）---
+bindkey "\eOH" beginning-of-line          # Home（应用模式）→ 跳到行首
+bindkey "\eOF" end-of-line                # End （应用模式）→ 跳到行尾
+bindkey "\e[H" beginning-of-line          # Home（普通模式）→ 跳到行首
+bindkey "\e[F" end-of-line                # End （普通模式）→ 跳到行尾
+
+# --- 历史记录前缀搜索（↑/↓ 及 PageUp/PageDown）---
+# 输入前缀后按方向键，只在匹配该前缀的历史中翻页
+autoload -U up-line-or-beginning-search down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "\e[A"  up-line-or-beginning-search    # ↑       → 向上匹配前缀历史
+bindkey "\e[B"  down-line-or-beginning-search  # ↓       → 向下匹配前缀历史
+bindkey "\e[5~" up-line-or-beginning-search    # PageUp  → 向上匹配前缀历史
+bindkey "\e[6~" down-line-or-beginning-search  # PageDown→ 向下匹配前缀历史
+
+# --- 单词跳转（Ctrl + 方向键）---
+bindkey "\e[1;5C" forward-word                 # Ctrl+→  → 向右跳一个单词
+bindkey "\e[1;5D" backward-word                # Ctrl+←  → 向左跳一个单词
+
+# --- 单词 / 行删除 ---
+bindkey '^w' backward-kill-word                # Ctrl+W  → 向左删除一个单词（readline 标准）
+bindkey '^k' kill-line                         # Ctrl+K  → 删除光标到行尾
+
+# --- zsh-autosuggestions：接受建议 ---
+bindkey '^f' autosuggest-accept                # Ctrl+F  → 接受整条建议（右箭头也可）
+# Alt+F 保留默认 forward-word，用 Ctrl+→ 替代单词跳转
+
+# --- 历史参数复用 ---
+bindkey '\e.' insert-last-word                 # Alt+.   → 插入上条命令的最后一个参数
 
 # === Tmux Window Name ===
 autoload -Uz add-zsh-hook
@@ -108,4 +137,5 @@ tmux-window-name() {
 }
 add-zsh-hook chpwd tmux-window-name
 
+eval "$(zoxide init zsh --cmd cd)"
 # zprof

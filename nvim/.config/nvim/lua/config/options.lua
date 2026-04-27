@@ -24,6 +24,7 @@ local opts = {
   winblend = 0, -- override lazyvim menu background for transparency
   clipboard = "unnamedplus",
   winborder = "rounded", -- added in nvim 0.11
+  -- exrc = true,
 }
 
 -- Set options from table

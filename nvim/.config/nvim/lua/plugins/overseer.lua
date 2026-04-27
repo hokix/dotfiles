@@ -1,6 +1,13 @@
 ---@diagnostic disable: undefined-global
 return {
   "stevearc/overseer.nvim",
+  opts = {
+    component_aliases = {
+      open_output_on_failure = {
+        { "on_output_quickfix", open_on_exit = "failure", items_only = true, close = true },
+      },
+    },
+  },
   keys = {
     {
       "<leader>oo",

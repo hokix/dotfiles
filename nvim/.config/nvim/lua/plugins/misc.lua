@@ -68,6 +68,12 @@ return {
         },
       },
       legacy_commands = false,
+      daily_notes = {
+        folder = "Work",
+        date_format = "每日小结 - YYYY-MM-DD - dddd",
+        default_tags = { "每日小结" },
+        workdays_only = false,
+      },
     },
   },
   {
@@ -94,5 +100,12 @@ return {
         { "<leader>M", group = "mount", icon = "" },
       },
     },
+  },
+  {
+    "ThePrimeagen/refactoring.nvim",
+    dependencies = {
+      "lewis6991/async.nvim",
+    },
+    optional = true,
   },
 }

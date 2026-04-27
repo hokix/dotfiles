@@ -1,9 +1,7 @@
 {
   "mcpServers": {
     "figma": {
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "command": "npx",
       "args": [
         "-y",
@@ -18,9 +16,7 @@
       "sourcePath": "/Users/ted/.copilot/mcp-config.json"
     },
     "git": {
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local",
       "command": "mcp-server-git",
       "args": [],
@@ -28,54 +24,34 @@
       "sourcePath": "/Users/ted/.copilot/mcp-config.json"
     },
     "gitnexus": {
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local",
       "command": "npx",
-      "args": [
-        "-y",
-        "gitnexus",
-        "mcp"
-      ],
+      "args": ["-y", "gitnexus", "mcp"],
       "source": "user",
       "sourcePath": "/Users/ted/.copilot/mcp-config.json"
     },
     "memory": {
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local",
       "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ],
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
       "source": "user",
       "sourcePath": "/Users/ted/.copilot/mcp-config.json"
     },
     "playwright": {
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local",
       "command": "npx",
-      "args": [
-        "@playwright/mcp@latest"
-      ],
+      "args": ["@playwright/mcp@latest"],
       "source": "user",
       "sourcePath": "/Users/ted/.copilot/mcp-config.json"
     },
     "postman-api-mcp": {
-      "tools": [
-        "*"
-      ],
+      "tools": ["*"],
       "type": "local",
       "command": "npx",
-      "args": [
-        "@postman/postman-mcp-server",
-        "--full"
-      ],
+      "args": ["@postman/postman-mcp-server", "--full"],
       "env": {
         "POSTMAN_API_KEY": "${POSTMAN_API_KEY}"
       },
@@ -86,9 +62,7 @@
       "type": "http",
       "url": "http://127.0.0.1:3845/mcp",
       "headers": {},
-      "tools": [
-        "*"
-      ]
+      "tools": ["*"]
     }
   },
   "nativeMCPServers": []

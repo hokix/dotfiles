@@ -41,3 +41,10 @@ docs/superpowers/
 .gitnexus
 .claude/
 CLAUDE.md
+.playwright-mcp
+.ai-docs/
+.nvim.lua
+graphify-out/cache/
+graphify-out/manifest.json
+graphify-out/cost.json
+.opencode/

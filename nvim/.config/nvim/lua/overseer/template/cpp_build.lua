@@ -6,7 +6,10 @@ return {
     return {
       cmd = { "g++" },
       args = { file },
-      components = { { "on_output_quickfix", open = true }, "default" },
+      components = {
+        "open_output_on_failure",
+        "default",
+      },
     }
   end,
   condition = {

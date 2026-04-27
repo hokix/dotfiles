@@ -9,16 +9,24 @@ return {
           {
             cmd = { "go" },
             args = { "mod", "tidy" },
+            components = {
+              "open_output_on_failure",
+              "default",
+            },
           },
           {
             cmd = { "go" },
             args = { "mod", "vendor" },
+            components = {
+              "open_output_on_failure",
+              "default",
+            },
           },
         },
       },
     }
   end,
   condition = {
-    filetype = { "go" },
+    filetype = { "go", "gomod", "gosum", "gowork" },
   },
 }

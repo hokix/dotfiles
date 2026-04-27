@@ -14,7 +14,8 @@ return {
     lazy = true,
   },
   {
-    "sindrets/diffview.nvim",
+    -- "sindrets/diffview.nvim",
+    "dlyongemallo/diffview.nvim",
     lazy = true,
     cmd = {
       "DiffviewOpen",
