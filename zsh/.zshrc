@@ -52,7 +52,7 @@ export LESS_TERMCAP_us=$'\e[1;32m'
 zinit light zsh-users/zsh-autosuggestions
 
 # === Deferred: Third-party Plugins ===
-zinit ice wait lucid blockf
+zinit ice wait lucid blockf atload"zicompinit; zicdreplay"
 zinit light zsh-users/zsh-completions
 zinit ice wait lucid
 zinit light Aloxaf/fzf-tab
@@ -64,8 +64,8 @@ zinit ice wait lucid
 zinit light MichaelAquilina/zsh-you-should-use
 zinit ice wait lucid
 zinit light wfxr/forgit
-# syntax-highlighting last; atinit triggers deferred compinit
-zinit ice wait lucid atinit"zicompinit; zicdreplay"
+# syntax-highlighting must be loaded last
+zinit ice wait lucid
 zinit light zsh-users/zsh-syntax-highlighting
 
 # === Completions ===

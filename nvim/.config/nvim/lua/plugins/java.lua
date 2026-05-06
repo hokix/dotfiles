@@ -388,4 +388,33 @@ return {
     }, -- options, see default configuration
     lazy = true,
   },
+  {
+    "qumn/mybatis.nvim",
+    lazy = true,
+    ft = { "java", "xml" },
+    opts = {
+      mapper = {
+        filename_patterns = { "%Mapper%.java$", "%Mapper%.xml$" },
+      },
+    },
+  },
+  {
+    "folkey/snacks.nvim",
+    optional = true,
+    opts = function(_, opts)
+      require("mybatis").setup(opts)
+      -- Wrap Snacks.picker.lsp_definitions to intercept gd in mapper files
+      vim.schedule(function()
+        if Snacks and Snacks.picker and Snacks.picker.lsp_definitions then
+          local orig = Snacks.picker.lsp_definitions
+          Snacks.picker.lsp_definitions = function(o, ctx)
+            if require("mybatis").is_mapper_file(0) then
+              return require("mybatis").jump_or_fallback()
+            end
+            return orig(o, ctx)
+          end
+        end
+      end)
+    end,
+  },
 }

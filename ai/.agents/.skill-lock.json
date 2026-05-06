@@ -87,18 +87,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/executing-plans/SKILL.md",
-      "skillFolderHash": "20087d25fb28f5f54578d873dc198ab24b34f967",
+      "skillFolderHash": "7c20d2bd7ff7b166ea3064e21b1e5f0455750878",
       "installedAt": "2026-03-16T11:21:06.583Z",
-      "updatedAt": "2026-03-16T11:21:06.583Z"
+      "updatedAt": "2026-05-06T06:43:06.751Z"
     },
     "finishing-a-development-branch": {
       "source": "obra/superpowers",
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/finishing-a-development-branch/SKILL.md",
-      "skillFolderHash": "7656b8ebe0c9659ea548ba2981b078b333d1846e",
+      "skillFolderHash": "782e09faa5dcf7e9a7a173bd14b5622e35b80169",
       "installedAt": "2026-03-16T11:21:07.267Z",
-      "updatedAt": "2026-03-16T11:21:07.267Z"
+      "updatedAt": "2026-05-06T06:43:10.135Z"
     },
     "receiving-code-review": {
       "source": "obra/superpowers",
@@ -114,27 +114,27 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/requesting-code-review/SKILL.md",
-      "skillFolderHash": "ed265b1a03114cc400d5524afc5c961a4aa9ea8b",
+      "skillFolderHash": "ff419ec159bdf5ff2f2d83c7e544c586bcde69bb",
       "installedAt": "2026-03-16T11:21:09.628Z",
-      "updatedAt": "2026-03-16T11:21:09.628Z"
+      "updatedAt": "2026-05-06T06:43:12.450Z"
     },
     "subagent-driven-development": {
       "source": "obra/superpowers",
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/subagent-driven-development/SKILL.md",
-      "skillFolderHash": "fbcd94ffcf589754a8ecfa59861cc8843313590e",
+      "skillFolderHash": "73b43347c1bdc10f6ab81a5cdb036dd1c8098cc0",
       "installedAt": "2026-03-16T11:21:10.840Z",
-      "updatedAt": "2026-03-16T11:21:10.840Z"
+      "updatedAt": "2026-05-06T06:43:15.317Z"
     },
     "systematic-debugging": {
       "source": "obra/superpowers",
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/systematic-debugging/SKILL.md",
-      "skillFolderHash": "828c239ac986cc1fc7edd10292f66e4a3640e9c0",
+      "skillFolderHash": "e96f5f2620c17069d668be1880d5492e34c84ceb",
       "installedAt": "2026-03-16T11:21:12.199Z",
-      "updatedAt": "2026-03-16T11:21:12.199Z"
+      "updatedAt": "2026-05-06T06:43:17.809Z"
     },
     "test-driven-development": {
       "source": "obra/superpowers",
@@ -150,18 +150,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/using-git-worktrees/SKILL.md",
-      "skillFolderHash": "a5b3f5965f321175a7f07dcadff0bb79adb9e9f7",
+      "skillFolderHash": "13a9643fb9e4b236173f7d4b56b15dac10394f1b",
       "installedAt": "2026-03-16T11:21:14.562Z",
-      "updatedAt": "2026-03-16T11:21:14.562Z"
+      "updatedAt": "2026-05-06T06:43:20.741Z"
     },
     "using-superpowers": {
       "source": "obra/superpowers",
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/using-superpowers/SKILL.md",
-      "skillFolderHash": "64c70a2b656d440ddb50818c2477e028facbc468",
+      "skillFolderHash": "225dd70596c396940ff158335a954a64d93ece40",
       "installedAt": "2026-03-16T11:21:15.313Z",
-      "updatedAt": "2026-04-01T03:41:02.341Z"
+      "updatedAt": "2026-05-06T06:43:23.735Z"
     },
     "verification-before-completion": {
       "source": "obra/superpowers",
@@ -177,9 +177,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/writing-plans/SKILL.md",
-      "skillFolderHash": "704e240d4b281baf8a339e1418baa249860197f7",
+      "skillFolderHash": "8fe8e8b6ee9e5cbe53cb172a36f0dc31f9875847",
       "installedAt": "2026-03-16T11:21:17.418Z",
-      "updatedAt": "2026-03-31T02:21:07.721Z"
+      "updatedAt": "2026-05-06T06:43:26.552Z"
     },
     "writing-skills": {
       "source": "obra/superpowers",
@@ -316,9 +316,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/jeffallan/claude-skills.git",
       "skillPath": "skills/golang-pro/SKILL.md",
-      "skillFolderHash": "21c16cca0eaf425259a5aebc2de99ee64807b500",
+      "skillFolderHash": "e347d9842958ce46d5f0644ef6009304d648a964",
       "installedAt": "2026-03-17T07:05:43.700Z",
-      "updatedAt": "2026-03-17T07:05:43.700Z"
+      "updatedAt": "2026-05-06T06:43:32.254Z"
     },
     "mermaid-diagrams": {
       "source": "softaworks/agent-toolkit",
@@ -334,54 +334,54 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-base/SKILL.md",
-      "skillFolderHash": "c0a64dbb31b0003ff86ef5037bb272d8d4ba9e58",
+      "skillFolderHash": "959e5c9ed7ef24ef53779d0f0d1c9516a43fe439",
       "installedAt": "2026-03-30T09:22:41.962Z",
-      "updatedAt": "2026-04-24T03:06:46.552Z"
+      "updatedAt": "2026-05-06T06:43:36.252Z"
     },
     "lark-calendar": {
       "source": "larksuite/cli",
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-calendar/SKILL.md",
-      "skillFolderHash": "986344efdac7bcc0303c3e974493de61e55a8ddf",
+      "skillFolderHash": "75d8416cf391220827977dd67d549f3302197740",
       "installedAt": "2026-03-30T09:22:42.916Z",
-      "updatedAt": "2026-04-22T07:00:52.697Z"
+      "updatedAt": "2026-05-06T06:43:40.199Z"
     },
     "lark-contact": {
       "source": "larksuite/cli",
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-contact/SKILL.md",
-      "skillFolderHash": "5641d5a51711eb3d2d48f01be2e0e2c2ddbcbc7f",
+      "skillFolderHash": "3727ca0662a891b8deb872d97ea4b8846a27df59",
       "installedAt": "2026-03-30T09:22:44.514Z",
-      "updatedAt": "2026-03-30T09:22:44.514Z"
+      "updatedAt": "2026-05-06T06:43:44.669Z"
     },
     "lark-doc": {
       "source": "larksuite/cli",
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-doc/SKILL.md",
-      "skillFolderHash": "cb03cfc8537b17ea324cdb9360bba6ceed511ce0",
+      "skillFolderHash": "08296e68534b166bca5923b0e4278e91d171a334",
       "installedAt": "2026-03-30T09:22:45.785Z",
-      "updatedAt": "2026-04-27T02:48:05.014Z"
+      "updatedAt": "2026-05-06T06:43:49.535Z"
     },
     "lark-drive": {
       "source": "larksuite/cli",
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-drive/SKILL.md",
-      "skillFolderHash": "9ddaf19eae9ece73a6a14bd4157abff674ff9cf3",
+      "skillFolderHash": "e4ecc0e4d75787af26d883cabf96218dc844b77a",
       "installedAt": "2026-03-30T09:22:47.926Z",
-      "updatedAt": "2026-04-27T02:48:08.503Z"
+      "updatedAt": "2026-05-06T06:43:54.139Z"
     },
     "lark-event": {
       "source": "larksuite/cli",
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-event/SKILL.md",
-      "skillFolderHash": "4bccb823eac5d4cf1f09fde377e7c7a891009411",
+      "skillFolderHash": "8ead748e9db45aea0dd5f15d5699ddd9e8bd7d4e",
       "installedAt": "2026-03-30T09:22:49.423Z",
-      "updatedAt": "2026-04-24T03:06:57.916Z"
+      "updatedAt": "2026-05-06T06:43:58.086Z"
     },
     "lark-im": {
       "source": "larksuite/cli",
@@ -397,18 +397,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-mail/SKILL.md",
-      "skillFolderHash": "70b7ebd5bec4f2d3ba6f007d0e25a345b1dfe140",
+      "skillFolderHash": "85e8048716ee7c7b2d49e40768f12134a396e1de",
       "installedAt": "2026-03-30T09:22:51.556Z",
-      "updatedAt": "2026-04-27T02:48:16.109Z"
+      "updatedAt": "2026-05-06T06:44:02.672Z"
     },
     "lark-minutes": {
       "source": "larksuite/cli",
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-minutes/SKILL.md",
-      "skillFolderHash": "f07632656273c1749d95c50b96998af104752e4a",
+      "skillFolderHash": "15617b098c8edfcd5d0b94edfffacefb2c1f2ebc",
       "installedAt": "2026-03-30T09:22:52.746Z",
-      "updatedAt": "2026-04-24T03:07:09.636Z"
+      "updatedAt": "2026-05-06T06:44:09.594Z"
     },
     "lark-openapi-explorer": {
       "source": "larksuite/cli",
@@ -424,18 +424,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-shared/SKILL.md",
-      "skillFolderHash": "998037f84c858b3ba97014be206fc092ef6bacdd",
+      "skillFolderHash": "79c6b048a2cb203c34071b5b7c111dc3edecdd80",
       "installedAt": "2026-03-30T09:22:56.317Z",
-      "updatedAt": "2026-04-01T03:41:19.867Z"
+      "updatedAt": "2026-05-06T06:44:13.665Z"
     },
     "lark-sheets": {
       "source": "larksuite/cli",
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-sheets/SKILL.md",
-      "skillFolderHash": "e00259b12b1bd0d028f2fc76d8d01cf5c07ba211",
+      "skillFolderHash": "5fdf3cc13c5619da8dde02d9ab7b245f069aac49",
       "installedAt": "2026-03-30T09:22:58.367Z",
-      "updatedAt": "2026-04-20T02:39:42.824Z"
+      "updatedAt": "2026-05-06T06:44:18.584Z"
     },
     "lark-skill-maker": {
       "source": "larksuite/cli",
@@ -451,18 +451,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-task/SKILL.md",
-      "skillFolderHash": "dc6ef9be984ca45a465034f84b78bf6c9a9bde25",
+      "skillFolderHash": "30388673edf9c4e613ca49ae7623a199bcf987b3",
       "installedAt": "2026-03-30T09:23:02.025Z",
-      "updatedAt": "2026-04-20T02:39:47.513Z"
+      "updatedAt": "2026-05-06T06:44:23.091Z"
     },
     "lark-vc": {
       "source": "larksuite/cli",
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-vc/SKILL.md",
-      "skillFolderHash": "15d57a26f84e4039ab552d1feefa48d7b19e882f",
+      "skillFolderHash": "a97354f997c3ac2cc4c01919ddfda9d9b1c372a4",
       "installedAt": "2026-03-30T09:23:03.971Z",
-      "updatedAt": "2026-04-24T03:07:13.424Z"
+      "updatedAt": "2026-05-06T06:44:28.084Z"
     },
     "lark-whiteboard": {
       "source": "larksuite/cli",
@@ -568,9 +568,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
       "skillPath": "skills/figma-code-connect/SKILL.md",
-      "skillFolderHash": "54b9dd189f439795c06df4ec78c3053001b99758",
+      "skillFolderHash": "ceacae69bacffcba219584d2f1459bd14bc27fc9",
       "installedAt": "2026-04-09T09:23:13.345Z",
-      "updatedAt": "2026-04-27T02:48:27.408Z"
+      "updatedAt": "2026-05-06T06:44:31.652Z"
     },
     "figma-create-design-system-rules": {
       "source": "figma/mcp-server-guide",
@@ -604,9 +604,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
       "skillPath": "skills/figma-generate-library/SKILL.md",
-      "skillFolderHash": "85eac758c1f15e980f1517773a46050aa1660b78",
+      "skillFolderHash": "a76a0c16c21efe1c4f28a46b84fa392fea475468",
       "installedAt": "2026-04-09T09:23:15.935Z",
-      "updatedAt": "2026-04-14T11:14:32.052Z"
+      "updatedAt": "2026-05-06T06:44:34.619Z"
     },
     "figma-implement-design": {
       "source": "figma/mcp-server-guide",
@@ -622,9 +622,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
       "skillPath": "skills/figma-use/SKILL.md",
-      "skillFolderHash": "c05ad50b0e455dade1841645978d541c7cc6af79",
+      "skillFolderHash": "a5cd80a7036085ed7a0b34e528258936aafb1c12",
       "installedAt": "2026-04-09T09:23:17.286Z",
-      "updatedAt": "2026-04-27T02:48:33.048Z"
+      "updatedAt": "2026-05-06T06:44:37.980Z"
     },
     "api-migration-checklist": {
       "source": "git@git.dz11.com:skills/platform/skills.git",
