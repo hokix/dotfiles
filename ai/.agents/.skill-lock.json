@@ -334,9 +334,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-base/SKILL.md",
-      "skillFolderHash": "959e5c9ed7ef24ef53779d0f0d1c9516a43fe439",
+      "skillFolderHash": "07f648528dfaf712bd5c3c9b6851f7794f865d04",
       "installedAt": "2026-03-30T09:22:41.962Z",
-      "updatedAt": "2026-05-06T06:43:36.252Z"
+      "updatedAt": "2026-05-08T09:54:56.038Z"
     },
     "lark-calendar": {
       "source": "larksuite/cli",
@@ -397,9 +397,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-mail/SKILL.md",
-      "skillFolderHash": "85e8048716ee7c7b2d49e40768f12134a396e1de",
+      "skillFolderHash": "ab92e604a7ec3153c0f4caf881fb36542175ab5d",
       "installedAt": "2026-03-30T09:22:51.556Z",
-      "updatedAt": "2026-05-06T06:44:02.672Z"
+      "updatedAt": "2026-05-08T09:55:00.814Z"
     },
     "lark-minutes": {
       "source": "larksuite/cli",
@@ -469,9 +469,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-whiteboard/SKILL.md",
-      "skillFolderHash": "99cd5b1efe07773bd678ccf6581e3f15808f1973",
+      "skillFolderHash": "d69c39835b77fde45d23fdf502154e770f74dce7",
       "installedAt": "2026-03-30T09:23:05.157Z",
-      "updatedAt": "2026-04-27T02:48:19.873Z"
+      "updatedAt": "2026-05-08T09:55:04.739Z"
     },
     "lark-wiki": {
       "source": "larksuite/cli",
@@ -704,27 +704,36 @@
       "sourceType": "git",
       "sourceUrl": "git@git.dz11.com:xiaohui/skills.git",
       "skillPath": "obsidian-to-dds/SKILL.md",
-      "skillFolderHash": "",
+      "skillFolderHash": "00707f48a622f32b6dc5dabaadc82bea37ae01038a9a75c8a6beb701874eef81",
       "installedAt": "2026-04-24T03:05:45.133Z",
-      "updatedAt": "2026-04-24T09:37:03.613Z"
+      "updatedAt": "2026-05-08T12:02:09.726Z"
     },
     "obsidian-project-docs": {
       "source": "git@git.dz11.com:xiaohui/skills.git",
       "sourceType": "git",
       "sourceUrl": "git@git.dz11.com:xiaohui/skills.git",
       "skillPath": "obsidian-project-docs/SKILL.md",
-      "skillFolderHash": "",
+      "skillFolderHash": "51d715710feced7f4f438648dda88cdeccd18ea0353a2948888264195bb8b7eb",
       "installedAt": "2026-04-24T08:34:39.673Z",
-      "updatedAt": "2026-04-24T09:37:03.607Z"
+      "updatedAt": "2026-05-08T12:02:09.721Z"
     },
     "obsidian-summary": {
       "source": "git@git.dz11.com:xiaohui/skills.git",
       "sourceType": "git",
       "sourceUrl": "git@git.dz11.com:xiaohui/skills.git",
       "skillPath": "obsidian-summary/SKILL.md",
-      "skillFolderHash": "",
+      "skillFolderHash": "df906930e44bb57e6b58faefa03c0d285d131d24977ea4f300347a5ac16663a4",
       "installedAt": "2026-04-24T08:34:39.677Z",
-      "updatedAt": "2026-04-24T09:37:03.611Z"
+      "updatedAt": "2026-05-08T12:02:09.725Z"
+    },
+    "llm-wiki": {
+      "source": "sdyckjq-lab/llm-wiki-skill",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/sdyckjq-lab/llm-wiki-skill.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "4f58cf6d51dae7edefa8bbb969d6794bf27724a8",
+      "installedAt": "2026-05-09T12:01:07.113Z",
+      "updatedAt": "2026-05-09T12:01:07.113Z"
     }
   },
   "dismissed": {
@@ -737,6 +746,7 @@
     "codex",
     "cursor",
     "deepagents",
+    "dexto",
     "firebender",
     "gemini-cli",
     "github-copilot",

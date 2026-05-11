@@ -41,42 +41,6 @@ return {
     },
   },
   {
-    "obsidian-nvim/obsidian.nvim",
-    dependencies = {
-      "folke/snacks.nvim",
-      "saghen/blink.cmp",
-      "MeanderingProgrammer/render-markdown.nvim",
-      "nvim-treesitter/nvim-treesitter",
-    },
-    version = "*", -- recommended, use latest release instead of latest commit
-    event = {
-      "BufReadPre " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*.md",
-      "BufNewFile " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*.md",
-      "BufReadPre " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*.md",
-      "BufNewFile " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*.md",
-      "BufReadPre " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*/*.md",
-      "BufNewFile " .. vim.fn.expand("~") .. "/Documents/obsidian/notes/*/*/*.md",
-    },
-    cmd = { "Obsidian" },
-    ---@module 'obsidian'
-    ---@type obsidian.config
-    opts = {
-      workspaces = {
-        {
-          name = "notes",
-          path = "~/Documents/obsidian/notes",
-        },
-      },
-      legacy_commands = false,
-      daily_notes = {
-        folder = "Work",
-        date_format = "每日小结 - YYYY-MM-DD - dddd",
-        default_tags = { "每日小结" },
-        workdays_only = false,
-      },
-    },
-  },
-  {
     "uhs-robert/sshfs.nvim",
     lazy = true,
     event = "VeryLazy",

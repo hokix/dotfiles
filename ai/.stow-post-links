@@ -3,4 +3,5 @@
 .claude/skills:.agents/skills
 .copilot/agents:.config/agents
 .copilot/mcp-config.json:.config/mcphub/servers.json
-.config/opencode/skills:.agents/skills
+.deepseek/skills:.agents/skills
+.deepseek/mcp.json:.config/mcphub/servers.json

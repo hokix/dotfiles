@@ -229,7 +229,7 @@ return {
         end
       end
       -- spring boot
-      if LazyVim.has("spring_boot") then
+      if LazyVim.has("spring-boot.nvim") then
         vim.list_extend(bundles, require("spring_boot").java_extensions() or nil)
       end
 
