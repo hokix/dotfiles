@@ -4,6 +4,8 @@ return {
     local args = { "build" }
     if vim.fn.isdirectory(vim.fn.getcwd() .. "/vendor") == 1 then
       table.insert(args, "-mod=vendor")
+      table.insert(args, "-o")
+      table.insert(args, "./tmp")
     end
     return {
       cmd = { "go" },

@@ -72,20 +72,4 @@ return {
     },
     optional = true,
   },
-  {
-    "HakonHarnes/img-clip.nvim",
-    lazy = true,
-    event = "VeryLazy",
-    opts = {
-      default = {
-        dir_path = "~/Downloads",
-        use_absolute_path = true,
-        prompt_for_file_name = false,
-      },
-    },
-    keys = {
-      -- suggested keymap
-      { "<leader>fP", "<cmd>PasteImage<cr>", desc = "Paste image from system clipboard" },
-    },
-  },
 }
