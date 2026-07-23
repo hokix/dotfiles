@@ -21,27 +21,11 @@
     tool = nvimdiff
 [format]
     pretty = format:'%Cred%h%Creset -%C(yellow)%d%Creset %an %s %Cgreen(%ad)%Creset'
-; [url "git@github.com:"]
-;     insteadOf = http://github.com/
-; [url "git@github.com:"]
-;     insteadOf = https://github.com/
-; [url "https://github.com/"]
-;     insteadOf = git@github.com:
 [include]
     path = .gitconfig-url
     path = .gitconfig-local
 [includeIf "gitdir:~/workspace*/"]
     path = .gitconfig-job
-[credential "https://github.com"]
-	helper = 
-	helper = !/opt/homebrew/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = 
-	helper = !/opt/homebrew/bin/gh auth git-credential
-[url "ssh://git@git.dz11.com/"]
-	insteadOf = https://git.dz11.com/
 [credential]
 	helper = 
-	helper = /usr/local/share/gcm-core/git-credential-manager
-[credential "https://dev.azure.com"]
-	useHttpPath = true
+	helper = git-credential-manager
