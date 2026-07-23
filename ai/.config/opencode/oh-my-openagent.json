@@ -183,6 +183,7 @@
     },
     "unspecified-low": {
       "model": "github-copilot/claude-sonnet-4.6",
+      "variant": "high",
       "fallback_models": [
         {
           "model": "github-copilot/gemini-3-flash-preview"
@@ -191,6 +192,7 @@
     },
     "unspecified-high": {
       "model": "github-copilot/claude-sonnet-4.6",
+      "variant": "high",
       "fallback_models": [
         {
           "model": "github-copilot/gemini-3-flash-preview"
@@ -205,5 +207,6 @@
         }
       ]
     }
-  }
+  },
+  "telemetry": false
 }

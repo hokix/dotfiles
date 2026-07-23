@@ -66,10 +66,13 @@ return {
     },
   },
   {
-    "ThePrimeagen/refactoring.nvim",
-    dependencies = {
-      "lewis6991/async.nvim",
-    },
+    "mistweaverco/kulala.nvim",
     optional = true,
+    opts = {
+      default_env = "live",
+    },
+    keys = {
+      { "<leader>Ra", "<cmd>lua require('kulala').run_all()<cr>", desc = "Send all the request", ft = "http" },
+    },
   },
 }

@@ -66,7 +66,7 @@ zinit ice wait lucid
 zinit light wfxr/forgit
 # syntax-highlighting must be loaded last
 zinit ice wait lucid
-zinit light zsh-users/zsh-syntax-highlighting
+zinit light zdharma-continuum/fast-syntax-highlighting
 
 # === Completions ===
 fpath=("$HOME/.zsh/completions" $fpath)
@@ -90,6 +90,16 @@ source <(fzf --zsh)
 alias ll="ls -l"
 alias tmux="tmux -2"
 alias ctags="noglob ctags"
+if command -v eza >/dev/null; then
+    alias ls="eza --icons --git"
+    alias ll="eza -lah --icons --git"
+    alias la="eza -a --icons"
+    alias lt="eza --tree --level=2 --icons"
+fi
+if command -v bat >/dev/null; then
+    alias cat="bat --paging=never"
+    export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+fi
 
 # === Key Bindings ===
 

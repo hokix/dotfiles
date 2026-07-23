@@ -1,0 +1,5 @@
+--style=numbers,changes,header
+--theme="Catppuccin Mocha"
+--paging=auto
+--decorations=auto
+--terminal-width=120
