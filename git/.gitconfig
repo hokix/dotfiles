@@ -28,4 +28,4 @@
     path = .gitconfig-job
 [credential]
 	helper = 
-	helper = git-credential-manager
+	helper = manager
