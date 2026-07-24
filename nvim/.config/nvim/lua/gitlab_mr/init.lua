@@ -8,6 +8,14 @@ local function notify(message, level)
   vim.notify(message, level or vim.log.levels.INFO, { title = title })
 end
 
+local function ensure_executable(name)
+  if vim.fn.executable(name) ~= 1 then
+    notify(("Dependency `%s` is required. Please install it first."):format(name), vim.log.levels.WARN)
+    return false
+  end
+  return true
+end
+
 local function trim(value)
   local result = (value or ""):gsub("^%s+", ""):gsub("%s+$", "")
   return result
@@ -48,6 +56,12 @@ function M.run(cmd)
   local name = vim.api.nvim_buf_get_name(0)
   if name == "" then
     notify("current buffer is not a file", vim.log.levels.ERROR)
+    return
+  end
+  if not ensure_executable("git") then
+    return
+  end
+  if not ensure_executable("glab") then
     return
   end
   if vim.bo.modified then
@@ -114,6 +128,12 @@ function M.run(cmd)
 
   api.request_json(root, "projects/:fullpath", function(project, project_err)
     if not project then
+      if
+        project_err:find("none of the git remotes configured for this repository point to a known GitLab", 1, true)
+      then
+        notify("MRDiffLink is only available in GitLab repositories configured in glab", vim.log.levels.WARN)
+        return
+      end
       notify("unable to resolve the current GitLab project: " .. project_err, vim.log.levels.ERROR)
       return
     end
