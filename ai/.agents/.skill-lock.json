@@ -477,7 +477,7 @@
       "skillPath": "obsidian-to-dds/SKILL.md",
       "skillFolderHash": "b803b940922cc25627971be8f68e1db8c501e1d88a197ce8f566511c7cb6fb27",
       "installedAt": "2026-04-24T03:05:45.133Z",
-      "updatedAt": "2026-07-23T03:14:47.876Z"
+      "updatedAt": "2026-07-24T02:20:51.586Z"
     },
     "obsidian-project-docs": {
       "source": "git@git.dz11.com:xiaohui/skills.git",
@@ -486,7 +486,7 @@
       "skillPath": "obsidian-project-docs/SKILL.md",
       "skillFolderHash": "51d715710feced7f4f438648dda88cdeccd18ea0353a2948888264195bb8b7eb",
       "installedAt": "2026-04-24T08:34:39.673Z",
-      "updatedAt": "2026-07-23T03:14:47.875Z"
+      "updatedAt": "2026-07-24T02:20:51.583Z"
     },
     "obsidian-summary": {
       "source": "git@git.dz11.com:xiaohui/skills.git",
@@ -495,7 +495,7 @@
       "skillPath": "obsidian-summary/SKILL.md",
       "skillFolderHash": "df906930e44bb57e6b58faefa03c0d285d131d24977ea4f300347a5ac16663a4",
       "installedAt": "2026-04-24T08:34:39.677Z",
-      "updatedAt": "2026-07-23T03:14:47.875Z"
+      "updatedAt": "2026-07-24T02:20:51.584Z"
     },
     "llm-wiki": {
       "source": "sdyckjq-lab/llm-wiki-skill",
@@ -992,9 +992,9 @@
       "sourceType": "git",
       "sourceUrl": "git@git.dz11.com:xiaohui/skills.git",
       "skillPath": "kulala-usage/SKILL.md",
-      "skillFolderHash": "28e959e27a6bb0782e153b904bebb6553009ea367ce7123d121ee36ea586073b",
+      "skillFolderHash": "e30559352b383c887f51df439730f0c216932e1ef8aff55e7c4b533289adeb10",
       "installedAt": "2026-07-17T04:42:49.576Z",
-      "updatedAt": "2026-07-23T03:14:47.873Z"
+      "updatedAt": "2026-07-24T02:20:51.581Z"
     }
   },
   "dismissed": {
