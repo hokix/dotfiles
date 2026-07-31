@@ -73,6 +73,14 @@ return {
     },
     keys = {
       { "<leader>Ra", "<cmd>lua require('kulala').run_all()<cr>", desc = "Send all the request", ft = "http" },
+      {
+        "<leader>Rf",
+        function()
+          require("kulala").search()
+        end,
+        desc = "Find request",
+        ft = "http",
+      },
     },
   },
 }

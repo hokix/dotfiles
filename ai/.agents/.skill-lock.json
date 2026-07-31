@@ -8,7 +8,7 @@
       "skillPath": "coding-jupiter-skill/SKILL.md",
       "skillFolderHash": "02f53657dfb24ee497db70696228974c4d5db7d8f6e15cc6bd392edfbe309cee",
       "installedAt": "2026-03-16T11:18:53.598Z",
-      "updatedAt": "2026-07-07T02:33:31.728Z"
+      "updatedAt": "2026-07-27T11:07:47.814Z"
     },
     "dy-api-conventions": {
       "source": "git@git.dz11.com:skills/platform/skills.git",
@@ -17,7 +17,7 @@
       "skillPath": "dy-api-conventions/SKILL.md",
       "skillFolderHash": "c887d4d1d193c4fd4ad1e6a15a2fea95b9af2cb6e89fbe411739ec164bcbeed4",
       "installedAt": "2026-03-16T11:18:53.598Z",
-      "updatedAt": "2026-07-07T02:33:31.729Z"
+      "updatedAt": "2026-07-27T11:07:47.816Z"
     },
     "dy-doc-go-api": {
       "source": "git@git.dz11.com:skills/platform/skills.git",
@@ -35,7 +35,7 @@
       "skillPath": "dy-gorm-gen-tool/SKILL.md",
       "skillFolderHash": "96080a27820ea37db833666672d40aeb528c2a1a1d71a5b61e492b94c4911483",
       "installedAt": "2026-03-16T11:18:53.599Z",
-      "updatedAt": "2026-07-07T02:33:31.732Z"
+      "updatedAt": "2026-07-27T11:07:47.820Z"
     },
     "gen-postman-echo": {
       "source": "git@git.dz11.com:skills/platform/skills.git",
@@ -44,7 +44,7 @@
       "skillPath": "gen-postman-echo/SKILL.md",
       "skillFolderHash": "dcaf36085726af9ed01f1a8e4cd9f535d078f1b5d41ba463d67ac15f1fa528d5",
       "installedAt": "2026-03-16T11:18:53.599Z",
-      "updatedAt": "2026-07-07T02:33:31.734Z"
+      "updatedAt": "2026-07-27T11:07:47.825Z"
     },
     "minerva-upgrade": {
       "source": "git@git.dz11.com:skills/platform/skills.git",
@@ -53,7 +53,7 @@
       "skillPath": "minerva-upgrade/SKILL.md",
       "skillFolderHash": "3e9f9d7fee7b20f75f5700fbdf607be9be58e41f4c8d74ab143aa157d27a910c",
       "installedAt": "2026-03-16T11:18:53.599Z",
-      "updatedAt": "2026-07-07T02:33:31.735Z"
+      "updatedAt": "2026-07-27T11:07:47.829Z"
     },
     "find-skills": {
       "source": "vercel-labs/skills",
@@ -404,7 +404,7 @@
       "skillPath": "api-migration-checklist/SKILL.md",
       "skillFolderHash": "f85c5cd7c27d4066a5c3408c4bf2f057519fa060e68639da3baee610340b8929",
       "installedAt": "2026-04-14T11:15:01.627Z",
-      "updatedAt": "2026-07-07T02:33:31.719Z"
+      "updatedAt": "2026-07-27T11:07:47.803Z"
     },
     "coding-style-skill": {
       "source": "git@git.dz11.com:skills/platform/skills.git",
@@ -413,7 +413,7 @@
       "skillPath": "coding-style-skill/SKILL.md",
       "skillFolderHash": "2d86a16a3460b67be1b3d4170cc0ffb5e5403c958b88c58ce9bbba994a283039",
       "installedAt": "2026-04-14T11:15:01.630Z",
-      "updatedAt": "2026-07-07T02:33:31.729Z"
+      "updatedAt": "2026-07-27T11:07:47.815Z"
     },
     "dy-doc-api": {
       "source": "git@git.dz11.com:skills/platform/skills.git",
@@ -422,7 +422,7 @@
       "skillPath": "dy-doc-go-api/SKILL.md",
       "skillFolderHash": "a2da5adecf14aa5a0d3d1f7fee30c1b67833668ed63c9615b09129f101c275ec",
       "installedAt": "2026-04-14T11:15:01.630Z",
-      "updatedAt": "2026-07-07T02:33:31.731Z"
+      "updatedAt": "2026-07-27T11:07:47.819Z"
     },
     "dy-mermaid": {
       "source": "git@git.dz11.com:skills/platform/skills.git",
@@ -431,7 +431,7 @@
       "skillPath": "dy-mermaid/SKILL.md",
       "skillFolderHash": "99f262b16730dff4975c0120bfded6a26c4948957417cb3e441f4fd7717609d5",
       "installedAt": "2026-04-14T11:15:01.631Z",
-      "updatedAt": "2026-07-07T02:33:31.733Z"
+      "updatedAt": "2026-07-27T11:07:47.822Z"
     },
     "weekly-duty-report": {
       "source": "git@git.dz11.com:skills/platform/skills.git",
@@ -440,7 +440,7 @@
       "skillPath": "weekly-duty-report/SKILL.md",
       "skillFolderHash": "8f61aad0b9291c99a419e774b9de58047ef74e0f0fe207d2e5e9f0bf1fe02ced",
       "installedAt": "2026-04-14T11:15:01.632Z",
-      "updatedAt": "2026-07-07T02:33:31.736Z"
+      "updatedAt": "2026-07-27T11:07:47.830Z"
     },
     "weekly-duty-report-cli": {
       "source": "git@git.dz11.com:skills/platform/skills.git",
@@ -449,7 +449,7 @@
       "skillPath": "weekly-duty-report-cli/SKILL.md",
       "skillFolderHash": "37b4d69e314661de1522d91f9634600cbdd5cfed4e5b1262a43bc011ba8ab54a",
       "installedAt": "2026-04-14T11:15:01.633Z",
-      "updatedAt": "2026-07-07T02:33:31.736Z"
+      "updatedAt": "2026-07-27T11:07:47.832Z"
     },
     "create-agentsmd": {
       "source": "github/awesome-copilot",
@@ -502,9 +502,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/sdyckjq-lab/llm-wiki-skill.git",
       "skillPath": "SKILL.md",
-      "skillFolderHash": "2ef2c3639eb0b66b1dee0d49b3347d88a3712583",
+      "skillFolderHash": "efa2294dd7c00479f7d8463fef88812d2fd5d1bc",
       "installedAt": "2026-05-09T12:01:07.113Z",
-      "updatedAt": "2026-07-23T03:15:03.049Z"
+      "updatedAt": "2026-07-27T11:08:08.527Z"
     },
     "dy-baselib-skill": {
       "source": "git@git.dz11.com:skills/platform/skills.git",
@@ -513,7 +513,7 @@
       "skillPath": "dy-baselib-skill/SKILL.md",
       "skillFolderHash": "5dd5799b2e2f7b9b6e40e9392213ebf6bc21b710df1223264459bac0e2e74d8d",
       "installedAt": "2026-05-28T01:57:36.740Z",
-      "updatedAt": "2026-07-07T02:33:31.730Z"
+      "updatedAt": "2026-07-27T11:07:47.818Z"
     },
     "gitnexus-pr-swarm-review": {
       "source": "abhigyanpatwari/gitnexus",
@@ -522,7 +522,7 @@
       "skillPath": ".claude/skills/gitnexus-pr-swarm-review/SKILL.md",
       "skillFolderHash": "d8645c2d1dbc2dbdb141e5507b69428e91005a29",
       "installedAt": "2026-06-04T07:05:26.520Z",
-      "updatedAt": "2026-07-20T12:15:26.970Z"
+      "updatedAt": "2026-07-27T01:59:00.935Z"
     },
     "dy-virtual-project-bootstrap": {
       "source": "git@git.dz11.com:skills/platform/skills.git",
@@ -531,7 +531,7 @@
       "skillPath": "dy-virtual-project-bootstrap/SKILL.md",
       "skillFolderHash": "76510447eadbaaf6a1f05dbbd6ecb601dabe4d6dbf4568dbe6d247664ce64f3e",
       "installedAt": "2026-06-10T02:39:57.962Z",
-      "updatedAt": "2026-07-07T02:33:31.734Z"
+      "updatedAt": "2026-07-27T11:07:47.824Z"
     },
     "design-an-interface": {
       "source": "mattpocock/skills",
@@ -988,13 +988,121 @@
       "updatedAt": "2026-07-15T03:01:59.287Z"
     },
     "kulala-usage": {
-      "source": "git@git.dz11.com:xiaohui/skills.git",
+      "source": "git@git.dz11.com:skills/platform/skills.git",
       "sourceType": "git",
-      "sourceUrl": "git@git.dz11.com:xiaohui/skills.git",
+      "sourceUrl": "git@git.dz11.com:skills/platform/skills.git",
       "skillPath": "kulala-usage/SKILL.md",
-      "skillFolderHash": "e30559352b383c887f51df439730f0c216932e1ef8aff55e7c4b533289adeb10",
-      "installedAt": "2026-07-17T04:42:49.576Z",
-      "updatedAt": "2026-07-24T02:20:51.581Z"
+      "skillFolderHash": "15dd5972296217693429dda21d0f15340530e26da128c15041b77070bf30de81",
+      "installedAt": "2026-07-24T09:53:28.596Z",
+      "updatedAt": "2026-07-27T11:07:47.828Z"
+    },
+    "gitnexus-cli": {
+      "source": "abhigyanpatwari/gitnexus",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/abhigyanpatwari/gitnexus.git",
+      "skillPath": ".claude/skills/gitnexus-cli/SKILL.md",
+      "skillFolderHash": "4e113f46b884399f083ab0d36ea0012d87d2a1f9",
+      "installedAt": "2026-07-27T01:59:00.925Z",
+      "updatedAt": "2026-07-27T01:59:00.925Z"
+    },
+    "gitnexus-debugging": {
+      "source": "abhigyanpatwari/gitnexus",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/abhigyanpatwari/gitnexus.git",
+      "skillPath": ".claude/skills/gitnexus-debugging/SKILL.md",
+      "skillFolderHash": "cd64fea806bed80a4e1184c065c698d620458bf7",
+      "installedAt": "2026-07-27T01:59:00.928Z",
+      "updatedAt": "2026-07-27T01:59:00.928Z"
+    },
+    "gitnexus-exploring": {
+      "source": "abhigyanpatwari/gitnexus",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/abhigyanpatwari/gitnexus.git",
+      "skillPath": ".claude/skills/gitnexus-exploring/SKILL.md",
+      "skillFolderHash": "2fc238d471819fed6e4a2da5ce1bd71068ad6f3d",
+      "installedAt": "2026-07-27T01:59:00.929Z",
+      "updatedAt": "2026-07-27T01:59:00.929Z"
+    },
+    "gitnexus-guide": {
+      "source": "abhigyanpatwari/gitnexus",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/abhigyanpatwari/gitnexus.git",
+      "skillPath": ".claude/skills/gitnexus-guide/SKILL.md",
+      "skillFolderHash": "784930ae2465d9a2daf8308ee04dd62f8246f91c",
+      "installedAt": "2026-07-27T01:59:00.930Z",
+      "updatedAt": "2026-07-27T01:59:00.930Z"
+    },
+    "gitnexus-impact-analysis": {
+      "source": "abhigyanpatwari/gitnexus",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/abhigyanpatwari/gitnexus.git",
+      "skillPath": ".claude/skills/gitnexus-impact-analysis/SKILL.md",
+      "skillFolderHash": "15fd86a068ea9b56a8fdbc07fd12ad37e92bd523",
+      "installedAt": "2026-07-27T01:59:00.931Z",
+      "updatedAt": "2026-07-27T01:59:00.931Z"
+    },
+    "gitnexus-lfg": {
+      "source": "abhigyanpatwari/gitnexus",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/abhigyanpatwari/gitnexus.git",
+      "skillPath": ".claude/skills/gitnexus-lfg/SKILL.md",
+      "skillFolderHash": "74c643e144c1e03fcb28f85a6f759d7982a2c4b1",
+      "installedAt": "2026-07-27T01:59:00.932Z",
+      "updatedAt": "2026-07-27T01:59:00.932Z"
+    },
+    "gitnexus-pdg-query": {
+      "source": "abhigyanpatwari/gitnexus",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/abhigyanpatwari/gitnexus.git",
+      "skillPath": ".claude/skills/gitnexus/gitnexus-pdg-query/SKILL.md",
+      "skillFolderHash": "b1c8a7b36745a4f3bd520eb96aea978a105b2c7d",
+      "installedAt": "2026-07-27T01:59:00.933Z",
+      "updatedAt": "2026-07-27T01:59:00.933Z"
+    },
+    "gitnexus-plan": {
+      "source": "abhigyanpatwari/gitnexus",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/abhigyanpatwari/gitnexus.git",
+      "skillPath": ".claude/skills/gitnexus-plan/SKILL.md",
+      "skillFolderHash": "a6699e660607b7247d74a09497bb6fab77b8f572",
+      "installedAt": "2026-07-27T01:59:00.934Z",
+      "updatedAt": "2026-07-27T01:59:00.934Z"
+    },
+    "gitnexus-refactoring": {
+      "source": "abhigyanpatwari/gitnexus",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/abhigyanpatwari/gitnexus.git",
+      "skillPath": ".claude/skills/gitnexus-refactoring/SKILL.md",
+      "skillFolderHash": "ef39246161cb18ef6411bd5df881de64124f5eb1",
+      "installedAt": "2026-07-27T01:59:00.935Z",
+      "updatedAt": "2026-07-27T01:59:00.935Z"
+    },
+    "gitnexus-review": {
+      "source": "abhigyanpatwari/gitnexus",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/abhigyanpatwari/gitnexus.git",
+      "skillPath": ".claude/skills/gitnexus-review/SKILL.md",
+      "skillFolderHash": "64adb74162d3789b395d8aaf628028967391fddd",
+      "installedAt": "2026-07-27T01:59:00.936Z",
+      "updatedAt": "2026-07-29T02:07:08.570Z"
+    },
+    "gitnexus-taint-analysis": {
+      "source": "abhigyanpatwari/gitnexus",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/abhigyanpatwari/gitnexus.git",
+      "skillPath": ".claude/skills/gitnexus/gitnexus-taint-analysis/SKILL.md",
+      "skillFolderHash": "db28de846d4e0efb1397fbf015c2753df3fd5026",
+      "installedAt": "2026-07-27T01:59:00.937Z",
+      "updatedAt": "2026-07-27T01:59:00.937Z"
+    },
+    "gitnexus-work": {
+      "source": "abhigyanpatwari/gitnexus",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/abhigyanpatwari/gitnexus.git",
+      "skillPath": ".claude/skills/gitnexus-work/SKILL.md",
+      "skillFolderHash": "25fa97a2fcf72b73f3b6d2f5526d6b349fc6ca2e",
+      "installedAt": "2026-07-27T01:59:00.938Z",
+      "updatedAt": "2026-07-27T01:59:00.938Z"
     }
   },
   "dismissed": {
