@@ -115,6 +115,14 @@ return {
             enabled = true,
             backend = "tmux",
           },
+          tools = {
+            codewhale = {
+              cmd = { "codewhale" },
+            },
+            omp = {
+              cmd = { "omp" },
+            },
+          },
         },
       },
     },

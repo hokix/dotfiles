@@ -84,25 +84,4 @@ return {
       },
     },
   },
-  {
-    "zerochae/endpoint.nvim",
-    dependencies = {
-      -- Choose one or more pickers (all optional):
-      "folke/snacks.nvim", -- For snacks picker
-      -- vim.ui.select picker works without dependencies
-    },
-    cmd = { "Endpoint" },
-    opt = {
-      cache = {
-        mode = "persistent",
-      },
-      picker = {
-        type = "snacks",
-      },
-    },
-    config = function(_, opts)
-      require("endpoint").setup(opts)
-    end,
-    lazy = true,
-  },
 }
