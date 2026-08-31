@@ -1,68 +1,97 @@
 {
   "mcpServers": {
     "figma": {
-      "tools": ["*"],
-      "command": "npx",
       "args": [
         "-y",
         "figma-developer-mcp",
         "--figma-api-key=${FIGMA_API_KEY}",
         "--stdio"
       ],
+      "command": "npx",
+      "disabled": true,
       "env": {
         "FIGMA_API_KEY": "${FIGMA_API_KEY}"
       },
       "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json"
+      "sourcePath": "/Users/ted/.copilot/mcp-config.json",
+      "tools": [
+        "*"
+      ]
     },
     "git": {
-      "tools": ["*"],
-      "type": "local",
-      "command": "mcp-server-git",
       "args": [],
+      "command": "mcp-server-git",
       "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json"
+      "sourcePath": "/Users/ted/.copilot/mcp-config.json",
+      "tools": [
+        "*"
+      ],
+      "type": "local"
     },
     "gitnexus": {
-      "tools": ["*"],
-      "type": "local",
+      "args": [
+        "-y",
+        "gitnexus",
+        "mcp"
+      ],
       "command": "npx",
-      "args": ["-y", "gitnexus", "mcp"],
       "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json"
+      "sourcePath": "/Users/ted/.copilot/mcp-config.json",
+      "tools": [
+        "*"
+      ],
+      "type": "local"
+    },
+    "local_figma": {
+      "disabled": true,
+      "headers": {},
+      "tools": [
+        "*"
+      ],
+      "type": "http",
+      "url": "http://127.0.0.1:3845/mcp"
     },
     "memory": {
-      "tools": ["*"],
-      "type": "local",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-memory"],
       "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json"
+      "sourcePath": "/Users/ted/.copilot/mcp-config.json",
+      "tools": [
+        "*"
+      ],
+      "type": "local"
     },
     "playwright": {
-      "tools": ["*"],
-      "type": "local",
+      "args": [
+        "@playwright/mcp@latest"
+      ],
       "command": "npx",
-      "args": ["@playwright/mcp@latest"],
       "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json"
+      "sourcePath": "/Users/ted/.copilot/mcp-config.json",
+      "tools": [
+        "*"
+      ],
+      "type": "local"
     },
     "postman-api-mcp": {
-      "tools": ["*"],
-      "type": "local",
+      "args": [
+        "@postman/postman-mcp-server",
+        "--full"
+      ],
       "command": "npx",
-      "args": ["@postman/postman-mcp-server", "--full"],
+      "disabled": true,
       "env": {
         "POSTMAN_API_KEY": "${POSTMAN_API_KEY}"
       },
       "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json"
-    },
-    "local_figma": {
-      "type": "http",
-      "url": "http://127.0.0.1:3845/mcp",
-      "headers": {},
-      "tools": ["*"]
+      "sourcePath": "/Users/ted/.copilot/mcp-config.json",
+      "tools": [
+        "*"
+      ],
+      "type": "local"
     }
   },
   "nativeMCPServers": []
