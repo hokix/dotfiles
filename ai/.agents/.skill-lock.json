@@ -1129,6 +1129,24 @@
       "skillFolderHash": "c43995f87c40e1b99a422976db90db8035a643e8d29a6626bed0bd74a457cf28",
       "installedAt": "2026-08-26T01:55:08.702Z",
       "updatedAt": "2026-08-26T01:55:08.702Z"
+    },
+    "archify": {
+      "source": "tt-a1i/archify",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/tt-a1i/archify.git",
+      "skillPath": "archify/SKILL.md",
+      "skillFolderHash": "3b1a89f8896affe5eacdb5f3e94a6e7d646a0cd4",
+      "installedAt": "2026-09-01T05:33:44.279Z",
+      "updatedAt": "2026-09-01T05:33:44.279Z"
+    },
+    "herdr": {
+      "source": "herdrdev/herdr",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/herdrdev/herdr.git",
+      "skillPath": "skills/herdr/SKILL.md",
+      "skillFolderHash": "f8bb649bb92ddc99e6af463ab9a635da98c7b129",
+      "installedAt": "2026-09-02T11:07:55.151Z",
+      "updatedAt": "2026-09-02T11:07:55.151Z"
     }
   },
   "dismissed": {

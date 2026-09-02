@@ -19,9 +19,9 @@ export NVM_LAZY_LOAD=true
 export NVM_LAZY_LOAD_EXTRA_COMMANDS=('vim' 'nvim')
 
 # Tmux auto-start (replaces OMZP::tmux)
-if command -v tmux &>/dev/null && [[ -z "$TMUX" && -z "$VSCODE_PID" && -z "$INTELLIJ_ENVIRONMENT_READER" ]]; then
-  tmux -2 attach -t default 2>/dev/null || tmux -2 new-session -s default
-fi
+# if command -v tmux &>/dev/null && [[ -z "$TMUX" && -z "$VSCODE_PID" && -z "$INTELLIJ_ENVIRONMENT_READER" ]]; then
+#   tmux -2 attach -t default 2>/dev/null || tmux -2 new-session -s default
+# fi
 
 # Local overrides
 [ -f ~/.zshrc_local ] && source ~/.zshrc_local
@@ -143,9 +143,14 @@ bindkey '\e.' insert-last-word                 # Alt+.   → 插入上条命令�
 # === Tmux Window Name ===
 autoload -Uz add-zsh-hook
 tmux-window-name() {
+	[[ -n "$TMUX" ]] || return
 	($TMUX_PLUGIN_MANAGER_PATH/tmux-window-name/scripts/rename_session_windows.py &)
 }
 add-zsh-hook chpwd tmux-window-name
+
+for _f in ${HOME}/.config/herdr/plugins/github/herdr-automatic-rename-*/shell/hook.zsh(N); do
+  source $_f; break
+done
 
 eval "$(zoxide init zsh --cmd cd)"
 # zprof
