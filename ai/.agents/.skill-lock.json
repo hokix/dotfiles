@@ -209,18 +209,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-base/SKILL.md",
-      "skillFolderHash": "cbc09c5f25e0ee4e3195668512529e1398e9f54a",
+      "skillFolderHash": "6363beaa1576fb5ad686f9521fbe833430563ae5",
       "installedAt": "2026-03-30T09:22:41.962Z",
-      "updatedAt": "2026-09-03T07:41:43.186Z"
+      "updatedAt": "2026-09-04T07:07:06.652Z"
     },
     "lark-calendar": {
       "source": "larksuite/cli",
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-calendar/SKILL.md",
-      "skillFolderHash": "1e033da84f6433fad14d7f98885ebe4ce07326da",
+      "skillFolderHash": "95b3b893ca823ec42ad7557b10bd788333c65bf0",
       "installedAt": "2026-03-30T09:22:42.916Z",
-      "updatedAt": "2026-09-03T07:41:51.497Z"
+      "updatedAt": "2026-09-04T07:07:14.674Z"
     },
     "lark-contact": {
       "source": "larksuite/cli",
@@ -272,9 +272,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-mail/SKILL.md",
-      "skillFolderHash": "cb924e4e477522017011c9c48b020ead06fbba6b",
+      "skillFolderHash": "3e4af769d52d580a8ad22b6d2179c0596d4f8fd6",
       "installedAt": "2026-03-30T09:22:51.556Z",
-      "updatedAt": "2026-09-03T07:42:26.383Z"
+      "updatedAt": "2026-09-04T07:07:22.917Z"
     },
     "lark-minutes": {
       "source": "larksuite/cli",
@@ -452,18 +452,18 @@
       "sourceType": "git",
       "sourceUrl": "git@git.dz11.com:skills/platform/skills.git",
       "skillPath": "dy-mermaid/SKILL.md",
-      "skillFolderHash": "b48922b9b734e5e634266645572f2031cab7e4663386622a9b679744bd629641",
+      "skillFolderHash": "99f262b16730dff4975c0120bfded6a26c4948957417cb3e441f4fd7717609d5",
       "installedAt": "2026-04-14T11:15:01.631Z",
-      "updatedAt": "2026-09-03T07:41:32.288Z"
+      "updatedAt": "2026-09-04T07:06:55.871Z"
     },
     "weekly-duty-report": {
       "source": "git@git.dz11.com:skills/platform/skills.git",
       "sourceType": "git",
       "sourceUrl": "git@git.dz11.com:skills/platform/skills.git",
       "skillPath": "weekly-duty-report/SKILL.md",
-      "skillFolderHash": "00953b1b44a9337418ff77c9c56e2ddeb2ae04f38c403c8d483314d9e45960d9",
+      "skillFolderHash": "8f61aad0b9291c99a419e774b9de58047ef74e0f0fe207d2e5e9f0bf1fe02ced",
       "installedAt": "2026-04-14T11:15:01.632Z",
-      "updatedAt": "2026-09-03T07:41:34.153Z"
+      "updatedAt": "2026-09-04T07:06:57.682Z"
     },
     "weekly-duty-report-cli": {
       "source": "git@git.dz11.com:skills/platform/skills.git",
@@ -507,18 +507,18 @@
       "sourceType": "git",
       "sourceUrl": "git@git.dz11.com:xiaohui/skills.git",
       "skillPath": "obsidian-project-docs/SKILL.md",
-      "skillFolderHash": "2ca9465f62d56ada8dfe93cc18a03e0cb33913b457df4f18931d1004621f5c96",
+      "skillFolderHash": "51d715710feced7f4f438648dda88cdeccd18ea0353a2948888264195bb8b7eb",
       "installedAt": "2026-04-24T08:34:39.673Z",
-      "updatedAt": "2026-09-03T07:43:11.600Z"
+      "updatedAt": "2026-09-04T07:07:23.762Z"
     },
     "obsidian-summary": {
       "source": "git@git.dz11.com:xiaohui/skills.git",
       "sourceType": "git",
       "sourceUrl": "git@git.dz11.com:xiaohui/skills.git",
       "skillPath": "obsidian-summary/SKILL.md",
-      "skillFolderHash": "12189d84bcb7423501d9c750981ab85b5feefe41715165ba0b560cd2bb6217ad",
+      "skillFolderHash": "df906930e44bb57e6b58faefa03c0d285d131d24977ea4f300347a5ac16663a4",
       "installedAt": "2026-04-24T08:34:39.677Z",
-      "updatedAt": "2026-09-03T07:43:12.296Z"
+      "updatedAt": "2026-09-04T07:07:24.447Z"
     },
     "llm-wiki": {
       "source": "sdyckjq-lab/llm-wiki-skill",

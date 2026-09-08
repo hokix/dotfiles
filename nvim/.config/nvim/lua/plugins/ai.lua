@@ -126,7 +126,7 @@ return {
           },
           mux = {
             enabled = true,
-            backend = "herdr",
+            backend = "tmux",
           },
           tools = {
             codewhale = {
