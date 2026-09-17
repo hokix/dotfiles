@@ -126,12 +126,9 @@ return {
           },
           mux = {
             enabled = true,
-            backend = "tmux",
+            backend = "herdr",
           },
           tools = {
-            codewhale = {
-              cmd = { "codewhale" },
-            },
             omp = {
               cmd = { "omp" },
             },

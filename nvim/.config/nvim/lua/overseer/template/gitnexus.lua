@@ -10,7 +10,7 @@ return {
         name = "gitnexus analyze",
         builder = function()
           return {
-            cmd = { "npx", "gitnexus", "analyze" },
+            cmd = { "npx", "--yes", "gitnexus@latest", "analyze", "--index-only", "--pdg" },
           }
         end,
         desc = "Run gitnexus analyze.",

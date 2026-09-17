@@ -1,5 +1,8 @@
 gui:
   nerdFontsVersion: "3"
+os:
+  editPreset: "nvim"
+
 theme:
   activeBorderColor:
     - "#89b4fa"
@@ -9,8 +12,6 @@ theme:
   optionsTextColor:
     - "#89b4fa"
   selectedLineBgColor:
-    - "#313244"
-  selectedRangeBgColor:
     - "#313244"
   cherryPickedCommitBgColor:
     - "#45475a"
@@ -22,5 +23,9 @@ theme:
     - "#cdd6f4"
   searchingActiveBorderColor:
     - "#f9e2af"
-  os:
-    editPreset: "nvim"
+
+authorColors:
+  "*": "#b4befe"
+
+worktree:
+  defaultPath: ".worktrees"
