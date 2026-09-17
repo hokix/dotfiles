@@ -63,6 +63,6 @@ My Windows🪟/Linux🐧/macOS🍎 dotfiles managed by [stow 📦](https://www.g
 
 <!-- STATS_START -->
 - **Configuration Packages:** 27
-- **Neovim Lua Files:** 41
+- **Neovim Lua Files:** 40
 - **Shell Config Files:** 3
 <!-- STATS_END -->
