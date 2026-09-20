@@ -218,9 +218,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-calendar/SKILL.md",
-      "skillFolderHash": "6596f947b453c51eff3ae2848c2e16e5bb9ddd1e",
+      "skillFolderHash": "37b9b4d805ce6c5de09ad5249802ad8e53aa0dfb",
       "installedAt": "2026-03-30T09:22:42.916Z",
-      "updatedAt": "2026-09-10T05:45:53.039Z"
+      "updatedAt": "2026-09-18T05:56:13.436Z"
     },
     "lark-contact": {
       "source": "larksuite/cli",
@@ -1108,9 +1108,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-meeting/SKILL.md",
-      "skillFolderHash": "c8bdc1d2710fc71c125b7ab28017df1e584c3e87",
+      "skillFolderHash": "97346f0039d53efcf92344ce0393d46603f3e283",
       "installedAt": "2026-08-24T09:31:22.584Z",
-      "updatedAt": "2026-09-08T06:17:40.390Z"
+      "updatedAt": "2026-09-18T05:56:23.630Z"
     },
     "dy-juno-live-test-go": {
       "source": "git@git.dz11.com:skills/platform/skills.git",

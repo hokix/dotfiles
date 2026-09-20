@@ -177,6 +177,8 @@ return {
           self.mux_backend = "herdr"
 
           local cmd = table.concat(vim.tbl_map(vim.fn.shellescape, self.tool.cmd), " ")
+            .. "; herdr pane close "
+            .. vim.fn.shellescape(pid)
           herdr_json({ "pane", "run", pid, cmd })
 
           local pi = herdr_json({ "pane", "get", pid })
