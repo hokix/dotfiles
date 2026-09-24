@@ -263,9 +263,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/larksuite/cli.git",
       "skillPath": "skills/lark-im/SKILL.md",
-      "skillFolderHash": "1b90b0feec1b248c81c6d12af03404b9f200e7f9",
+      "skillFolderHash": "6eb78611dfc16231baace52550829c32bb97582b",
       "installedAt": "2026-03-30T09:22:50.441Z",
-      "updatedAt": "2026-09-17T01:36:04.653Z"
+      "updatedAt": "2026-09-24T05:48:14.438Z"
     },
     "lark-mail": {
       "source": "larksuite/cli",
@@ -389,36 +389,36 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
       "skillPath": "skills/figma-create-new-file/SKILL.md",
-      "skillFolderHash": "53b9fcd422e12aab188f7fa4187e27d483a88864",
+      "skillFolderHash": "0efd011e9f54bded9394ef90988b7b445bc184ce",
       "installedAt": "2026-04-09T09:23:14.566Z",
-      "updatedAt": "2026-08-24T09:15:24.716Z"
+      "updatedAt": "2026-09-24T05:48:17.580Z"
     },
     "figma-generate-design": {
       "source": "figma/mcp-server-guide",
       "sourceType": "github",
       "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
       "skillPath": "skills/figma-generate-design/SKILL.md",
-      "skillFolderHash": "3ae7f67979701e88eb7bdbd021ea0bbba2a72420",
+      "skillFolderHash": "f57fa90cbe13860112293319c8f377ab27155291",
       "installedAt": "2026-04-09T09:23:15.214Z",
-      "updatedAt": "2026-09-10T05:46:35.876Z"
+      "updatedAt": "2026-09-24T05:48:21.954Z"
     },
     "figma-generate-library": {
       "source": "figma/mcp-server-guide",
       "sourceType": "github",
       "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
       "skillPath": "skills/figma-generate-library/SKILL.md",
-      "skillFolderHash": "ccb734956090a4b5e85b2e4ebd771e63ee73d96b",
+      "skillFolderHash": "06f75a75bd8d81f331fe24e45939d1cbccd435e7",
       "installedAt": "2026-04-09T09:23:15.935Z",
-      "updatedAt": "2026-09-15T11:12:59.330Z"
+      "updatedAt": "2026-09-24T05:48:27.005Z"
     },
     "figma-use": {
       "source": "figma/mcp-server-guide",
       "sourceType": "github",
       "sourceUrl": "https://github.com/figma/mcp-server-guide.git",
       "skillPath": "skills/figma-use/SKILL.md",
-      "skillFolderHash": "c64c30f2b6d7b67ecfb229d14a70658854e589d0",
+      "skillFolderHash": "c5d264245779f34ac68dc4e18ee0b21a867ebfe4",
       "installedAt": "2026-04-09T09:23:17.286Z",
-      "updatedAt": "2026-09-15T11:13:02.437Z"
+      "updatedAt": "2026-09-24T05:48:33.079Z"
     },
     "api-migration-checklist": {
       "source": "git@git.dz11.com:skills/platform/skills.git",
@@ -1135,9 +1135,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/tt-a1i/archify.git",
       "skillPath": "archify/SKILL.md",
-      "skillFolderHash": "ffb8258f653b66f5afb8340bf8eb61c7309830ff",
+      "skillFolderHash": "68f9fae4d0b4a17c5cd8cba9682e7306f879d4bb",
       "installedAt": "2026-09-01T05:33:44.279Z",
-      "updatedAt": "2026-09-17T01:40:29.653Z"
+      "updatedAt": "2026-09-24T05:49:19.780Z"
     },
     "herdr": {
       "source": "herdrdev/herdr",
@@ -1147,6 +1147,15 @@
       "skillFolderHash": "6985a5e8418d43171c45c2a9e04b02de7308e1d8",
       "installedAt": "2026-09-02T11:07:55.151Z",
       "updatedAt": "2026-09-17T01:40:38.385Z"
+    },
+    "gitnexus-index-group": {
+      "source": "git@git.dz11.com:xiaohui/skills.git",
+      "sourceType": "git",
+      "sourceUrl": "git@git.dz11.com:xiaohui/skills.git",
+      "skillPath": "gitnexus-index-group/SKILL.md",
+      "skillFolderHash": "e7a84b515f2548d091fddc0d0ec7668487bbc35f173f06074fe7815c5ca0120a",
+      "installedAt": "2026-09-21T08:34:25.180Z",
+      "updatedAt": "2026-09-21T08:34:25.180Z"
     }
   },
   "dismissed": {
@@ -1154,14 +1163,13 @@
   },
   "lastSelectedAgents": [
     "amp",
-    "antigravity",
-    "antigravity-cli",
     "cline",
     "codex",
     "cursor",
-    "deepagents",
+    "droid",
     "gemini-cli",
     "github-copilot",
+    "kilo",
     "kimi-code-cli",
     "opencode",
     "warp",

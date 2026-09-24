@@ -1,98 +1,10 @@
 {
   "mcpServers": {
-    "figma": {
-      "args": [
-        "-y",
-        "figma-developer-mcp",
-        "--figma-api-key=${FIGMA_API_KEY}",
-        "--stdio"
-      ],
-      "command": "npx",
-      "disabled": true,
-      "env": {
-        "FIGMA_API_KEY": "${FIGMA_API_KEY}"
-      },
-      "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json",
-      "tools": [
-        "*"
-      ]
-    },
-    "git": {
-      "args": [],
-      "command": "mcp-server-git",
-      "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json",
-      "tools": [
-        "*"
-      ],
-      "type": "local"
-    },
-    "gitnexus": {
-      "args": [
-        "-y",
-        "gitnexus",
-        "mcp"
-      ],
-      "command": "npx",
-      "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json",
-      "tools": [
-        "*"
-      ],
-      "type": "local"
-    },
-    "local_figma": {
-      "disabled": true,
-      "headers": {},
-      "tools": [
-        "*"
-      ],
-      "type": "http",
-      "url": "http://127.0.0.1:3845/mcp"
-    },
-    "memory": {
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-memory"
-      ],
-      "command": "npx",
-      "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json",
-      "tools": [
-        "*"
-      ],
-      "type": "local"
-    },
-    "playwright": {
-      "args": [
-        "@playwright/mcp@latest"
-      ],
-      "command": "npx",
-      "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json",
-      "tools": [
-        "*"
-      ],
-      "type": "local"
-    },
-    "postman-api-mcp": {
-      "args": [
-        "@postman/postman-mcp-server",
-        "--full"
-      ],
-      "command": "npx",
-      "disabled": true,
-      "env": {
-        "POSTMAN_API_KEY": "${POSTMAN_API_KEY}"
-      },
-      "source": "user",
-      "sourcePath": "/Users/ted/.copilot/mcp-config.json",
-      "tools": [
-        "*"
-      ],
-      "type": "local"
+    "mcpm_profile_coding": {
+      "type": "local",
+      "command": "mcpm",
+      "args": ["profile", "run", "coding"],
+      "tools": ["*"]
     }
-  },
-  "nativeMCPServers": []
+  }
 }
