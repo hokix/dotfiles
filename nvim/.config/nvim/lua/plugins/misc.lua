@@ -73,6 +73,9 @@ return {
       kulala_core = {
         timeout = 120000,
       },
+      treesitter = {
+        enable = false,
+      },
     },
     keys = {
       { "<leader>Ra", "<cmd>lua require('kulala').run_all()<cr>", desc = "Send all the request", ft = "http" },

@@ -153,5 +153,14 @@ for _f in ${HOME}/.config/herdr/plugins/github/herdr-automatic-rename-*/shell/ho
   source $_f; break
 done
 
+
+urlencode() {
+  python3 -c 'import sys, urllib.parse; print(urllib.parse.quote(sys.argv[1]))' "$1"
+}
+
+urldecode() {
+  python3 -c 'import sys, urllib.parse; print(urllib.parse.unquote(sys.argv[1]))' "$1"
+}
+
 eval "$(zoxide init zsh --cmd cd)"
 # zprof

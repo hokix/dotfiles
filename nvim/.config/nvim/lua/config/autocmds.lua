@@ -36,3 +36,22 @@ vim.api.nvim_create_autocmd({ "VimEnter", "VimLeave" }, {
     end
   end,
 })
+
+-- register kulala's treesitter parser using nvim-treesitter instead
+vim.api.nvim_create_autocmd("User", {
+  pattern = "TSUpdate",
+  callback = function()
+    require("nvim-treesitter.parsers").kulala_http = {
+      install_info = {
+        url = "https://github.com/dont-be-evil-company/tree-sitter-kulala-http",
+        queries = "queries/kulala_http",
+      },
+    }
+  end,
+})
+-- then install it with either `:TSInstall kulala_http` or `require("nvim-treesitter").install({'kulala_http'})`
+
+-- register `kulala_http` treesitter parser for `http` and `rest` filetypes
+vim.treesitter.language.register("kulala_http", { "http", "rest" })
+-- register `markdown` treesitter parser for `kulala_ui` filetype
+vim.treesitter.language.register("markdown", { "kulala_ui" })

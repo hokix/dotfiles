@@ -23,6 +23,9 @@ return {
       cmake_executor = {
         name = "quickfix",
       },
+      cmake_compile_commands_options = {
+        action = "copy",
+      },
     },
   },
   {
