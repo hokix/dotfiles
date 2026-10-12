@@ -84,6 +84,7 @@ unsetopt BG_NICE
 setopt no_nomatch
 
 # === fzf ===
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source <(fzf --zsh)
 
 # === Aliases ===
